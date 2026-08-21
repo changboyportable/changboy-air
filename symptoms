@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>อาการเสียแอร์เคลื่อนที่ | ช่างบอยซ่อมแอร์เคลื่อนที่</title>
+
+    <meta name="description"
+        content="รวมอาการเสียแอร์เคลื่อนที่ เช่น แอร์ไม่เย็น เปิดไม่ติด น้ำหยด น้ำแข็งเกาะ เสียงดัง คอมเพรสเซอร์ไม่ทำงาน และแอร์ไม่ตัด พร้อมสาเหตุเบื้องต้น">
+
+    <meta name="keywords"
+        content="แอร์เคลื่อนที่ไม่เย็น, แอร์เคลื่อนที่เสีย, แอร์เคลื่อนที่น้ำหยด, แอร์เคลื่อนที่เปิดไม่ติด, ซ่อมแอร์เคลื่อนที่">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* =========================
+           SYMPTOMS PAGE
+        ========================= */
+
+        .symptoms-hero {
+            padding: 80px 20px 60px;
+            text-align: center;
+            background: linear-gradient(135deg, #eaf7ff, #ffffff);
+        }
+
+        .symptoms-hero h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .symptoms-hero p {
+            max-width: 750px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .symptoms-section {
+            padding: 60px 20px;
+        }
+
+        .symptoms-intro {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            text-align: center;
+        }
+
+        .symptoms-intro h2 {
+            margin-bottom: 15px;
+        }
+
+        .symptoms-intro p {
+            line-height: 1.8;
+        }
+
+        .symptoms-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .symptom-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e8e8e8;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .symptom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        .symptom-icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .symptom-card h3 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .symptom-card p {
+            line-height: 1.7;
+            margin-bottom: 18px;
+        }
+
+        .symptom-card ul {
+            padding-left: 20px;
+            line-height: 1.8;
+        }
+
+        .symptom-warning {
+            margin-top: 50px;
+            padding: 25px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            background: #fff8e8;
+            border-left: 5px solid #f0a500;
+            border-radius: 10px;
+        }
+
+        .contact-section {
+            padding: 60px 20px;
+            text-align: center;
+            background: #f5f9fc;
+        }
+
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+
+        .back-home {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .back-home a {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .symptoms-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .symptoms-hero h1 {
+                font-size: 34px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .symptoms-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .symptoms-hero {
+                padding: 60px 15px 45px;
+            }
+
+            .symptoms-hero h1 {
+                font-size: 30px;
+            }
+
+            .symptoms-hero p {
+                font-size: 16px;
+            }
+
+            .symptom-card {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+    <div class="container">
+
+        <div class="logo">
+            <h2>ช่างบอยซ่อมแอร์เคลื่อนที่</h2>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">หน้าแรก</a>
+                </li>
+
+                <li>
+                    <a href="index.html#services">บริการ</a>
+                </li>
+
+                <li>
+                    <a href="symptoms.html">อาการเสีย</a>
+                </li>
+
+                <li>
+                    <a href="index.html#articles">บทความ</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">ติดต่อเรา</a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="symptoms-hero">
+
+    <div class="container">
+
+        <h1>🔧 อาการเสียแอร์เคลื่อนที่</h1>
+
+        <p>
+            รวมอาการผิดปกติที่พบบ่อยของแอร์เคลื่อนที่
+            พร้อมสาเหตุเบื้องต้นที่อาจทำให้เครื่องทำงานผิดปกติ
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SYMPTOMS ================= -->
+
+<section class="symptoms-section">
+
+    <div class="container">
+
+        <div class="symptoms-intro">
+
+            <h2>แอร์เคลื่อนที่ของคุณมีอาการแบบไหน?</h2>
+
+            <p>
+                เลือกอาการที่ใกล้เคียงกับปัญหาของเครื่อง
+                เพื่อทำความเข้าใจสาเหตุเบื้องต้น
+                ก่อนตรวจเช็กและซ่อมอย่างละเอียด
+            </p>
+
+        </div>
+
+
+        <div class="symptoms-grid">
+
+
+            <!-- 1 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">❄️</div>
+
+                <h3>แอร์เคลื่อนที่ไม่เย็น</h3>
+
+                <p>
+                    เปิดเครื่องแล้วมีลมออก
+                    แต่ลมไม่เย็นหรือเย็นน้อยกว่าปกติ
+                </p>
+
+                <ul>
+                    <li>คอยล์สกปรก</li>
+                    <li>ฟิลเตอร์อุดตัน</li>
+                    <li>ระบบน้ำยามีปัญหา</li>
+                    <li>ระบบระบายความร้อนไม่ดี</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 2 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">🔌</div>
+
+                <h3>แอร์เคลื่อนที่เปิดไม่ติด</h3>
+
+                <p>
+                    กดปุ่มเปิดแล้วเครื่องไม่ทำงาน
+                    หรือไม่มีไฟแสดงผล
+                </p>
+
+                <ul>
+                    <li>ไฟไม่เข้าเครื่อง</li>
+                    <li>ฟิวส์ขาด</li>
+                    <li>แผง PCB มีปัญหา</li>
+                    <li>ระบบป้องกันทำงาน</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 3 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">💧</div>
+
+                <h3>แอร์เคลื่อนที่น้ำหยด</h3>
+
+                <p>
+                    มีน้ำไหลออกจากตัวเครื่อง
+                    หรือมีน้ำขังผิดปกติ
+                </p>
+
+                <ul>
+                    <li>ถังน้ำเต็ม</li>
+                    <li>ท่อน้ำทิ้งอุดตัน</li>
+                    <li>ปั๊มน้ำมีปัญหาในรุ่นที่มีปั๊ม</li>
+                    <li>ระบบระบายน้ำผิดปกติ</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 4 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">🧊</div>
+
+                <h3>มีน้ำแข็งเกาะคอยล์</h3>
+
+                <p>
+                    พบเกล็ดน้ำแข็งหรือก้อนน้ำแข็ง
+                    บริเวณคอยล์เย็น
+                </p>
+
+                <ul>
+                    <li>ลมผ่านคอยล์ไม่เพียงพอ</li>
+                    <li>ฟิลเตอร์สกปรก</li>
+                    <li>เซ็นเซอร์ผิดปกติ</li>
+                    <li>ระบบทำความเย็นมีปัญหา</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 5 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">🔊</div>
+
+                <h3>แอร์เคลื่อนที่เสียงดัง</h3>
+
+                <p>
+                    เครื่องมีเสียงดังผิดปกติ
+                    เสียงสั่น หรือเสียงกระแทก
+                </p>
+
+                <ul>
+                    <li>มอเตอร์พัดลม</li>
+                    <li>ใบพัดเสียสมดุล</li>
+                    <li>ชิ้นส่วนภายในหลวม</li>
+                    <li>คอมเพรสเซอร์ผิดปกติ</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 6 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">⚙️</div>
+
+                <h3>คอมเพรสเซอร์ไม่ทำงาน</h3>
+
+                <p>
+                    พัดลมทำงานแต่คอมเพรสเซอร์
+                    ไม่เริ่มทำงานหรือมีเสียงฮัม
+                </p>
+
+                <ul>
+                    <li>คาปาซิเตอร์มีปัญหา</li>
+                    <li>รีเลย์ผิดปกติ</li>
+                    <li>โอเวอร์โหลดตัด</li>
+                    <li>คอมเพรสเซอร์มีปัญหา</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 7 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">🌡️</div>
+
+                <h3>แอร์ไม่ตัดการทำงาน</h3>
+
+                <p>
+                    เครื่องทำงานต่อเนื่องเป็นเวลานาน
+                    และอุณหภูมิไม่ถึงค่าที่ตั้งไว้
+                </p>
+
+                <ul>
+                    <li>อุณหภูมิห้องสูง</li>
+                    <li>ระบายลมร้อนไม่ดี</li>
+                    <li>คอยล์สกปรก</li>
+                    <li>เซ็นเซอร์อุณหภูมิมีปัญหา</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 8 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">💨</div>
+
+                <h3>ลมออกแต่ลมไม่แรง</h3>
+
+                <p>
+                    เปิดเครื่องแล้วมีลมออก
+                    แต่แรงลมลดลงกว่าปกติ
+                </p>
+
+                <ul>
+                    <li>ฟิลเตอร์ตัน</li>
+                    <li>คอยล์สกปรก</li>
+                    <li>ใบพัดสกปรก</li>
+                    <li>มอเตอร์พัดลมมีปัญหา</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 9 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">🚨</div>
+
+                <h3>แอร์ขึ้น Error Code</h3>
+
+                <p>
+                    หน้าจอแสดงรหัสผิดพลาด
+                    หรือมีไฟแจ้งเตือน
+                </p>
+
+                <ul>
+                    <li>เซ็นเซอร์ผิดปกติ</li>
+                    <li>ระบบน้ำมีปัญหา</li>
+                    <li>ระบบไฟฟ้าผิดปกติ</li>
+                    <li>ระบบป้องกันทำงาน</li>
+                </ul>
+
+            </article>
+
+
+            <!-- 10 -->
+
+            <article class="symptom-card">
+
+                <div class="symptom-icon">🔥</div>
+
+                <h3>ปลั๊กหรือสายไฟร้อน</h3>
+
+                <p>
+                    พบว่าปลั๊ก ขั้วต่อ หรือสายไฟ
+                    ร้อนผิดปกติระหว่างใช้งาน
+                </p>
+
+                <ul>
+                    <li>ขั้วต่อหลวม</li>
+                    <li>ปลั๊กเสื่อมสภาพ</li>
+                    <li>สายไฟมีปัญหา</li>
+                    <li>กระแสไฟสูงผิดปกติ</li>
+                </ul>
+
+            </article>
+
+        </div>
+
+
+        <!-- ================= WARNING ================= -->
+
+        <div class="symptom-warning">
+
+            <h3>⚠️ ข้อควรระวัง</h3>
+
+            <p>
+                อาการเดียวกันอาจเกิดจากหลายสาเหตุ
+                ข้อมูลในหน้านี้เป็นเพียงแนวทางเบื้องต้น
+                การตรวจสอบระบบไฟฟ้า คอมเพรสเซอร์
+                และระบบทำความเย็นควรให้ช่างตรวจสอบอย่างเหมาะสม
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section">
+
+    <div class="container">
+
+        <h2>มีอาการผิดปกติ แต่ไม่แน่ใจว่าเกิดจากอะไร?</h2>
+
+        <p>
+            สามารถติดต่อช่างบอยเพื่อสอบถามอาการเบื้องต้นได้
+        </p>
+
+        <div class="contact-buttons">
+
+            <a href="tel:0805178615" class="btn btn-primary">
+                📞 โทร 080-517-8615
+            </a>
+
+            <a href="https://line.me/R/ti/p/@365jdxhc"
+               class="btn btn-line"
+               target="_blank"
+               rel="noopener noreferrer">
+                💬 LINE : @365jdxhc
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BACK HOME ================= -->
+
+<div class="back-home">
+
+    <a href="index.html">
+        ← กลับหน้าแรก
+    </a>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 ช่างบอยซ่อมแอร์เคลื่อนที่
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
