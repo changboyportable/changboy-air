@@ -436,3 +436,63 @@ transform:translateY(40px);
 
 
 }
+/* =========================================
+   FLOATING CONTACT BUTTONS
+========================================= */
+
+.floating-contact {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.floating-contact a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    padding: 12px 18px;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+    transition: all 0.25s ease;
+}
+
+.floating-contact a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.floating-line {
+    background: #06c755;
+}
+
+.floating-phone {
+    background: #007bff;
+}
+
+/* มือถือ */
+@media (max-width: 600px) {
+
+    .floating-contact {
+        bottom: 15px;
+        right: 12px;
+        left: 12px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .floating-contact a {
+        flex: 1;
+        min-width: 0;
+        padding: 12px 10px;
+        font-size: 14px;
+    }
+}
