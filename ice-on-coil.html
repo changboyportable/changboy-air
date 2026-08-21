@@ -1,0 +1,731 @@
+```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ เกิดจากอะไร? | ช่างบอยซ่อมแอร์เคลื่อนที่</title>
+
+    <meta name="description"
+          content="น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ เกิดจากอะไร? รวมสาเหตุสำคัญ เช่น ฟิลเตอร์สกปรก ลมผ่านน้อย น้ำยาแอร์ไม่เพียงพอ พัดลมผิดปกติ และเซ็นเซอร์ พร้อมวิธีตรวจสอบเบื้องต้น">
+
+    <meta name="keywords"
+          content="น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่, แอร์เคลื่อนที่เป็นน้ำแข็ง, คอยล์เย็นเป็นน้ำแข็ง, แอร์เคลื่อนที่ไม่เย็น, แอร์เคลื่อนที่น้ำแข็งเกาะ, ซ่อมแอร์เคลื่อนที่">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical"
+          href="https://changboyportable.github.io/changboy-air/ice-on-coil.html">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, "Noto Sans Thai", sans-serif;
+            line-height: 1.8;
+            color: #222;
+            background: #f5f8fb;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #0077b6, #00b4d8);
+            color: #fff;
+            padding: 18px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+        }
+
+        .header-inner {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            gap: 6px;
+        }
+
+        nav a {
+            padding: 7px 10px;
+            border-radius: 7px;
+            font-size: 15px;
+            transition: 0.25s;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background: rgba(255,255,255,0.18);
+        }
+
+        /* MAIN */
+        main {
+            max-width: 1000px;
+            margin: 35px auto;
+            padding: 0 18px;
+        }
+
+        .breadcrumb {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .breadcrumb a {
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        .article {
+            background: #fff;
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .article-label {
+            display: inline-block;
+            background: #e0f7ff;
+            color: #0077b6;
+            padding: 5px 13px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            color: #005b8f;
+            font-size: 34px;
+            line-height: 1.4;
+            margin-bottom: 18px;
+        }
+
+        .intro {
+            font-size: 18px;
+            color: #555;
+            background: #f0f9ff;
+            border-left: 5px solid #00a8e8;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #006494;
+            font-size: 25px;
+            margin-top: 38px;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            color: #0077b6;
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul,
+        ol {
+            margin: 10px 0 20px 25px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .warning {
+            background: #fff7e6;
+            border-left: 5px solid #ff9800;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .danger {
+            background: #fff0f0;
+            border-left: 5px solid #e53935;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .success {
+            background: #effaf3;
+            border-left: 5px solid #28a745;
+            padding: 18px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .reason-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            margin: 20px 0;
+        }
+
+        .reason-card {
+            background: #f8fcff;
+            border: 1px solid #dceff7;
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .reason-card strong {
+            display: block;
+            color: #006494;
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        .check-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+        }
+
+        .check-table th,
+        .check-table td {
+            border: 1px solid #d9e3e8;
+            padding: 12px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .check-table th {
+            background: #eaf7fc;
+            color: #005b8f;
+        }
+
+        .faq {
+            margin-top: 15px;
+        }
+
+        .faq-item {
+            border: 1px solid #dfe8ed;
+            border-radius: 10px;
+            padding: 16px 18px;
+            margin-bottom: 12px;
+            background: #fafcfd;
+        }
+
+        .faq-item strong {
+            display: block;
+            color: #006494;
+            margin-bottom: 6px;
+        }
+
+        .related {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #ddd;
+        }
+
+        .related a {
+            display: block;
+            background: #f0f8fc;
+            border-radius: 9px;
+            padding: 12px 15px;
+            margin: 8px 0;
+            color: #006494;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .related a:hover {
+            background: #dff3fb;
+            transform: translateX(3px);
+        }
+
+        .contact-box {
+            margin-top: 35px;
+            padding: 25px;
+            border-radius: 14px;
+            background: linear-gradient(135deg, #0077b6, #00a8e8);
+            color: #fff;
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            color: #fff;
+            margin-top: 0;
+        }
+
+        .contact-box a {
+            display: inline-block;
+            margin: 7px;
+            padding: 10px 18px;
+            background: #fff;
+            color: #006494;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 40px;
+            background: #003b5c;
+            color: #fff;
+            text-align: center;
+            padding: 25px 15px;
+            font-size: 14px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+
+            header {
+                position: relative;
+            }
+
+            .header-inner {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                justify-content: center;
+            }
+
+            nav a {
+                font-size: 14px;
+            }
+
+            main {
+                margin: 20px auto;
+                padding: 0 12px;
+            }
+
+            .article {
+                padding: 22px 18px;
+                border-radius: 12px;
+            }
+
+            h1 {
+                font-size: 27px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            .intro {
+                font-size: 16px;
+            }
+
+            .reason-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .check-table {
+                font-size: 14px;
+            }
+
+            .check-table th,
+            .check-table td {
+                padding: 9px;
+            }
+        }
+    </style>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่เกิดจากอะไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "สาเหตุที่พบบ่อย ได้แก่ แผ่นกรองอากาศสกปรก ลมผ่านคอยล์เย็นไม่เพียงพอ น้ำยาแอร์ไม่เพียงพอ พัดลมทำงานผิดปกติ คอยล์เย็นสกปรก หรือเซ็นเซอร์อุณหภูมิทำงานผิดปกติ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ถ้าน้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ควรทำอย่างไร?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ควรปิดโหมดทำความเย็นและปล่อยให้น้ำแข็งละลายก่อน จากนั้นตรวจสอบแผ่นกรองอากาศ ช่องลม และการทำงานของพัดลม หากกลับมาเป็นซ้ำควรให้ช่างตรวจหาสาเหตุ"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "น้ำแข็งเกาะคอยล์ทำให้แอร์ไม่เย็นหรือไม่?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ได้ เพราะน้ำแข็งสามารถขวางการไหลเวียนของอากาศผ่านคอยล์เย็น ทำให้ลมออกน้อยลงและประสิทธิภาพการทำความเย็นลดลง"
+          }
+        }
+      ]
+    }
+    </script>
+
+</head>
+
+<body>
+
+<header>
+    <div class="header-inner">
+
+        <div class="logo">
+            ช่างบอยซ่อมแอร์เคลื่อนที่
+        </div>
+
+        <nav>
+            <a href="index.html">หน้าแรก</a>
+            <a href="services.html">บริการ</a>
+            <a href="symptoms.html">อาการเสีย</a>
+            <a href="why-us.html">ทำไมต้องเลือกเรา</a>
+            <a href="articles.html" class="active">บทความ</a>
+            <a href="contact.html">ติดต่อเรา</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <div class="breadcrumb">
+        <a href="index.html">หน้าแรก</a>
+        &nbsp;›&nbsp;
+        <a href="articles.html">บทความ</a>
+        &nbsp;›&nbsp;
+        น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่
+    </div>
+
+
+    <article class="article">
+
+        <span class="article-label">
+            🧊 บทความความรู้แอร์เคลื่อนที่
+        </span>
+
+        <h1>
+            น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ เกิดจากอะไร?
+        </h1>
+
+        <div class="intro">
+            น้ำแข็งเกาะบริเวณคอยล์เย็นของแอร์เคลื่อนที่
+            เป็นอาการที่พบได้บ่อย และไม่ควรปล่อยให้เครื่องทำงานต่อเนื่องเป็นเวลานาน
+            เพราะอาจทำให้ลมออกน้อย แอร์ไม่เย็น และระบบทำงานหนักกว่าปกติ
+        </div>
+
+
+        <h2>🧊 น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่คืออะไร?</h2>
+
+        <p>
+            โดยปกติคอยล์เย็นจะทำหน้าที่ดูดความร้อนจากอากาศภายในห้อง
+            เมื่อลมไหลผ่านคอยล์เย็นอย่างเหมาะสม ระบบจะสามารถระบายความร้อน
+            และควบแน่นความชื้นออกมาเป็นน้ำได้ตามปกติ
+        </p>
+
+        <p>
+            แต่หากอุณหภูมิบริเวณคอยล์เย็นลดลงมากเกินไป
+            หรือมีลมไหลผ่านคอยล์ไม่เพียงพอ ความชื้นที่เกาะอยู่บนคอยล์
+            อาจกลายเป็นน้ำแข็งและสะสมเพิ่มขึ้นเรื่อย ๆ
+        </p>
+
+
+        <h2>🔍 สาเหตุที่ทำให้น้ำแข็งเกาะคอยล์</h2>
+
+        <div class="reason-grid">
+
+            <div class="reason-card">
+                <strong>1. 🧹 แผ่นกรองอากาศสกปรก</strong>
+                ฝุ่นที่สะสมบนฟิลเตอร์มากเกินไป ทำให้อากาศไหลผ่านคอยล์เย็นได้น้อยลง
+                และอาจทำให้คอยล์เย็นจับตัวเป็นน้ำแข็ง
+            </div>
+
+            <div class="reason-card">
+                <strong>2. 💨 ลมผ่านคอยล์น้อย</strong>
+                หากช่องทางเดินอากาศอุดตัน หรือพัดลมทำงานผิดปกติ
+                ปริมาณลมที่ผ่านคอยล์เย็นจะลดลง
+            </div>
+
+            <div class="reason-card">
+                <strong>3. ❄️ น้ำยาแอร์ไม่เพียงพอ</strong>
+                ระบบน้ำยาที่ผิดปกติอาจทำให้ความดันและอุณหภูมิในระบบเปลี่ยนแปลง
+                จนเกิดน้ำแข็งบริเวณคอยล์เย็นได้
+            </div>
+
+            <div class="reason-card">
+                <strong>4. 🌀 พัดลมมีปัญหา</strong>
+                เช่น มอเตอร์พัดลมทำงานช้า รอบตก หรือไม่ทำงาน
+                ทำให้อากาศผ่านคอยล์เย็นไม่เพียงพอ
+            </div>
+
+            <div class="reason-card">
+                <strong>5. 🧽 คอยล์เย็นสกปรก</strong>
+                ฝุ่นและสิ่งสกปรกที่สะสมบนคอยล์เย็นสามารถลดการไหลของอากาศ
+                และทำให้ประสิทธิภาพการแลกเปลี่ยนความร้อนลดลง
+            </div>
+
+            <div class="reason-card">
+                <strong>6. 🌡️ เซ็นเซอร์อุณหภูมิผิดปกติ</strong>
+                หากเซ็นเซอร์อ่านค่าอุณหภูมิคลาดเคลื่อน
+                ระบบอาจควบคุมการทำงานของคอมเพรสเซอร์ไม่เหมาะสม
+            </div>
+
+        </div>
+
+
+        <h2>⚠️ อาการที่มักพบร่วมกับน้ำแข็งเกาะคอยล์</h2>
+
+        <ul>
+            <li>แอร์เคลื่อนที่เริ่มเย็นน้อยลง</li>
+            <li>ลมเย็นออกจากเครื่องเบาลง</li>
+            <li>เห็นน้ำแข็งเกาะบริเวณคอยล์เย็น</li>
+            <li>เครื่องทำงานต่อเนื่องเป็นเวลานาน</li>
+            <li>หลังใช้งานไปสักระยะ แอร์เริ่มไม่เย็น</li>
+            <li>เมื่อปิดเครื่องแล้วมีน้ำละลายออกมามากกว่าปกติ</li>
+        </ul>
+
+
+        <h2>🔧 วิธีตรวจสอบเบื้องต้น</h2>
+
+        <ol>
+            <li>ปิดโหมดทำความเย็นก่อน</li>
+            <li>ปล่อยให้น้ำแข็งละลายจนหมด</li>
+            <li>ถอดแผ่นกรองอากาศออกมาตรวจสอบ</li>
+            <li>ทำความสะอาดฟิลเตอร์หากมีฝุ่นสะสมมาก</li>
+            <li>ตรวจสอบว่าช่องลมเข้าและช่องลมออกไม่มีสิ่งกีดขวาง</li>
+            <li>สังเกตว่าพัดลมทำงานตามปกติหรือไม่</li>
+            <li>ทดลองใช้งานใหม่หลังจากน้ำแข็งละลายหมดแล้ว</li>
+        </ol>
+
+
+        <div class="warning">
+            <strong>💡 เคล็ดลับ:</strong>
+            หากน้ำแข็งเกาะเพราะฟิลเตอร์สกปรก
+            การทำความสะอาดฟิลเตอร์อาจช่วยแก้ปัญหาได้
+            แต่หากทำความสะอาดแล้วอาการยังกลับมาเป็นซ้ำ
+            ควรตรวจสอบระบบเพิ่มเติม
+        </div>
+
+
+        <h2>❌ สิ่งที่ไม่ควรทำเมื่อน้ำแข็งเกาะคอยล์</h2>
+
+        <div class="danger">
+
+            <ul>
+                <li>
+                    ❌ ไม่ควรใช้ของแข็งหรือไขควงแซะน้ำแข็งออก
+                </li>
+
+                <li>
+                    ❌ ไม่ควรใช้น้ำร้อนจัดราดบริเวณคอยล์
+                </li>
+
+                <li>
+                    ❌ ไม่ควรเปิดโหมดเย็นต่อทั้งที่น้ำแข็งยังเกาะอยู่
+                </li>
+
+                <li>
+                    ❌ ไม่ควรเติมน้ำยาแอร์เองโดยไม่ตรวจหาสาเหตุ
+                </li>
+            </ul>
+
+        </div>
+
+
+        <h2>📋 สรุปสาเหตุและแนวทางตรวจสอบ</h2>
+
+        <table class="check-table">
+
+            <thead>
+                <tr>
+                    <th>อาการ / จุดที่พบ</th>
+                    <th>สาเหตุที่เป็นไปได้</th>
+                    <th>แนวทางเบื้องต้น</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>ลมออกเบา</td>
+                    <td>ฟิลเตอร์สกปรก / พัดลมผิดปกติ</td>
+                    <td>ตรวจฟิลเตอร์และระบบพัดลม</td>
+                </tr>
+
+                <tr>
+                    <td>คอยล์มีน้ำแข็ง</td>
+                    <td>ลมผ่านน้อย / ระบบน้ำยาผิดปกติ</td>
+                    <td>ปล่อยน้ำแข็งละลายและตรวจหาสาเหตุ</td>
+                </tr>
+
+                <tr>
+                    <td>แอร์เย็นช่วงแรก แต่ภายหลังไม่เย็น</td>
+                    <td>น้ำแข็งสะสมบนคอยล์</td>
+                    <td>ตรวจการไหลเวียนของอากาศและระบบทำความเย็น</td>
+                </tr>
+
+                <tr>
+                    <td>น้ำแข็งกลับมาเป็นซ้ำ</td>
+                    <td>มีปัญหาที่ระบบหรือชิ้นส่วน</td>
+                    <td>ควรให้ช่างตรวจสอบเพิ่มเติม</td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <h2>👨‍🔧 เมื่อไหร่ควรให้ช่างตรวจ?</h2>
+
+        <p>
+            หากทำความสะอาดฟิลเตอร์และตรวจช่องลมเบื้องต้นแล้ว
+            แต่เมื่อนำกลับมาใช้งานน้ำแข็งยังเกาะคอยล์ซ้ำอีก
+            ไม่ควรแก้ด้วยการเติมน้ำยาแอร์อย่างเดียว
+        </p>
+
+        <p>
+            เพราะอาการน้ำแข็งเกาะอาจเกิดได้จากหลายสาเหตุ
+            เช่น ระบบลม พัดลม เซ็นเซอร์ หรือระบบทำความเย็น
+            จึงควรตรวจหาต้นเหตุก่อนซ่อม
+        </p>
+
+
+        <div class="success">
+            <strong>✅ จำง่าย ๆ</strong><br>
+            น้ำแข็งเกาะคอยล์ไม่ได้แปลว่า “น้ำยาแอร์ขาด” เสมอไป
+            ต้องตรวจทั้งระบบก่อนจึงจะทราบสาเหตุที่แท้จริง
+        </div>
+
+
+        <h2>❓ คำถามที่พบบ่อย</h2>
+
+        <div class="faq">
+
+            <div class="faq-item">
+                <strong>น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่เกิดจากอะไร?</strong>
+                สาเหตุที่พบได้ ได้แก่ ฟิลเตอร์สกปรก ลมผ่านคอยล์น้อย
+                พัดลมผิดปกติ คอยล์เย็นสกปรก ระบบน้ำยาผิดปกติ
+                หรือเซ็นเซอร์อุณหภูมิทำงานผิดปกติ
+            </div>
+
+            <div class="faq-item">
+                <strong>น้ำแข็งเกาะคอยล์ทำให้แอร์ไม่เย็นหรือไม่?</strong>
+                ได้ เพราะน้ำแข็งสามารถขวางทางเดินของอากาศ
+                ทำให้ลมออกน้อยลงและประสิทธิภาพการทำความเย็นลดลง
+            </div>
+
+            <div class="faq-item">
+                <strong>ควรเติมน้ำยาแอร์ทันทีหรือไม่?</strong>
+                ไม่ควรเติมทันทีโดยไม่ตรวจสอบ เพราะน้ำแข็งเกาะคอยล์
+                สามารถเกิดจากหลายสาเหตุ ไม่ได้เกิดจากน้ำยาแอร์ไม่เพียงพอเพียงอย่างเดียว
+            </div>
+
+            <div class="faq-item">
+                <strong>ถ้าน้ำแข็งละลายแล้วกลับมาเกาะอีกควรทำอย่างไร?</strong>
+                ควรหยุดใช้งานโหมดทำความเย็นและให้ช่างตรวจสอบระบบ
+                เพื่อหาสาเหตุที่แท้จริงก่อนใช้งานต่อเนื่อง
+            </div>
+
+        </div>
+
+
+        <section class="related">
+
+            <h2>📚 บทความที่เกี่ยวข้อง</h2>
+
+            <a href="symptoms.html">
+                🔧 ดูอาการเสียของแอร์เคลื่อนที่ที่พบบ่อย
+            </a>
+
+            <a href="index.html">
+                ❄️ แอร์เคลื่อนที่ไม่เย็น เกิดจากอะไร?
+            </a>
+
+            <a href="index.html">
+                💧 น้ำหยดจากแอร์เคลื่อนที่ เกิดจากอะไร?
+            </a>
+
+            <a href="index.html">
+                ⚡ แอร์เคลื่อนที่กินไฟผิดปกติ ต้องตรวจอะไรบ้าง?
+            </a>
+
+        </section>
+
+
+        <div class="contact-box">
+
+            <h2>🔧 มีปัญหาแอร์เคลื่อนที่?</h2>
+
+            <p>
+                ช่างบอยซ่อมแอร์เคลื่อนที่
+                ตรวจเช็ก วิเคราะห์อาการ และซ่อมตามสาเหตุ
+            </p>
+
+            <a href="tel:0805178615">
+                📞 โทร 080-517-8615
+            </a>
+
+            <a href="https://line.me/R/ti/p/@365jdxhc"
+               target="_blank"
+               rel="noopener">
+                💬 LINE : @365jdxhc
+            </a>
+
+        </div>
+
+    </article>
+
+</main>
+
+
+<footer>
+    <p>
+        ร้าน : ช่างบอยซ่อมแอร์เคลื่อนที่
+    </p>
+
+    <p>
+        โทร : 080-517-8615
+        &nbsp; | &nbsp;
+        LINE : @365jdxhc
+    </p>
+
+    <p>
+        © 2026 ช่างบอยซ่อมแอร์เคลื่อนที่
+    </p>
+</footer>
+
+</body>
+</html>
+```
