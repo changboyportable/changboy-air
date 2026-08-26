@@ -1,12 +1,11 @@
 /* =========================================================
    CHANGBOY PORTABLE AIR CONDITIONER
-   MAIN WEBSITE + ARTICLE STYLE
-   VERSION 2.0
-   ========================================================= */
+   MAIN WEBSITE + SYMPTOMS + ARTICLE
+========================================================= */
 
 
 /* =========================================================
-   1. RESET / GLOBAL
+   1. RESET
 ========================================================= */
 
 * {
@@ -15,10 +14,11 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 90px;
 }
+
 
 body {
     font-family:
@@ -27,36 +27,36 @@ body {
         sans-serif;
 
     background: #f5f7fa;
+
     color: #333;
 
     line-height: 1.7;
-
-    overflow-x: hidden;
 }
+
 
 img {
     max-width: 100%;
+
     height: auto;
+
     display: block;
 }
 
+
 a {
     transition:
-        color 0.25s ease,
-        background 0.25s ease,
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        all 0.25s ease;
 }
 
-button {
-    font-family: inherit;
-}
 
 .container {
     width: 90%;
+
     max-width: 1200px;
+
     margin: 0 auto;
 }
+
 
 
 /* =========================================================
@@ -65,55 +65,63 @@ button {
 
 header {
     background: #0d47a1;
+
     color: #ffffff;
 
     position: sticky;
+
     top: 0;
 
     z-index: 9999;
 
     box-shadow:
-        0 3px 15px rgba(0, 0, 0, 0.12);
+        0 3px 15px rgba(0,0,0,0.12);
 }
 
-header .container {
+
+.header-container {
     display: flex;
 
     justify-content: space-between;
+
     align-items: center;
 
+    gap: 25px;
+
     padding: 18px 0;
-
-    gap: 20px;
 }
 
-.logo {
-    flex-shrink: 0;
-}
 
-.logo h2 {
+.logo a {
     color: #ffffff;
+
+    text-decoration: none;
 
     font-size: 24px;
 
-    line-height: 1.3;
-
     font-weight: 800;
+
+    line-height: 1.3;
 }
+
+
+.logo a:hover {
+    color: #ffd54f;
+}
+
 
 nav ul {
     display: flex;
 
     align-items: center;
 
+    flex-wrap: wrap;
+
     list-style: none;
 
-    flex-wrap: wrap;
+    gap: 24px;
 }
 
-nav li {
-    margin-left: 25px;
-}
 
 nav a {
     color: #ffffff;
@@ -123,15 +131,13 @@ nav a {
     font-weight: 700;
 
     font-size: 15px;
-
-    white-space: nowrap;
 }
+
 
 nav a:hover {
     color: #ffd54f;
-
-    transform: translateY(-1px);
 }
+
 
 
 /* =========================================================
@@ -141,13 +147,13 @@ nav a:hover {
 .hero {
     position: relative;
 
+    overflow: hidden;
+
     min-height: 650px;
 
     display: flex;
 
     align-items: center;
-
-    overflow: hidden;
 
     background:
         linear-gradient(
@@ -156,12 +162,8 @@ nav a:hover {
             #ffffff 55%,
             #eef8ff 100%
         );
-
-    color: #123047;
 }
 
-
-/* Decorative circle */
 
 .hero::before {
     content: "";
@@ -169,19 +171,20 @@ nav a:hover {
     position: absolute;
 
     width: 520px;
+
     height: 520px;
 
     right: -180px;
-    top: -120px;
+
+    top: -150px;
 
     background: #0d47a1;
 
     opacity: 0.05;
 
     border-radius: 50%;
-
-    pointer-events: none;
 }
+
 
 .hero::after {
     content: "";
@@ -189,9 +192,11 @@ nav a:hover {
     position: absolute;
 
     width: 350px;
+
     height: 350px;
 
     left: -180px;
+
     bottom: -180px;
 
     background: #06c755;
@@ -199,33 +204,18 @@ nav a:hover {
     opacity: 0.04;
 
     border-radius: 50%;
-
-    pointer-events: none;
 }
 
-.hero-overlay {
-    display: none;
-}
-
-
-/* =========================================================
-   4. HERO CONTENT
-========================================================= */
 
 .hero-content {
     position: relative;
 
     z-index: 2;
 
-    width: 100%;
-
-    max-width: 1200px;
-
     display: grid;
 
     grid-template-columns:
-        minmax(0, 1fr)
-        minmax(0, 1fr);
+        1fr 1fr;
 
     align-items: center;
 
@@ -235,16 +225,13 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   5. HERO TEXT
-========================================================= */
-
 .hero-text {
     max-width: 620px;
 
     animation:
         fadeUp 0.8s ease;
 }
+
 
 .hero-badge {
     display: inline-flex;
@@ -255,8 +242,7 @@ nav a:hover {
 
     color: #0369a1;
 
-    padding:
-        9px 18px;
+    padding: 9px 18px;
 
     border-radius: 50px;
 
@@ -270,27 +256,25 @@ nav a:hover {
         1px solid #bae6fd;
 }
 
+
 .hero h1 {
     color: #123047;
 
     font-size:
-        clamp(
-            42px,
-            5vw,
-            68px
-        );
+        clamp(42px, 5vw, 68px);
 
     line-height: 1.15;
 
     font-weight: 800;
 
-    margin:
-        0 0 22px;
+    margin-bottom: 22px;
 }
+
 
 .hero h1 span {
     color: #087ea4;
 }
+
 
 .hero-description {
     color: #475569;
@@ -305,114 +289,23 @@ nav a:hover {
 }
 
 
-/* =========================================================
-   6. HERO BUTTON
-========================================================= */
-
 .hero-button {
     display: flex;
 
     flex-wrap: wrap;
-
-    align-items: center;
 
     gap: 12px;
 
     margin-top: 10px;
 }
 
-.btn {
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding:
-        14px 26px;
-
-    border-radius: 50px;
-
-    text-decoration: none;
-
-    font-weight: 700;
-
-    font-size: 17px;
-
-    box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.12);
-
-    border: none;
-
-    cursor: pointer;
-}
-
-.btn-primary {
-    background: #ff6f00;
-
-    color: #ffffff;
-}
-
-.btn-primary:hover {
-    background: #e65100;
-
-    color: #ffffff;
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(255, 111, 0, 0.30);
-}
-
-.btn-line {
-    background: #06c755;
-
-    color: #ffffff;
-}
-
-.btn-line:hover {
-    background: #00a843;
-
-    color: #ffffff;
-
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(6, 199, 85, 0.30);
-}
-
-.btn-secondary {
-    background: transparent;
-
-    color: #0d47a1;
-
-    border:
-        2px solid #0d47a1;
-
-    box-shadow: none;
-}
-
-.btn-secondary:hover {
-    background: #0d47a1;
-
-    color: #ffffff;
-}
-
-
-/* =========================================================
-   7. HERO CONTACT
-========================================================= */
 
 .hero-contact {
     display: flex;
 
     flex-wrap: wrap;
 
-    align-items: center;
-
-    gap: 10px;
+    gap: 18px;
 
     margin-top: 22px;
 
@@ -423,18 +316,8 @@ nav a:hover {
     font-weight: 600;
 }
 
-.contact-divider {
-    color: #cbd5e1;
-}
-
-
-/* =========================================================
-   8. HERO IMAGE
-========================================================= */
 
 .hero-image {
-    position: relative;
-
     display: flex;
 
     align-items: center;
@@ -445,55 +328,35 @@ nav a:hover {
         heroImage 1s ease;
 }
 
-.hero-image::before {
-    content: "";
-
-    position: absolute;
-
-    width: 440px;
-    height: 440px;
-
-    background: #ffffff;
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 15px 50px rgba(0, 0, 0, 0.08);
-
-    z-index: -1;
-}
 
 .hero-image img {
     width: 100%;
 
     max-width: 520px;
 
-    height: auto;
-
     border-radius: 25px;
 
-    object-fit: cover;
-
     box-shadow:
-        0 15px 40px rgba(0, 0, 0, 0.12);
+        0 15px 40px rgba(0,0,0,0.12);
 
     transition:
-        transform 0.4s ease,
-        box-shadow 0.4s ease;
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
 }
 
-.hero-image:hover img {
+
+.hero-image img:hover {
     transform:
-        scale(1.025)
-        translateY(-4px);
+        translateY(-8px) scale(1.02);
 
     box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.16);
+        0 20px 50px rgba(0,0,0,0.18);
 }
+
 
 
 /* =========================================================
-   9. ANIMATION
+   4. ANIMATION
 ========================================================= */
 
 @keyframes fadeUp {
@@ -514,6 +377,7 @@ nav a:hover {
 
 }
 
+
 @keyframes heroImage {
 
     from {
@@ -533,13 +397,107 @@ nav a:hover {
 }
 
 
+
 /* =========================================================
-   10. SECTION
+   5. BUTTON
+========================================================= */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 14px 26px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 17px;
+
+    border: none;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(0,0,0,0.12);
+}
+
+
+.btn-primary {
+    background: #ff6f00;
+
+    color: #ffffff;
+}
+
+
+.btn-primary:hover {
+    background: #e65100;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-3px);
+}
+
+
+.btn-line {
+    background: #06c755;
+
+    color: #ffffff;
+}
+
+
+.btn-line:hover {
+    background: #00a843;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-3px);
+}
+
+
+.article-button {
+    display: inline-block;
+
+    background: #0d47a1;
+
+    color: #ffffff;
+
+    padding: 12px 22px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+}
+
+
+.article-button:hover {
+    background: #083378;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-2px);
+}
+
+
+
+/* =========================================================
+   6. SECTION
 ========================================================= */
 
 section {
     padding: 70px 0;
 }
+
 
 section h2 {
     color: #0d47a1;
@@ -550,27 +508,34 @@ section h2 {
 
     line-height: 1.35;
 
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
+
 
 .section-description {
     max-width: 750px;
 
     margin:
-        -20px auto 35px;
+        0 auto 40px;
 
     text-align: center;
 
     color: #64748b;
 
     font-size: 17px;
-
-    line-height: 1.8;
 }
 
 
+.section-button {
+    text-align: center;
+
+    margin-top: 35px;
+}
+
+
+
 /* =========================================================
-   11. CARD GRID
+   7. CARD
 ========================================================= */
 
 .card-grid {
@@ -583,105 +548,38 @@ section h2 {
         );
 
     gap: 25px;
-
-    align-items: stretch;
 }
 
-
-/* =========================================================
-   12. CARD
-========================================================= */
 
 .card {
     background: #ffffff;
 
     border-radius: 16px;
 
-    text-align: center;
-
     overflow: hidden;
 
     box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.08);
+        0 5px 18px rgba(0,0,0,0.08);
 
     transition:
         transform 0.3s ease,
         box-shadow 0.3s ease;
 }
 
+
 .card:hover {
     transform:
         translateY(-7px);
 
     box-shadow:
-        0 14px 30px rgba(0, 0, 0, 0.13);
+        0 14px 30px rgba(0,0,0,0.14);
 }
 
-
-/* =========================================================
-   13. CARD IMAGE
-========================================================= */
-
-.card-image {
-    width: 100%;
-
-    height: 220px;
-
-    overflow: hidden;
-
-    background: #eaf2f8;
-
-    position: relative;
-}
-
-.card-image::after {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            to bottom,
-            rgba(0,0,0,0),
-            rgba(0,0,0,0.08)
-        );
-
-    pointer-events: none;
-}
-
-.card-image img {
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    object-position: center;
-
-    transition:
-        transform 0.5s ease,
-        filter 0.5s ease;
-}
-
-.card:hover .card-image img {
-    transform:
-        scale(1.08);
-
-    filter:
-        brightness(1.04);
-}
-
-
-/* =========================================================
-   14. CARD CONTENT
-========================================================= */
 
 .card-content {
-    padding:
-        24px 22px 27px;
+    padding: 25px;
 }
+
 
 .card h3 {
     color: #0d47a1;
@@ -693,18 +591,18 @@ section h2 {
     line-height: 1.4;
 }
 
+
 .card p {
     color: #555;
 
-    line-height: 1.75;
-
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
+
 
 .card a {
     display: inline-block;
 
-    margin-top: 15px;
+    margin-top: 12px;
 
     color: #0d47a1;
 
@@ -713,121 +611,125 @@ section h2 {
     font-weight: 700;
 }
 
+
 .card a:hover {
     color: #ff6f00;
+}
 
+
+
+/* =========================================================
+   8. CARD IMAGE
+========================================================= */
+
+.card-image {
+    width: 100%;
+
+    height: 220px;
+
+    overflow: hidden;
+
+    background: #eef3f7;
+}
+
+
+.card-image img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.45s ease;
+}
+
+
+.image-card:hover .card-image img {
     transform:
-        translateX(3px);
+        scale(1.08);
 }
+
 
 
 /* =========================================================
-   15. SERVICE CARD
+   9. SYMPTOMS SECTION
 ========================================================= */
 
-.service-card {
-    display: flex;
-
-    flex-direction: column;
-
-    height: 100%;
-}
-
-.service-card .card-image {
-    height: 230px;
-}
-
-.service-card .card-content {
-    flex: 1;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: flex-start;
+.symptoms-section {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f5f9fd
+        );
 }
 
 
-/* =========================================================
-   16. ARTICLE CARD
-========================================================= */
-
-.article-card {
-    display: flex;
-
-    flex-direction: column;
-
-    height: 100%;
-}
-
-.article-card .card-image {
-    height: 210px;
-}
-
-.article-card .card-content {
-    flex: 1;
-
-    display: flex;
-
-    flex-direction: column;
-}
-
-.article-card .card-content a {
-    margin-top: auto;
-
-    padding-top: 18px;
+.symptoms-grid {
+    grid-template-columns:
+        repeat(
+            5,
+            1fr
+        );
 }
 
 
-/* =========================================================
-   17. ARTICLE MORE
-========================================================= */
-
-.article-more {
+.symptom-card {
     text-align: center;
 
-    margin-top: 40px;
+    padding: 30px 20px;
+
+    overflow: visible;
 }
 
-.article-button {
-    display: inline-flex;
+
+.symptom-icon {
+    width: 75px;
+
+    height: 75px;
+
+    display: flex;
 
     align-items: center;
 
     justify-content: center;
 
-    background: #0d47a1;
+    margin: 0 auto 18px;
 
-    color: #ffffff;
+    background: #eaf4ff;
 
-    padding:
-        13px 25px;
+    border-radius: 50%;
 
-    border-radius: 50px;
+    font-size: 38px;
 
-    text-decoration: none;
-
-    font-weight: 700;
-
-    box-shadow:
-        0 5px 15px rgba(13, 71, 161, 0.20);
+    transition:
+        transform 0.3s ease;
 }
 
-.article-button:hover {
-    background: #083378;
 
-    color: #ffffff;
-
+.symptom-card:hover .symptom-icon {
     transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 8px 20px rgba(13, 71, 161, 0.25);
+        scale(1.12)
+        rotate(4deg);
 }
+
+
+.symptom-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.symptom-card p {
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
 
 
 /* =========================================================
-   18. WHY US
+   10. WHY US
 ========================================================= */
 
 .check-list {
@@ -837,38 +739,27 @@ section h2 {
 
     margin: 0 auto;
 
-    font-size: 20px;
+    font-size: 19px;
 }
 
-.check-list li {
-    margin: 15px 0;
 
-    padding:
-        14px 18px;
+.check-list li {
+    margin: 12px 0;
+
+    padding: 14px 18px;
 
     background: #ffffff;
 
     border-radius: 10px;
 
     box-shadow:
-        0 3px 12px rgba(0, 0, 0, 0.05);
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+        0 3px 12px rgba(0,0,0,0.05);
 }
 
-.check-list li:hover {
-    transform:
-        translateX(5px);
-
-    box-shadow:
-        0 6px 18px rgba(0, 0, 0, 0.08);
-}
 
 
 /* =========================================================
-   19. CONTACT
+   11. CONTACT
 ========================================================= */
 
 .contact-box {
@@ -885,14 +776,16 @@ section h2 {
     text-align: center;
 
     box-shadow:
-        0 5px 18px rgba(0, 0, 0, 0.08);
+        0 5px 18px rgba(0,0,0,0.08);
 }
+
 
 .contact-box p {
     margin: 15px;
 
-    font-size: 21px;
+    font-size: 20px;
 }
+
 
 .contact-box a {
     color: #0d47a1;
@@ -902,9 +795,6 @@ section h2 {
     font-weight: 700;
 }
 
-.contact-box a:hover {
-    color: #ff6f00;
-}
 
 .contact-buttons {
     display: flex;
@@ -915,37 +805,13 @@ section h2 {
 
     gap: 10px;
 
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
-.contact-buttons .btn {
-    margin: 0;
-}
 
 
 /* =========================================================
-   20. FOOTER
-========================================================= */
-
-footer {
-    background: #0d47a1;
-
-    color: #ffffff;
-
-    text-align: center;
-
-    padding: 28px 15px;
-}
-
-footer p {
-    margin: 4px 0;
-
-    line-height: 1.7;
-}
-
-
-/* =========================================================
-   21. ARTICLE PAGE
+   12. MAIN / ARTICLE
 ========================================================= */
 
 main {
@@ -956,23 +822,17 @@ main {
 }
 
 
-/* =========================================================
-   22. BREADCRUMB
-========================================================= */
-
 .breadcrumb {
     max-width: 950px;
 
     margin:
-        0 auto 20px;
-
-    padding:
-        0 5px;
+        0 auto 25px;
 
     color: #777;
 
     font-size: 14px;
 }
+
 
 .breadcrumb a {
     color: #0d47a1;
@@ -982,79 +842,53 @@ main {
     font-weight: 700;
 }
 
-.breadcrumb a:hover {
-    color: #ff6f00;
-}
 
 .breadcrumb span {
-    margin:
-        0 6px;
+    margin: 0 7px;
 }
+
 
 
 /* =========================================================
-   23. ARTICLE BOX
+   13. PAGE HEADER
 ========================================================= */
 
-.article-box {
+.page-header {
     max-width: 950px;
 
-    margin: 0 auto;
+    margin:
+        0 auto 45px;
 
     background: #ffffff;
 
+    padding: 40px;
+
     border-radius: 18px;
 
-    padding: 45px;
-
-    box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.07);
-}
-
-
-/* =========================================================
-   24. ARTICLE HEADER
-========================================================= */
-
-.article-header {
     text-align: center;
 
-    padding-bottom: 30px;
-
-    border-bottom:
-        1px solid #e5e7eb;
+    box-shadow:
+        0 8px 30px rgba(0,0,0,0.07);
 }
 
-.article-category {
-    display: inline-block;
 
-    background: #e3f2fd;
-
-    color: #0d47a1;
-
-    padding:
-        7px 18px;
-
-    border-radius: 30px;
-
-    font-size: 14px;
-
-    font-weight: 700;
-
-    margin-bottom: 18px;
+.page-header .article-category {
+    margin-bottom: 15px;
 }
 
-.article-header h1 {
+
+.page-header h1 {
     color: #0d47a1;
 
     font-size: 42px;
 
     line-height: 1.35;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-.article-intro {
+
+.page-header p {
     max-width: 760px;
 
     margin: 0 auto;
@@ -1065,265 +899,125 @@ main {
 }
 
 
+
 /* =========================================================
-   25. ARTICLE CONTENT
+   14. ARTICLE CATEGORY
 ========================================================= */
 
-.article-box > h2 {
-    text-align: left;
+.article-category {
+    display: inline-block;
+
+    background: #e3f2fd;
 
     color: #0d47a1;
 
-    font-size: 29px;
+    padding: 7px 18px;
 
-    line-height: 1.4;
+    border-radius: 30px;
 
-    margin-top: 45px;
+    font-size: 14px;
 
-    margin-bottom: 18px;
+    font-weight: 700;
 }
 
-.article-box p {
-    color: #444;
-
-    font-size: 17px;
-
-    line-height: 1.85;
-
-    margin-bottom: 18px;
-}
-
-.article-box strong {
-    color: #0d47a1;
-}
 
 
 /* =========================================================
-   26. HIGHLIGHT
+   15. SYMPTOMS PAGE
 ========================================================= */
 
-.highlight-box {
-    margin:
-        30px 0;
+.symptoms-page-grid {
+    max-width: 1100px;
 
-    padding:
-        25px 30px;
+    margin: 0 auto;
 
-    background: #eef7ff;
+    display: grid;
 
-    border-left:
-        5px solid #0d47a1;
+    grid-template-columns:
+        repeat(2, 1fr);
 
-    border-radius: 12px;
+    gap: 25px;
 }
 
-.highlight-box h2 {
-    text-align: left;
 
-    color: #0d47a1;
+.symptom-page-card {
+    background: #ffffff;
 
-    font-size: 23px;
+    padding: 35px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 7px 25px rgba(0,0,0,0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    text-align: center;
+}
+
+
+.symptom-page-card:hover {
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 14px 35px rgba(0,0,0,0.12);
+}
+
+
+.symptom-page-icon {
+    width: 85px;
+
+    height: 85px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eaf4ff;
+
+    font-size: 42px;
+}
+
+
+.symptom-page-card h2 {
+    font-size: 26px;
 
     margin-bottom: 15px;
 }
 
-.highlight-box ol {
-    padding-left: 25px;
+
+.symptom-page-card p {
+    color: #555;
+
+    font-size: 16px;
+
+    line-height: 1.85;
+
+    margin-bottom: 20px;
 }
 
-.highlight-box li {
-    margin: 8px 0;
-}
 
 
 /* =========================================================
-   27. REASON LIST
-========================================================= */
-
-.reason-list {
-    display: grid;
-
-    gap: 15px;
-
-    margin-top: 25px;
-}
-
-.reason-item {
-    display: flex;
-
-    gap: 20px;
-
-    padding: 22px;
-
-    background: #f8fafc;
-
-    border:
-        1px solid #e5e7eb;
-
-    border-radius: 14px;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.reason-item:hover {
-    transform:
-        translateY(-3px);
-
-    box-shadow:
-        0 7px 20px rgba(0, 0, 0, 0.07);
-}
-
-.reason-number {
-    flex:
-        0 0 50px;
-
-    width: 50px;
-    height: 50px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: #0d47a1;
-
-    color: #ffffff;
-
-    border-radius: 50%;
-
-    font-weight: 700;
-}
-
-.reason-item h3 {
-    color: #0d47a1;
-
-    font-size: 20px;
-
-    margin-bottom: 7px;
-}
-
-.reason-item p {
-    margin-bottom: 8px;
-}
-
-.reason-item a {
-    color: #ff6f00;
-
-    text-decoration: none;
-
-    font-weight: 700;
-}
-
-.reason-item a:hover {
-    text-decoration: underline;
-}
-
-
-/* =========================================================
-   28. STEP LIST
-========================================================= */
-
-.step-list {
-    display: grid;
-
-    gap: 15px;
-
-    margin-top: 25px;
-}
-
-.step {
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 18px;
-
-    padding: 20px;
-
-    background: #ffffff;
-
-    border:
-        1px solid #e5e7eb;
-
-    border-radius: 14px;
-}
-
-.step > span {
-    flex:
-        0 0 42px;
-
-    width: 42px;
-    height: 42px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    background: #ff6f00;
-
-    color: #ffffff;
-
-    border-radius: 50%;
-
-    font-weight: 700;
-}
-
-.step h3 {
-    color: #0d47a1;
-
-    font-size: 19px;
-
-    margin-bottom: 5px;
-}
-
-.step p {
-    margin-bottom: 0;
-}
-
-
-/* =========================================================
-   29. WARNING
-========================================================= */
-
-.warning-box {
-    margin:
-        40px 0;
-
-    padding:
-        28px;
-
-    background: #fff8e1;
-
-    border-left:
-        5px solid #ff9800;
-
-    border-radius: 12px;
-}
-
-.warning-box h2 {
-    text-align: left;
-
-    color: #e65100;
-
-    font-size: 25px;
-
-    margin-bottom: 12px;
-}
-
-
-/* =========================================================
-   30. INFO BOX
+   16. INFO BOX
 ========================================================= */
 
 .info-box {
-    margin:
-        40px 0;
+    max-width: 950px;
 
-    padding:
-        30px;
+    margin:
+        45px auto 0;
+
+    padding: 30px;
 
     background: #e8f5e9;
 
@@ -1332,6 +1026,7 @@ main {
 
     border-radius: 12px;
 }
+
 
 .info-box h2 {
     text-align: left;
@@ -1344,157 +1039,23 @@ main {
 }
 
 
-/* =========================================================
-   31. DANGER LIST
-========================================================= */
-
-.danger-list {
-    margin:
-        20px 0;
-
-    padding:
-        20px 25px 20px 45px;
-
-    background: #fff5f5;
-
-    border-left:
-        5px solid #d32f2f;
-
-    border-radius: 12px;
+.info-box p {
+    margin-bottom: 12px;
 }
 
-.danger-list li {
-    margin: 8px 0;
-}
 
 
 /* =========================================================
-   32. SUMMARY
-========================================================= */
-
-.summary-box {
-    margin-top:
-        45px;
-
-    padding:
-        30px;
-
-    background: #e3f2fd;
-
-    border-radius: 15px;
-}
-
-.summary-box h2 {
-    text-align: left;
-
-    color: #0d47a1;
-
-    font-size: 27px;
-
-    margin-bottom: 15px;
-}
-
-
-/* =========================================================
-   33. RELATED ARTICLES
-========================================================= */
-
-.related-articles {
-    margin-top:
-        55px;
-
-    padding-top:
-        35px;
-
-    border-top:
-        1px solid #e5e7eb;
-}
-
-.related-articles h2 {
-    text-align: left;
-
-    color: #0d47a1;
-
-    font-size: 28px;
-
-    margin-bottom: 25px;
-}
-
-.related-grid {
-    display: grid;
-
-    grid-template-columns:
-        repeat(2, 1fr);
-
-    gap: 18px;
-}
-
-.related-card {
-    display: flex;
-
-    flex-direction: column;
-
-    padding: 22px;
-
-    background: #f8fafc;
-
-    border:
-        1px solid #e5e7eb;
-
-    border-radius: 14px;
-
-    text-decoration: none;
-
-    color: #333;
-
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
-}
-
-.related-card:hover {
-    transform:
-        translateY(-4px);
-
-    box-shadow:
-        0 7px 20px rgba(0, 0, 0, 0.08);
-
-    border-color:
-        #0d47a1;
-}
-
-.related-card span {
-    font-size: 30px;
-
-    margin-bottom: 8px;
-}
-
-.related-card strong {
-    color: #0d47a1;
-
-    font-size: 18px;
-
-    margin-bottom: 5px;
-}
-
-.related-card small {
-    color: #666;
-
-    font-size: 14px;
-}
-
-
-/* =========================================================
-   34. ARTICLE CONTACT
+   17. ARTICLE CONTACT
 ========================================================= */
 
 .article-contact {
-    margin-top:
-        55px;
+    max-width: 950px;
 
-    padding:
-        35px;
+    margin:
+        45px auto 0;
+
+    padding: 35px;
 
     background:
         linear-gradient(
@@ -1510,6 +1071,7 @@ main {
     text-align: center;
 }
 
+
 .article-contact h2 {
     color: #ffffff;
 
@@ -1518,26 +1080,46 @@ main {
     margin-bottom: 12px;
 }
 
+
 .article-contact p {
     color: #ffffff;
 
     margin-bottom: 20px;
 }
 
-.article-contact .btn {
-    box-shadow: none;
-}
 
 
 /* =========================================================
-   35. FLOATING CONTACT
+   18. FOOTER
+========================================================= */
+
+footer {
+    background: #0d47a1;
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 25px;
+}
+
+
+footer p {
+    margin: 4px 0;
+}
+
+
+
+/* =========================================================
+   19. FLOATING CONTACT
 ========================================================= */
 
 .floating-contact {
     position: fixed;
 
-    bottom: 20px;
     right: 20px;
+
+    bottom: 20px;
 
     z-index: 9999;
 
@@ -1548,6 +1130,7 @@ main {
     gap: 10px;
 }
 
+
 .floating-contact a {
     display: flex;
 
@@ -1555,10 +1138,9 @@ main {
 
     justify-content: center;
 
-    min-width: 130px;
+    min-width: 120px;
 
-    padding:
-        12px 18px;
+    padding: 12px 18px;
 
     border-radius: 50px;
 
@@ -1568,51 +1150,33 @@ main {
 
     font-weight: 700;
 
-    font-size: 15px;
-
     box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.20);
+        0 5px 15px rgba(0,0,0,0.2);
 }
+
 
 .floating-contact a:hover {
     transform:
         translateY(-3px);
 }
 
-.floating-line {
-    background: #06c755;
-}
 
 .floating-phone {
     background: #007bff;
 }
 
 
+.floating-line {
+    background: #06c755;
+}
+
+
+
 /* =========================================================
-   36. TABLET
+   20. TABLET
 ========================================================= */
 
-@media (max-width: 900px) {
-
-    header .container {
-        flex-direction: column;
-
-        gap: 12px;
-    }
-
-    nav ul {
-        flex-wrap: wrap;
-
-        justify-content: center;
-    }
-
-    nav li {
-        margin:
-            5px 10px;
-    }
-
-
-    /* HERO */
+@media (max-width: 1000px) {
 
     .hero-content {
         grid-template-columns: 1fr;
@@ -1620,10 +1184,8 @@ main {
         text-align: center;
 
         gap: 40px;
-
-        padding:
-            60px 0;
     }
+
 
     .hero-text {
         max-width: 700px;
@@ -1631,19 +1193,23 @@ main {
         margin: 0 auto;
     }
 
+
     .hero-description {
         margin-left: auto;
 
         margin-right: auto;
     }
 
+
     .hero-button {
         justify-content: center;
     }
 
+
     .hero-contact {
         justify-content: center;
     }
+
 
     .hero-image img {
         max-width: 500px;
@@ -1652,18 +1218,17 @@ main {
     }
 
 
-    /* CARD */
-
-    .card-grid {
+    .symptoms-grid {
         grid-template-columns:
-            repeat(2, minmax(0, 1fr));
+            repeat(3, 1fr);
     }
 
 }
 
 
+
 /* =========================================================
-   37. MOBILE
+   21. MOBILE
 ========================================================= */
 
 @media (max-width: 768px) {
@@ -1675,25 +1240,28 @@ main {
 
     /* HEADER */
 
-    header .container {
-        padding:
-            15px 0;
+    .header-container {
+        flex-direction: column;
+
+        padding: 15px 0;
+
+        gap: 12px;
     }
 
-    .logo h2 {
+
+    .logo a {
         font-size: 20px;
 
         text-align: center;
     }
 
+
     nav ul {
         justify-content: center;
+
+        gap: 8px 14px;
     }
 
-    nav li {
-        margin:
-            4px 8px;
-    }
 
     nav a {
         font-size: 13px;
@@ -1704,102 +1272,60 @@ main {
 
     .hero {
         min-height: auto;
-
-        text-align: center;
     }
+
 
     .hero-content {
         padding:
             50px 0 60px;
-
-        gap: 35px;
     }
 
-    .hero-badge {
-        font-size: 13px;
-
-        padding:
-            8px 14px;
-    }
 
     .hero h1 {
         font-size: 38px;
-
-        line-height: 1.2;
-
-        margin-bottom: 18px;
     }
+
 
     .hero-description {
         font-size: 17px;
-
-        line-height: 1.75;
     }
 
-    .hero-button {
-        display: flex;
 
+    .hero-button {
         flex-direction: column;
 
         align-items: center;
-
-        gap: 5px;
     }
+
 
     .hero-button .btn {
         width: 100%;
 
         max-width: 320px;
-
-        margin: 4px 0;
     }
+
 
     .hero-contact {
         flex-direction: column;
 
-        gap: 3px;
-
-        font-size: 14px;
-    }
-
-    .contact-divider {
-        display: none;
-    }
-
-    .hero-image::before {
-        width: 300px;
-
-        height: 300px;
-    }
-
-    .hero-image img {
-        width: 100%;
-
-        max-width: 420px;
-
-        border-radius: 20px;
+        gap: 4px;
     }
 
 
     /* SECTION */
 
     section {
-        padding:
-            50px 0;
+        padding: 50px 0;
     }
+
 
     section h2 {
         font-size: 28px;
-
-        line-height: 1.35;
-
-        margin-bottom: 30px;
     }
+
 
     .section-description {
         font-size: 16px;
-
-        margin-bottom: 30px;
     }
 
 
@@ -1807,224 +1333,123 @@ main {
 
     .card-grid {
         grid-template-columns: 1fr;
-
-        gap: 20px;
     }
+
 
     .card-image {
         height: 230px;
     }
 
-    .service-card .card-image {
-        height: 230px;
-    }
 
-    .article-card .card-image {
-        height: 220px;
-    }
+    /* SYMPTOMS */
 
-    .card-content {
-        padding:
-            22px 18px 25px;
-    }
-
-    .card h3 {
-        font-size: 20px;
+    .symptoms-grid {
+        grid-template-columns: 1fr;
     }
 
 
-    /* WHY US */
-
-    .check-list {
-        font-size: 17px;
-    }
-
-    .check-list li {
-        padding:
-            12px 15px;
+    .symptom-card {
+        padding: 25px 20px;
     }
 
 
-    /* CONTACT */
-
-    .contact-box {
-        padding:
-            25px 18px;
-    }
-
-    .contact-box p {
-        font-size: 18px;
-
-        margin:
-            13px 5px;
-    }
-
-    .contact-buttons {
-        flex-direction: column;
-
-        align-items: center;
-    }
-
-    .contact-buttons .btn {
-        width: 100%;
-
-        max-width: 300px;
-    }
-
-
-    /* ARTICLE */
+    /* PAGE */
 
     main {
         padding:
             25px 0 60px;
     }
 
-    .breadcrumb {
-        font-size: 12px;
 
-        line-height: 1.6;
+    .page-header {
+        padding: 28px 18px;
     }
 
-    .article-box {
-        width: 100%;
 
-        padding:
-            28px 18px;
-
-        border-radius: 14px;
-    }
-
-    .article-header h1 {
+    .page-header h1 {
         font-size: 30px;
     }
 
-    .article-intro {
+
+    .page-header p {
         font-size: 16px;
     }
 
-    .article-box > h2 {
+
+    /* SYMPTOMS PAGE */
+
+    .symptoms-page-grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .symptom-page-card {
+        padding: 28px 20px;
+    }
+
+
+    .symptom-page-card h2 {
         font-size: 24px;
-
-        margin-top:
-            35px;
-    }
-
-    .article-box p {
-        font-size: 16px;
     }
 
 
-    /* HIGHLIGHT */
+    /* CONTACT */
 
-    .highlight-box {
-        padding:
-            20px;
-    }
-
-    .highlight-box h2 {
-        font-size: 20px;
+    .contact-box {
+        padding: 25px 18px;
     }
 
 
-    /* REASON */
-
-    .reason-item {
-        gap: 12px;
-
-        padding:
-            18px;
-    }
-
-    .reason-number {
-        flex:
-            0 0 42px;
-
-        width: 42px;
-
-        height: 42px;
-    }
-
-    .reason-item h3 {
+    .contact-box p {
         font-size: 18px;
     }
 
 
-    /* STEP */
-
-    .step {
-        padding:
-            18px;
-
-        gap: 12px;
-    }
-
-    .step > span {
-        flex:
-            0 0 38px;
-
-        width: 38px;
-
-        height: 38px;
+    .contact-buttons {
+        flex-direction: column;
     }
 
 
-    /* BOXES */
-
-    .warning-box,
-    .info-box,
-    .summary-box {
-        padding:
-            22px;
-    }
-
-    .warning-box h2,
-    .info-box h2,
-    .summary-box h2 {
-        font-size: 22px;
+    .contact-buttons .btn {
+        width: 100%;
     }
 
 
-    /* RELATED */
+    /* INFO */
 
-    .related-grid {
-        grid-template-columns: 1fr;
+    .info-box {
+        padding: 22px;
     }
 
 
     /* ARTICLE CONTACT */
 
     .article-contact {
-        padding:
-            28px 18px;
+        padding: 28px 18px;
     }
+
 
     .article-contact h2 {
         font-size: 24px;
-    }
-
-    .article-contact .btn {
-        display: block;
-
-        max-width: 280px;
-
-        margin:
-            10px auto;
     }
 
 
     /* FLOATING */
 
     .floating-contact {
-        bottom: 15px;
+        left: 12px;
 
         right: 12px;
 
-        left: 12px;
+        bottom: 12px;
 
         flex-direction: row;
 
         gap: 10px;
     }
+
 
     .floating-contact a {
         flex: 1;
@@ -2040,8 +1465,9 @@ main {
 }
 
 
+
 /* =========================================================
-   38. SMALL MOBILE
+   22. SMALL MOBILE
 ========================================================= */
 
 @media (max-width: 480px) {
@@ -2050,124 +1476,53 @@ main {
         width: 93%;
     }
 
-    .logo h2 {
+
+    .logo a {
         font-size: 18px;
     }
 
-    nav li {
-        margin:
-            3px 6px;
+
+    nav ul {
+        gap: 5px 9px;
     }
+
 
     nav a {
         font-size: 12px;
     }
 
 
-    /* HERO */
-
-    .hero-content {
-        padding:
-            40px 0 50px;
-    }
-
-    .hero-badge {
-        font-size: 12px;
-
-        padding:
-            7px 12px;
-    }
-
     .hero h1 {
         font-size: 31px;
     }
+
 
     .hero-description {
         font-size: 16px;
     }
 
-    .hero-image::before {
-        width: 250px;
-
-        height: 250px;
-    }
 
     .hero-image img {
-        max-width: 100%;
-
         border-radius: 16px;
     }
 
-
-    /* CARD */
 
     .card-image {
         height: 210px;
     }
 
-    .service-card .card-image {
-        height: 210px;
-    }
 
-    .article-card .card-image {
-        height: 205px;
-    }
-
-
-    /* ARTICLE */
-
-    .article-box {
-        padding:
-            22px 15px;
-    }
-
-    .article-header h1 {
+    .page-header h1 {
         font-size: 27px;
     }
 
 
-    /* REASON */
+    .symptom-page-icon {
+        width: 70px;
 
-    .reason-item {
-        flex-direction: column;
-    }
+        height: 70px;
 
-    .reason-number {
-        flex:
-            0 0 auto;
-    }
-
-
-    /* FLOATING */
-
-    .floating-contact a {
-        font-size: 13px;
-
-        padding:
-            11px 8px;
-    }
-
-}
-
-
-/* =========================================================
-   39. ACCESSIBILITY
-========================================================= */
-
-@media (prefers-reduced-motion: reduce) {
-
-    html {
-        scroll-behavior: auto;
-    }
-
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-
-        animation-iteration-count: 1 !important;
-
-        transition-duration: 0.01ms !important;
+        font-size: 35px;
     }
 
 }
