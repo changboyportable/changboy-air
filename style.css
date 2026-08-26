@@ -104,70 +104,49 @@ nav a:hover {
 
 
 /* =========================================================
-   3. HERO
+   3. HERO SECTION
 ========================================================= */
 
 .hero {
-    min-height: 650px;
-
     position: relative;
+
+    min-height: 650px;
 
     display: flex;
     align-items: center;
 
     overflow: hidden;
 
-    color: #ffffff;
-
     background:
         linear-gradient(
-            90deg,
-            rgba(0, 70, 140, 0.90),
-            rgba(0, 0, 0, 0.30)
-        ),
-        url("images/hero.jpg");
+            135deg,
+            #eaf7ff 0%,
+            #ffffff 55%,
+            #eef8ff 100%
+        );
 
-    background-size: cover;
-    background-position: center;
+    color: #123047;
 }
 
-.hero-content {
-    position: relative;
 
-    z-index: 2;
+/* พื้นหลังตกแต่ง */
 
-    max-width: 720px;
+.hero::before {
+    content: "";
 
-    animation:
-        fadeUp 1s ease;
-}
+    position: absolute;
 
-.hero h1 {
-    color: #ffffff;
+    width: 520px;
+    height: 520px;
 
-    font-size: 55px;
+    right: -180px;
+    top: -120px;
 
-    line-height: 1.2;
+    background: #0d47a1;
 
-    margin: 20px 0 15px;
+    opacity: 0.05;
 
-    text-shadow:
-        0 3px 10px rgba(0, 0, 0, 0.5);
-}
-
-.hero p {
-    color: #ffffff;
-
-    font-size: 20px;
-
-    line-height: 1.7;
-
-    text-shadow:
-        0 2px 6px rgba(0, 0, 0, 0.5);
-}
-
-.hero-button {
-    margin-top: 30px;
+    border-radius: 50%;
 }
 
 .hero::after {
@@ -175,20 +154,302 @@ nav a:hover {
 
     position: absolute;
 
-    width: 500px;
-    height: 500px;
+    width: 350px;
+    height: 350px;
 
-    right: -150px;
-    top: 100px;
+    left: -180px;
+    bottom: -180px;
+
+    background: #06c755;
+
+    opacity: 0.04;
+
+    border-radius: 50%;
+}
+
+
+/* Overlay เดิม */
+
+.hero-overlay {
+    display: none;
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+    padding: 70px 0;
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.hero-text {
+    max-width: 620px;
+
+    animation:
+        fadeUp 0.8s ease;
+}
+
+
+/* Badge */
+
+.hero-badge {
+    display: inline-flex;
+
+    align-items: center;
+
+    background: #e0f2fe;
+
+    color: #0369a1;
+
+    padding:
+        9px 18px;
+
+    border-radius: 50px;
+
+    font-size: 15px;
+
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    border:
+        1px solid #bae6fd;
+}
+
+
+/* =========================================================
+   HERO H1
+========================================================= */
+
+.hero h1 {
+    color: #123047;
+
+    font-size:
+        clamp(
+            42px,
+            5vw,
+            68px
+        );
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    margin:
+        0 0 22px;
+
+    text-shadow: none;
+}
+
+.hero h1 span {
+    color: #087ea4;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero-description {
+    color: #475569;
+
+    font-size: 20px;
+
+    line-height: 1.8;
+
+    max-width: 600px;
+
+    margin-bottom: 28px;
+}
+
+
+/* =========================================================
+   HERO BUTTON
+========================================================= */
+
+.hero-button {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-top: 10px;
+}
+
+
+/* ปุ่มทั่วไป */
+
+.btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        14px 26px;
+
+    border-radius: 50px;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    font-size: 17px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.12);
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+/* ปุ่มโทร */
+
+.btn-primary {
+    background: #ff6f00;
+
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #e65100;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 111, 0, 0.30);
+}
+
+
+/* ปุ่ม LINE */
+
+.btn-line {
+    background: #06c755;
+
+    color: #ffffff;
+}
+
+.btn-line:hover {
+    background: #00a843;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(6, 199, 85, 0.30);
+}
+
+
+/* =========================================================
+   HERO CONTACT
+========================================================= */
+
+.hero-contact {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 22px;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    font-weight: 600;
+}
+
+.contact-divider {
+    color: #cbd5e1;
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.hero-image {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    animation:
+        heroImage 1s ease;
+}
+
+.hero-image::before {
+    content: "";
+
+    position: absolute;
+
+    width: 440px;
+    height: 440px;
 
     background: #ffffff;
 
-    opacity: 0.05;
-
     border-radius: 50%;
 
-    animation:
-        moveCircle 8s infinite alternate;
+    box-shadow:
+        0 15px 50px rgba(0, 0, 0, 0.08);
+
+    z-index: -1;
+}
+
+.hero-image img {
+    width: 100%;
+
+    max-width: 520px;
+
+    height: auto;
+
+    border-radius: 25px;
+
+    object-fit: cover;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12);
 }
 
 
@@ -200,24 +461,35 @@ nav a:hover {
 
     from {
         opacity: 0;
-        transform: translateY(40px);
+
+        transform:
+            translateY(35px);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+
+        transform:
+            translateY(0);
     }
 
 }
 
-@keyframes moveCircle {
+
+@keyframes heroImage {
 
     from {
-        transform: translateY(0);
+        opacity: 0;
+
+        transform:
+            translateX(35px);
     }
 
     to {
-        transform: translateY(40px);
+        opacity: 1;
+
+        transform:
+            translateX(0);
     }
 
 }
@@ -227,60 +499,21 @@ nav a:hover {
    4. BUTTON
 ========================================================= */
 
-.btn {
-    display: inline-block;
-
-    padding: 14px 28px;
-
-    border-radius: 40px;
-
-    text-decoration: none;
-
-    font-weight: 700;
-
-    margin: 8px;
-
-    box-shadow:
-        0 5px 15px rgba(0, 0, 0, 0.12);
-}
-
-.btn-primary {
-    background: #ff6f00;
-    color: #ffffff;
-}
-
-.btn-primary:hover {
-    background: #e65100;
-
-    transform:
-        translateY(-2px);
-}
-
-.btn-line {
-    background: #06c755;
-    color: #ffffff;
-}
-
-.btn-line:hover {
-    background: #00a843;
-
-    transform:
-        translateY(-2px);
-}
-
 .btn-secondary {
     background: transparent;
 
-    color: #ffffff;
+    color: #0d47a1;
 
-    border: 2px solid #ffffff;
+    border:
+        2px solid #0d47a1;
 
     box-shadow: none;
 }
 
 .btn-secondary:hover {
-    background: #ffffff;
-    color: #0d47a1;
+    background: #0d47a1;
+
+    color: #ffffff;
 }
 
 
@@ -300,6 +533,19 @@ section h2 {
     font-size: 34px;
 
     margin-bottom: 40px;
+}
+
+.section-description {
+    max-width: 750px;
+
+    margin:
+        -20px auto 35px;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 17px;
 }
 
 
@@ -389,6 +635,16 @@ section h2 {
 
 .check-list li {
     margin: 15px 0;
+
+    padding:
+        12px 18px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -425,6 +681,10 @@ section h2 {
     text-decoration: none;
 
     font-weight: 700;
+}
+
+.contact-box a:hover {
+    color: #ff6f00;
 }
 
 
@@ -1137,8 +1397,43 @@ main {
             5px 10px;
     }
 
-    .hero h1 {
-        font-size: 45px;
+
+    /* HERO */
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+        gap: 40px;
+
+        padding:
+            60px 0;
+    }
+
+    .hero-text {
+        max-width: 700px;
+
+        margin: 0 auto;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-button {
+        justify-content: center;
+    }
+
+    .hero-contact {
+        justify-content: center;
+    }
+
+    .hero-image img {
+        max-width: 500px;
+
+        margin: 0 auto;
     }
 
 }
@@ -1155,7 +1450,7 @@ main {
     }
 
 
-    /* HEADER */
+    /* ================= HEADER ================= */
 
     header .container {
         padding:
@@ -1182,26 +1477,40 @@ main {
     }
 
 
-    /* HERO */
+    /* ================= HERO ================= */
 
     .hero {
-        min-height: 540px;
+        min-height: auto;
 
         text-align: center;
     }
 
     .hero-content {
-        max-width: 100%;
+        padding:
+            50px 0 60px;
+
+        gap: 35px;
+    }
+
+    .hero-badge {
+        font-size: 13px;
+
+        padding:
+            8px 14px;
     }
 
     .hero h1 {
-        font-size: 35px;
+        font-size: 38px;
 
-        line-height: 1.25;
+        line-height: 1.2;
+
+        margin-bottom: 18px;
     }
 
-    .hero p {
-        font-size: 18px;
+    .hero-description {
+        font-size: 17px;
+
+        line-height: 1.75;
     }
 
     .hero-button {
@@ -1210,15 +1519,45 @@ main {
         flex-direction: column;
 
         align-items: center;
+
+        gap: 5px;
     }
 
-    .btn {
-        margin:
-            6px;
+    .hero-button .btn {
+        width: 100%;
+
+        max-width: 320px;
+
+        margin: 4px 0;
+    }
+
+    .hero-contact {
+        flex-direction: column;
+
+        gap: 3px;
+
+        font-size: 14px;
+    }
+
+    .contact-divider {
+        display: none;
+    }
+
+    .hero-image::before {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-image img {
+        width: 100%;
+
+        max-width: 420px;
+
+        border-radius: 20px;
     }
 
 
-    /* SECTION */
+    /* ================= SECTION ================= */
 
     section {
         padding:
@@ -1227,10 +1566,16 @@ main {
 
     section h2 {
         font-size: 28px;
+
+        line-height: 1.35;
+    }
+
+    .section-description {
+        font-size: 16px;
     }
 
 
-    /* CONTACT */
+    /* ================= CONTACT ================= */
 
     .contact-box {
         padding:
@@ -1242,7 +1587,7 @@ main {
     }
 
 
-    /* ARTICLE */
+    /* ================= ARTICLE ================= */
 
     main {
         padding:
@@ -1284,7 +1629,7 @@ main {
     }
 
 
-    /* HIGHLIGHT */
+    /* ================= HIGHLIGHT ================= */
 
     .highlight-box {
         padding:
@@ -1296,7 +1641,7 @@ main {
     }
 
 
-    /* REASON */
+    /* ================= REASON ================= */
 
     .reason-item {
         gap: 12px;
@@ -1318,7 +1663,7 @@ main {
     }
 
 
-    /* STEP */
+    /* ================= STEP ================= */
 
     .step {
         padding:
@@ -1336,7 +1681,7 @@ main {
     }
 
 
-    /* BOXES */
+    /* ================= BOXES ================= */
 
     .warning-box,
     .info-box,
@@ -1352,14 +1697,14 @@ main {
     }
 
 
-    /* RELATED */
+    /* ================= RELATED ================= */
 
     .related-grid {
         grid-template-columns: 1fr;
     }
 
 
-    /* ARTICLE CONTACT */
+    /* ================= ARTICLE CONTACT ================= */
 
     .article-contact {
         padding:
@@ -1380,7 +1725,7 @@ main {
     }
 
 
-    /* FLOATING */
+    /* ================= FLOATING ================= */
 
     .floating-contact {
         bottom: 15px;
@@ -1431,18 +1776,45 @@ main {
     }
 
 
+    /* HERO */
+
     .hero {
-        min-height: 500px;
+        min-height: auto;
+    }
+
+    .hero-content {
+        padding:
+            40px 0 50px;
+    }
+
+    .hero-badge {
+        font-size: 12px;
+
+        padding:
+            7px 12px;
     }
 
     .hero h1 {
-        font-size: 30px;
+        font-size: 31px;
     }
 
-    .hero p {
+    .hero-description {
         font-size: 16px;
     }
 
+    .hero-image::before {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+
+        border-radius: 16px;
+    }
+
+
+    /* ARTICLE */
 
     .article-box {
         padding:
@@ -1453,6 +1825,8 @@ main {
         font-size: 27px;
     }
 
+
+    /* REASON */
 
     .reason-item {
         flex-direction: column;
