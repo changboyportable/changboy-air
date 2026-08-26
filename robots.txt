@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://changboyportable.github.io/changboy-air/sitemap.xml
