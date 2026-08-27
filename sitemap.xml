@@ -2,14 +2,21 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- หน้าแรก -->
+    <!-- =========================
+         หน้าแรก
+    ========================== -->
+
     <url>
         <loc>https://changboyportable.github.io/changboy-air/</loc>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
 
-    <!-- หน้าบทความทั้งหมด -->
+
+    <!-- =========================
+         หน้าบทความทั้งหมด
+    ========================== -->
+
     <url>
         <loc>https://changboyportable.github.io/changboy-air/articles.html</loc>
         <changefreq>weekly</changefreq>
@@ -69,11 +76,10 @@
         <priority>0.8</priority>
     </url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/fan-not-work.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+
+    <!-- =========================
+         บทความ : ระบบทำความเย็น
+    ========================== -->
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/compressor-not-start.html</loc>
@@ -83,6 +89,28 @@
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/compressor-runs-but-not-cold.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- =========================
+         บทความ : ระบบพัดลม
+    ========================== -->
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/fan-not-work.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+    <!-- =========================
+         บทความ : ระบบไฟฟ้า
+    ========================== -->
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/capacitor.html</loc>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
