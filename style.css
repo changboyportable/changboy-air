@@ -1668,6 +1668,186 @@ main {
 
 
 /* =========================================================
+   10. SOCIAL MEDIA
+========================================================= */
+
+#social-media {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff,
+            #f4f9ff
+        );
+}
+
+.social-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap: 22px;
+
+    max-width: 1050px;
+
+    margin: 0 auto;
+}
+
+.social-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    padding:
+        25px 22px;
+
+    background: #ffffff;
+
+    border:
+        1px solid #e3edf7;
+
+    border-radius: 18px;
+
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px rgba(15, 23, 42, 0.07);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.social-card:hover {
+    transform:
+        translateY(-7px);
+
+    box-shadow:
+        0 15px 35px rgba(15, 23, 42, 0.12);
+}
+
+
+/* =========================================================
+   SOCIAL ICON
+========================================================= */
+
+.social-icon {
+    flex:
+        0 0 58px;
+
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    color: #ffffff;
+
+    font-size: 28px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   FACEBOOK
+========================================================= */
+
+.social-card.facebook {
+    border-top:
+        4px solid #1877f2;
+}
+
+.social-card.facebook .social-icon {
+    background: #1877f2;
+}
+
+.social-card.facebook span {
+    color: #1877f2;
+}
+
+
+/* =========================================================
+   YOUTUBE
+========================================================= */
+
+.social-card.youtube {
+    border-top:
+        4px solid #ff0000;
+}
+
+.social-card.youtube .social-icon {
+    background: #ff0000;
+}
+
+.social-card.youtube span {
+    color: #ff0000;
+}
+
+
+/* =========================================================
+   TIKTOK
+========================================================= */
+
+.social-card.tiktok {
+    border-top:
+        4px solid #111111;
+}
+
+.social-card.tiktok .social-icon {
+    background: #111111;
+}
+
+.social-card.tiktok span {
+    color: #111111;
+}
+
+
+/* =========================================================
+   SOCIAL TEXT
+========================================================= */
+
+.social-card h3 {
+    margin-bottom: 5px;
+
+    color: #0d47a1;
+
+    font-size: 20px;
+
+    font-weight: 800;
+}
+
+.social-card p {
+    margin-bottom: 7px;
+
+    color: #64748b;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+.social-card span {
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
    FLOATING CONTACT BUTTONS
 ========================================================= */
 
@@ -1741,7 +1921,7 @@ main {
 
 
 /* =========================================================
-   10. TABLET
+   11. TABLET
 ========================================================= */
 
 @media (max-width: 1000px) {
@@ -1807,11 +1987,18 @@ main {
         margin: 0 auto;
     }
 
+    .social-grid {
+        grid-template-columns:
+            1fr;
+
+        max-width: 650px;
+    }
+
 }
 
 
 /* =========================================================
-   11. MOBILE
+   12. MOBILE
 ========================================================= */
 
 @media (max-width: 768px) {
@@ -2123,6 +2310,41 @@ main {
     }
 
 
+    /* SOCIAL */
+
+    .social-grid {
+        grid-template-columns:
+            1fr;
+
+        gap: 15px;
+    }
+
+    .social-card {
+        padding:
+            20px 16px;
+
+        gap: 14px;
+    }
+
+    .social-icon {
+        flex:
+            0 0 50px;
+
+        width: 50px;
+        height: 50px;
+
+        font-size: 23px;
+    }
+
+    .social-card h3 {
+        font-size: 18px;
+    }
+
+    .social-card p {
+        font-size: 13px;
+    }
+
+
     /* FLOATING */
 
     .floating-contact {
@@ -2150,7 +2372,7 @@ main {
 
 
 /* =========================================================
-   12. SMALL MOBILE
+   13. SMALL MOBILE
 ========================================================= */
 
 @media (max-width: 480px) {
@@ -2248,6 +2470,17 @@ main {
     }
 
 
+    /* SOCIAL */
+
+    .social-card {
+        align-items: flex-start;
+    }
+
+    .social-card p {
+        line-height: 1.5;
+    }
+
+
     /* FLOATING */
 
     .floating-contact a {
@@ -2261,7 +2494,7 @@ main {
 
 
 /* =========================================================
-   13. ACCESSIBILITY
+   14. ACCESSIBILITY
 ========================================================= */
 
 a:focus-visible,
@@ -2275,7 +2508,7 @@ button:focus-visible {
 
 
 /* =========================================================
-   14. REDUCE MOTION
+   15. REDUCE MOTION
 ========================================================= */
 
 @media (prefers-reduced-motion: reduce) {
