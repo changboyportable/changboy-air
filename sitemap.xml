@@ -1,67 +1,229 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- หน้าแรก -->
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- =========================
+         หน้าแรก
+    ========================== -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/</loc>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/
+        </loc>
+
+        <changefreq>
+            weekly
+        </changefreq>
+
+        <priority>
+            1.0
+        </priority>
+
     </url>
 
-    <!-- บทความ แอร์ไม่เย็น -->
+
+    <!-- =========================
+         หน้าบทความทั้งหมด
+    ========================== -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/air-not-cold.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/articles.html
+        </loc>
+
+        <changefreq>
+            weekly
+        </changefreq>
+
+        <priority>
+            0.9
+        </priority>
+
     </url>
 
-    <!-- บทความ น้ำหยด / น้ำรั่ว -->
+
+    <!-- =========================
+         บทความ : อาการเสีย
+    ========================== -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/water-leak.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/air-not-cold.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
     </url>
 
-    <!-- บทความ เสียงดังผิดปกติ -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/loud-noise.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-cold.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
     </url>
 
-    <!-- บทความ กินไฟ -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/high-electricity.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-start.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
     </url>
 
-    <!-- บทความ น้ำแข็งเกาะคอยล์ -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/ice-on-coil.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/water-leak.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
     </url>
 
-    <!-- แอร์เคลื่อนที่ไม่เย็น -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-cold.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/portable-air-conditioner-water-leak.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
     </url>
 
-    <!-- แอร์เคลื่อนที่เปิดไม่ติด -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-start.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/loud-noise.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
     </url>
 
-    <!-- แอร์เคลื่อนที่น้ำรั่ว -->
+
     <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-water-leak.html</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/high-electricity.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
+    </url>
+
+
+    <url>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/ice-on-coil.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
+    </url>
+
+
+    <!-- =========================
+         บทความใหม่
+    ========================== -->
+
+    <!-- คอมเพรสเซอร์ไม่ทำงาน -->
+
+    <url>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/compressor-not-start.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
+    </url>
+
+
+    <!-- พัดลมไม่หมุน -->
+
+    <url>
+
+        <loc>
+            https://changboyportable.github.io/changboy-air/fan-not-work.html
+        </loc>
+
+        <changefreq>
+            monthly
+        </changefreq>
+
+        <priority>
+            0.8
+        </priority>
+
     </url>
 
 </urlset>
