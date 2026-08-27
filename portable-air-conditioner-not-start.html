@@ -1,464 +1,485 @@
-```html id="w0gqk8"
 <!DOCTYPE html>
 <html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร? | ช่างบอยซ่อมแอร์เคลื่อนที่</title>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร? | ช่างบอยซ่อมแอร์เคลื่อนที่
+    </title>
 
     <meta name="description"
-        content="แอร์เคลื่อนที่เปิดไม่ติด กดแล้วไม่มีไฟ เครื่องไม่ทำงาน หรือเปิดแล้วตัดทันที เกิดจากอะไร? รวมสาเหตุและวิธีตรวจสอบเบื้องต้น">
+          content="แอร์เคลื่อนที่เปิดไม่ติด กดรีโมตแล้วไม่มีไฟ เครื่องไม่ทำงาน หรือเปิดแล้วดับ ตรวจสอบสาเหตุเบื้องต้นได้อย่างไร">
 
     <meta name="keywords"
-        content="แอร์เคลื่อนที่เปิดไม่ติด, แอร์เคลื่อนที่เปิดไม่ทำงาน, แอร์เคลื่อนที่เสีย, ซ่อมแอร์เคลื่อนที่">
+          content="แอร์เคลื่อนที่เปิดไม่ติด, แอร์เปิดไม่ติด, แอร์เคลื่อนที่ไม่ทำงาน, ซ่อมแอร์เคลื่อนที่">
 
-    <link rel="stylesheet" href="style.css">
+    <meta name="author"
+          content="ช่างบอยซ่อมแอร์เคลื่อนที่">
 
-    <style>
-        .article-page {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 60px 20px;
+    <meta name="robots"
+          content="index, follow">
+
+    <meta name="theme-color"
+          content="#0d47a1">
+
+    <link rel="canonical"
+          href="https://changboyportable.github.io/changboy-air/air-not-start.html">
+
+    <meta property="og:type"
+          content="article">
+
+    <meta property="og:title"
+          content="แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?">
+
+    <meta property="og:description"
+          content="รวมสาเหตุที่ทำให้แอร์เคลื่อนที่เปิดไม่ติด พร้อมแนวทางตรวจสอบเบื้องต้น">
+
+    <meta property="og:url"
+          content="https://changboyportable.github.io/changboy-air/air-not-start.html">
+
+    <meta property="og:site_name"
+          content="ช่างบอยซ่อมแอร์เคลื่อนที่">
+
+    <link rel="stylesheet"
+          href="style.css">
+
+
+    <script type="application/ld+json">
+
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?",
+        "description": "รวมสาเหตุที่ทำให้แอร์เคลื่อนที่เปิดไม่ติด พร้อมแนวทางตรวจสอบเบื้องต้น",
+        "author": {
+            "@type": "Person",
+            "name": "ช่างบอยซ่อมแอร์เคลื่อนที่"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "ช่างบอยซ่อมแอร์เคลื่อนที่"
         }
+    }
 
-        .article-header {
-            text-align: center;
-            margin-bottom: 40px;
-        }
+    </script>
 
-        .article-header h1 {
-            font-size: 40px;
-            line-height: 1.4;
-            margin-bottom: 15px;
-        }
-
-        .article-date {
-            color: #777;
-            font-size: 14px;
-        }
-
-        .article-content {
-            font-size: 18px;
-            line-height: 1.9;
-        }
-
-        .article-content h2 {
-            margin-top: 45px;
-            margin-bottom: 18px;
-            font-size: 28px;
-        }
-
-        .article-content h3 {
-            margin-top: 30px;
-            font-size: 22px;
-        }
-
-        .article-content p {
-            margin-bottom: 20px;
-        }
-
-        .article-content ul,
-        .article-content ol {
-            padding-left: 25px;
-            margin-bottom: 25px;
-        }
-
-        .article-content li {
-            margin-bottom: 10px;
-        }
-
-        .article-box {
-            background: #f5f9fc;
-            padding: 25px;
-            border-radius: 14px;
-            margin: 30px 0;
-        }
-
-        .article-warning {
-            background: #fff7e6;
-            border-left: 5px solid #f0a500;
-            padding: 22px;
-            border-radius: 8px;
-            margin: 30px 0;
-        }
-
-        .article-contact {
-            text-align: center;
-            background: #eef8ff;
-            padding: 35px 20px;
-            border-radius: 16px;
-            margin-top: 50px;
-        }
-
-        .article-contact-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin-top: 25px;
-        }
-
-        .article-back {
-            text-align: center;
-            margin-top: 35px;
-        }
-
-        .article-back a {
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        @media (max-width: 600px) {
-
-            .article-page {
-                padding: 40px 15px;
-            }
-
-            .article-header h1 {
-                font-size: 30px;
-            }
-
-            .article-content {
-                font-size: 16px;
-            }
-
-            .article-content h2 {
-                font-size: 24px;
-            }
-        }
-    </style>
 </head>
+
 
 <body>
 
+
 <header>
+
     <div class="container">
 
         <div class="logo">
-            <h2>ช่างบอยซ่อมแอร์เคลื่อนที่</h2>
+
+            <h2>
+                ช่างบอยซ่อมแอร์เคลื่อนที่
+            </h2>
+
         </div>
 
         <nav>
+
             <ul>
-                <li><a href="index.html">หน้าแรก</a></li>
-                <li><a href="index.html#services">บริการ</a></li>
-                <li><a href="symptoms.html">อาการเสีย</a></li>
-                <li><a href="articles.html">บทความ</a></li>
-                <li><a href="index.html#contact">ติดต่อเรา</a></li>
+
+                <li>
+                    <a href="index.html">
+                        หน้าแรก
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#services">
+                        บริการ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#why-us">
+                        ทำไมต้องเลือกเรา
+                    </a>
+                </li>
+
+                <li>
+                    <a href="articles.html">
+                        บทความ
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">
+                        ติดต่อเรา
+                    </a>
+                </li>
+
             </ul>
+
         </nav>
 
     </div>
+
 </header>
 
 
-<main class="article-page">
+<main>
 
-    <div class="article-header">
-
-        <h1>
-            🔌 แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?
-        </h1>
-
-        <p class="article-date">
-            ความรู้แอร์เคลื่อนที่ | ช่างบอยซ่อมแอร์เคลื่อนที่
-        </p>
-
-    </div>
+    <div class="container">
 
 
-    <article class="article-content">
+        <div class="breadcrumb">
 
-        <p>
-            ปัญหา <strong>แอร์เคลื่อนที่เปิดไม่ติด</strong>
-            เป็นอีกหนึ่งอาการที่พบได้บ่อย
-            บางครั้งกดปุ่มเปิดแล้วไม่มีไฟแสดงผล
-            บางครั้งเครื่องติดขึ้นมาแล้วหยุดทำงาน
-            หรือมีเสียงแต่เครื่องไม่ทำงานตามปกติ
-        </p>
+            <a href="index.html">หน้าแรก</a>
 
-        <p>
-            สาเหตุมีตั้งแต่เรื่องง่าย ๆ เช่น ไฟไม่เข้าเครื่อง
-            ไปจนถึงปัญหาที่เกี่ยวข้องกับฟิวส์
-            แผงวงจร คาปาซิเตอร์ รีเลย์
-            หรือระบบป้องกันของเครื่อง
-        </p>
+            <span>›</span>
 
+            <a href="articles.html">บทความ</a>
 
-        <div class="article-box">
+            <span>›</span>
 
-            <strong>ก่อนตรวจสอบ:</strong>
-
-            <p>
-                หากมีกลิ่นไหม้ ปลั๊กร้อนมาก
-                มีประกายไฟ หรือเบรกเกอร์ตัดซ้ำ
-                ควรหยุดใช้งานและตัดไฟก่อน
-                ไม่ควรฝืนเปิดเครื่องซ้ำ
-            </p>
+            แอร์เคลื่อนที่เปิดไม่ติด
 
         </div>
 
 
-        <h2>1. 🔌 ตรวจสอบไฟฟ้าที่จ่ายเข้าเครื่อง</h2>
+        <article class="article-box">
 
-        <p>
-            ขั้นแรกควรตรวจสอบว่าเต้ารับที่ใช้งาน
-            มีไฟฟ้าตามปกติหรือไม่
-            และปลั๊กของแอร์เสียบแน่นหรือไม่
-        </p>
 
-        <p>
-            หากใช้ปลั๊กพ่วงหรืออุปกรณ์ต่อพ่วง
-            ควรตรวจสอบสภาพของอุปกรณ์เหล่านั้นด้วย
-            เพราะจุดต่อที่หลวมหรือเสื่อมอาจทำให้ไฟตกหรือร้อนผิดปกติ
-        </p>
+            <div class="article-header">
 
+                <div class="article-category">
+                    ⚡ อาการเสียที่พบบ่อย
+                </div>
 
-        <h2>2. 🔥 ฟิวส์อาจขาด</h2>
+                <h1>
+                    ⚡ แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?
+                </h1>
 
-        <p>
-            แอร์เคลื่อนที่บางรุ่นมีฟิวส์เพื่อป้องกันวงจร
-            หากเกิดกระแสไฟผิดปกติ ฟิวส์อาจขาด
-            ทำให้เครื่องไม่สามารถเปิดทำงานได้
-        </p>
+                <p class="article-intro">
 
-        <p>
-            หากพบว่าฟิวส์ขาด
-            ไม่ควรเปลี่ยนฟิวส์ที่มีค่าต่างจากสเปกของเครื่อง
-            และควรหาสาเหตุที่ทำให้ฟิวส์ขาดด้วย
-        </p>
+                    กดปุ่มเปิดแล้วแอร์เคลื่อนที่ไม่ทำงาน
+                    ไม่มีไฟแสดงผล หรือกดรีโมตแล้วเครื่องไม่ตอบสนอง
+                    อาจเกิดได้จากทั้งระบบไฟฟ้าและอุปกรณ์ภายใน
 
+                </p>
 
-        <h2>3. 🧠 แผง PCB มีปัญหา</h2>
+            </div>
 
-        <p>
-            PCB หรือแผงวงจรควบคุม
-            ทำหน้าที่ควบคุมการทำงานของระบบต่าง ๆ
-            ภายในแอร์เคลื่อนที่
-        </p>
-
-        <p>
-            หาก PCB มีปัญหา
-            เครื่องอาจไม่ตอบสนองต่อปุ่มเปิด
-            ไม่มีไฟแสดงผล หรือทำงานผิดปกติ
-        </p>
-
-
-        <h2>4. 🔘 ปุ่มเปิดหรือแผงควบคุมมีปัญหา</h2>
-
-        <p>
-            ปุ่มกดหรือแผงควบคุมด้านหน้า
-            อาจมีปัญหาจากการใช้งานหรือความชื้น
-            ทำให้คำสั่งเปิดเครื่องไม่ถูกส่งไปยังระบบควบคุม
-        </p>
-
-
-        <h2>5. ⚡ ระบบป้องกันทำงาน</h2>
-
-        <p>
-            แอร์เคลื่อนที่มีระบบป้องกันหลายรูปแบบ
-            เช่น การป้องกันความร้อนสูง
-            การป้องกันคอมเพรสเซอร์
-            หรือการตรวจสอบระดับน้ำในบางรุ่น
-        </p>
-
-        <p>
-            เมื่อเงื่อนไขบางอย่างผิดปกติ
-            เครื่องอาจไม่ยอมเริ่มทำงาน
-            เพื่อป้องกันความเสียหายของอุปกรณ์
-        </p>
-
-
-        <h2>6. 🛡️ โอเวอร์โหลดตัดการทำงาน</h2>
-
-        <p>
-            โอเวอร์โหลดทำหน้าที่ป้องกันคอมเพรสเซอร์
-            จากความร้อนหรือกระแสไฟที่ผิดปกติ
-        </p>
-
-        <p>
-            หากคอมเพรสเซอร์ร้อนเกินไป
-            ระบบอาจตัดการทำงานชั่วคราว
-            และต้องรอให้อุณหภูมิลดลงก่อนจึงจะกลับมาทำงาน
-        </p>
-
-
-        <h2>7. 🔄 รีเลย์มีปัญหา</h2>
-
-        <p>
-            รีเลย์เป็นอุปกรณ์ที่ใช้ควบคุมการจ่ายไฟ
-            ไปยังอุปกรณ์บางส่วนของระบบ
-        </p>
-
-        <p>
-            หากรีเลย์ผิดปกติ
-            อาจทำให้บางส่วนของเครื่องไม่ทำงาน
-            แม้ระบบควบคุมยังได้รับไฟอยู่
-        </p>
-
-
-        <h2>8. 🔌 คาปาซิเตอร์มีปัญหา</h2>
-
-        <p>
-            ในแอร์เคลื่อนที่บางรุ่น
-            คาปาซิเตอร์มีส่วนช่วยในการเริ่มต้นทำงาน
-            ของมอเตอร์หรือคอมเพรสเซอร์
-        </p>
-
-        <p>
-            หากคาปาซิเตอร์เสื่อม
-            อาจพบอาการเครื่องพยายามเริ่มทำงาน
-            แต่ไม่สามารถทำงานได้ตามปกติ
-        </p>
-
-
-        <h2>9. 💧 ระบบน้ำเต็ม</h2>
-
-        <p>
-            แอร์เคลื่อนที่บางรุ่นมีระบบตรวจสอบระดับน้ำ
-            เมื่อถังน้ำเต็มหรือระบบระบายน้ำมีปัญหา
-            เครื่องอาจหยุดทำงานหรือแจ้งเตือน
-        </p>
-
-        <p>
-            ควรตรวจสอบตามคู่มือของเครื่องว่า
-            มีวิธีระบายน้ำหรือรีเซ็ตระบบอย่างไร
-        </p>
-
-
-        <h2>10. 🔥 ปลั๊กหรือสายไฟร้อนผิดปกติ</h2>
-
-        <p>
-            หากพบว่าปลั๊ก ขั้วต่อ หรือสายไฟร้อนมาก
-            ระหว่างใช้งาน ไม่ควรฝืนเปิดเครื่องต่อ
-        </p>
-
-        <p>
-            อาจเกิดจากขั้วต่อหลวม
-            สายไฟเสื่อม หรือมีปัญหาในระบบไฟฟ้า
-            ซึ่งควรให้ช่างตรวจสอบ
-        </p>
-
-
-        <div class="article-warning">
-
-            <h3>⚠️ อาการที่ควรหยุดใช้งานทันที</h3>
-
-            <ul>
-
-                <li>มีกลิ่นไหม้</li>
-
-                <li>มีควันหรือประกายไฟ</li>
-
-                <li>ปลั๊กหรือสายไฟร้อนผิดปกติ</li>
-
-                <li>เบรกเกอร์ตัดซ้ำ</li>
-
-                <li>มีเสียงผิดปกติรุนแรง</li>
-
-            </ul>
-
-        </div>
-
-
-        <h2>🔍 ตรวจสอบเบื้องต้นได้อย่างไร?</h2>
-
-        <ol>
-
-            <li>
-                ตรวจสอบเต้ารับว่ามีไฟ
-            </li>
-
-            <li>
-                ตรวจสอบปลั๊กและสายไฟ
-            </li>
-
-            <li>
-                ตรวจสอบว่าเครื่องมีไฟแสดงผลหรือไม่
-            </li>
-
-            <li>
-                ตรวจสอบถังน้ำตามคู่มือของเครื่อง
-            </li>
-
-            <li>
-                ปิดเครื่องและรอสักระยะ หากสงสัยว่าระบบป้องกันทำงาน
-            </li>
-
-            <li>
-                หากยังเปิดไม่ติด ควรให้ช่างตรวจสอบ
-            </li>
-
-        </ol>
-
-
-        <h2>🛠️ เมื่อไหร่ควรให้ช่างตรวจ?</h2>
-
-        <p>
-            หากตรวจสอบไฟฟ้าเบื้องต้นแล้ว
-            แต่แอร์ยังไม่สามารถเปิดทำงานได้
-            หรือพบอาการผิดปกติทางไฟฟ้า
-            ไม่ควรถอดเครื่องหรือซ่อมวงจรด้วยตัวเอง
-        </p>
-
-        <p>
-            การตรวจสอบ PCB ฟิวส์ รีเลย์ คาปาซิเตอร์
-            และระบบไฟฟ้าภายในควรใช้อุปกรณ์วัด
-            และทำโดยผู้ที่มีความรู้ด้านไฟฟ้า
-        </p>
-
-
-        <div class="article-contact">
 
             <h2>
-                🔧 แอร์เคลื่อนที่เปิดไม่ติด?
+                🔍 สาเหตุที่ควรตรวจสอบ
             </h2>
 
-            <p>
-                หากตรวจสอบเบื้องต้นแล้วเครื่องยังไม่ทำงาน
-                สามารถติดต่อช่างบอยเพื่อสอบถามอาการได้
-            </p>
 
-            <div class="article-contact-buttons">
+            <div class="reason-list">
+
+
+                <div class="reason-item">
+
+                    <div class="reason-number">1</div>
+
+                    <div>
+
+                        <h3>
+                            🔌 ไฟไม่เข้าตัวเครื่อง
+                        </h3>
+
+                        <p>
+                            ตรวจสอบปลั๊กไฟ เต้ารับ
+                            สายไฟ และเบรกเกอร์
+                            ว่ามีไฟจ่ายตามปกติหรือไม่
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason-item">
+
+                    <div class="reason-number">2</div>
+
+                    <div>
+
+                        <h3>
+                            🧯 ฟิวส์ขาด
+                        </h3>
+
+                        <p>
+                            ฟิวส์มีหน้าที่ป้องกันกระแสไฟฟ้า
+                            หากฟิวส์ขาด เครื่องอาจไม่สามารถเปิดได้
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason-item">
+
+                    <div class="reason-number">3</div>
+
+                    <div>
+
+                        <h3>
+                            🔋 ระบบจ่ายไฟมีปัญหา
+                        </h3>
+
+                        <p>
+                            อุปกรณ์จ่ายไฟหรือส่วนควบคุมภายใน
+                            อาจมีปัญหาทำให้แผงวงจรไม่ได้รับไฟ
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason-item">
+
+                    <div class="reason-number">4</div>
+
+                    <div>
+
+                        <h3>
+                            🧠 แผงวงจรควบคุมมีปัญหา
+                        </h3>
+
+                        <p>
+                            PCB เป็นส่วนสำคัญในการควบคุมการทำงาน
+                            หากเสียอาจทำให้เครื่องไม่ตอบสนอง
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="reason-item">
+
+                    <div class="reason-number">5</div>
+
+                    <div>
+
+                        <h3>
+                            🎛️ รีโมตหรือแผงปุ่มกดมีปัญหา
+                        </h3>
+
+                        <p>
+                            หากกดรีโมตแล้วไม่มีการตอบสนอง
+                            อาจเกิดจากรีโมต ตัวรับสัญญาณ
+                            หรือปุ่มควบคุม
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="highlight-box">
+
+                <h2>
+                    🔍 ตรวจสอบเบื้องต้น
+                </h2>
+
+                <ol>
+
+                    <li>
+                        ทดลองเต้ารับไฟอื่นที่มั่นใจว่ามีไฟ
+                    </li>
+
+                    <li>
+                        ตรวจสอบปลั๊กและสายไฟ
+                    </li>
+
+                    <li>
+                        ตรวจสอบเบรกเกอร์
+                    </li>
+
+                    <li>
+                        ทดลองเปิดจากปุ่มบนตัวเครื่อง หากมี
+                    </li>
+
+                    <li>
+                        เปลี่ยนถ่านรีโมตหากรีโมตไม่ตอบสนอง
+                    </li>
+
+                </ol>
+
+            </div>
+
+
+            <div class="warning-box">
+
+                <h2>
+                    ⚠️ ห้ามแกะเครื่องขณะเสียบปลั๊ก
+                </h2>
+
+                <p>
+                    ภายในแอร์เคลื่อนที่มีวงจรไฟฟ้า
+                    และอุปกรณ์ที่อาจมีแรงดันไฟฟ้า
+                    ควรถอดปลั๊กก่อนตรวจสอบทุกครั้ง
+                    และงานตรวจวัดวงจรควรให้ช่างดำเนินการ
+                </p>
+
+            </div>
+
+
+            <div class="summary-box">
+
+                <h2>
+                    สรุป
+                </h2>
+
+                <p>
+                    แอร์เคลื่อนที่เปิดไม่ติด
+                    อาจเกิดจากไฟไม่เข้า ฟิวส์
+                    ระบบจ่ายไฟ แผง PCB
+                    รีโมต หรือระบบควบคุม
+                    ควรตรวจสอบจากจุดง่าย ๆ ก่อน
+                    แล้วจึงวิเคราะห์ระบบภายใน
+                </p>
+
+            </div>
+
+
+            <div class="related-articles">
+
+                <h2>
+                    📚 บทความที่เกี่ยวข้อง
+                </h2>
+
+                <div class="related-grid">
+
+                    <a class="related-card"
+                       href="air-not-cold.html">
+
+                        <span>🧊</span>
+
+                        <strong>
+                            แอร์เคลื่อนที่ไม่เย็น
+                        </strong>
+
+                        <small>
+                            สาเหตุและวิธีตรวจสอบ
+                        </small>
+
+                    </a>
+
+
+                    <a class="related-card"
+                       href="compressor-not-start.html">
+
+                        <span>🔧</span>
+
+                        <strong>
+                            คอมเพรสเซอร์ไม่ทำงาน
+                        </strong>
+
+                        <small>
+                            ตรวจสอบระบบคอมเพรสเซอร์
+                        </small>
+
+                    </a>
+
+
+                    <a class="related-card"
+                       href="fan-not-work.html">
+
+                        <span>🌀</span>
+
+                        <strong>
+                            พัดลมไม่หมุน
+                        </strong>
+
+                        <small>
+                            สาเหตุของพัดลมไม่ทำงาน
+                        </small>
+
+                    </a>
+
+
+                    <a class="related-card"
+                       href="capacitor.html">
+
+                        <span>⚡</span>
+
+                        <strong>
+                            คาปาซิเตอร์
+                        </strong>
+
+                        <small>
+                            อุปกรณ์สำคัญในแอร์เคลื่อนที่
+                        </small>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="article-contact">
+
+                <h2>
+                    📞 ต้องการให้ช่างตรวจสอบ?
+                </h2>
+
+                <p>
+                    หากแอร์เคลื่อนที่เปิดไม่ติด
+                    สามารถสอบถามอาการกับช่างบอยได้
+                </p>
 
                 <a href="tel:0805178615"
                    class="btn btn-primary">
-                    📞 โทร 080-517-8615
+                    📞 โทรหาช่าง
                 </a>
 
                 <a href="https://line.me/R/ti/p/@365jdxhc"
                    class="btn btn-line"
                    target="_blank"
                    rel="noopener noreferrer">
-                    💬 LINE : @365jdxhc
+                    💬 LINE
                 </a>
 
             </div>
 
-        </div>
 
-    </article>
-
-
-    <div class="article-back">
-
-        <a href="symptoms.html">
-            ← ดูอาการเสียแอร์เคลื่อนที่
-        </a>
-
-        &nbsp;&nbsp; | &nbsp;&nbsp;
-
-        <a href="articles.html">
-            ดูบทความทั้งหมด →
-        </a>
+        </article>
 
     </div>
 
 </main>
 
 
-<!-- FLOATING CONTACT BUTTONS -->
+<footer>
+
+    <div class="container">
+
+        <p>
+            © 2026 ช่างบอยซ่อมแอร์เคลื่อนที่
+        </p>
+
+        <p>
+            รับซ่อม ล้าง ตรวจเช็ก
+            และเปลี่ยนอะไหล่แอร์เคลื่อนที่
+            ปทุมธานี
+        </p>
+
+    </div>
+
+</footer>
+
 
 <div class="floating-contact">
 
@@ -471,27 +492,14 @@
 
     <a href="tel:0805178615"
        class="floating-phone">
-        📞 โทรหาเรา
+        📞 โทร
     </a>
 
 </div>
 
 
-<footer>
-
-    <div class="container">
-
-        <p>
-            © 2026 ช่างบอยซ่อมแอร์เคลื่อนที่
-        </p>
-
-    </div>
-
-</footer>
-
-
 <script src="script.js"></script>
 
 </body>
+
 </html>
-```
