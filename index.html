@@ -197,6 +197,82 @@
 <div class="hero-overlay"></div>
 
 
+<!-- SVG ตกแต่งด้านบน -->
+
+<svg
+    class="hero-decoration hero-decoration-top"
+    viewBox="0 0 120 120"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true">
+
+    <circle
+        cx="60"
+        cy="60"
+        r="52"
+        fill="none"
+        stroke="#4aa9df"
+        stroke-width="4"
+        opacity="0.25"/>
+
+    <path
+        d="M60 25
+           C50 40 40 48 40 65
+           C40 80 49 92 60 92
+           C71 92 80 80 80 65
+           C80 48 70 40 60 25Z"
+        fill="#4aa9df"
+        opacity="0.18"/>
+
+    <path
+        d="M60 38
+           L60 82
+           M42 60
+           L78 60"
+        stroke="#1687c7"
+        stroke-width="4"
+        stroke-linecap="round"
+        opacity="0.5"/>
+
+</svg>
+
+
+
+<!-- SVG ตกแต่งด้านล่าง -->
+
+<svg
+    class="hero-decoration hero-decoration-bottom"
+    viewBox="0 0 140 100"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-hidden="true">
+
+    <circle
+        cx="70"
+        cy="50"
+        r="38"
+        fill="#ffffff"
+        opacity="0.7"/>
+
+    <path
+        d="M70 20
+           L70 80
+           M40 50
+           L100 50"
+        stroke="#4aa9df"
+        stroke-width="5"
+        stroke-linecap="round"
+        opacity="0.45"/>
+
+    <circle
+        cx="70"
+        cy="50"
+        r="12"
+        fill="#1687c7"
+        opacity="0.55"/>
+
+</svg>
+
+
+
 <div class="container hero-content">
 
 
@@ -258,560 +334,125 @@
 
         </div>
 
+
+        <!-- จุดเด่น -->
+
+        <div class="hero-features">
+
+            <span>
+                ✓ ตรวจเช็กตามอาการ
+            </span>
+
+            <span>
+                ✓ แจ้งรายละเอียดก่อนซ่อม
+            </span>
+
+            <span>
+                ✓ เน้นงานแอร์เคลื่อนที่
+            </span>
+
+        </div>
+
     </div>
 
 
 
-    <!-- ================= HERO VISUAL ================= -->
+    <!-- ================= HERO IMAGE ================= -->
 
     <div class="hero-image">
 
 
-        <!-- รูปภาพหลักของเว็บไซต์ -->
+        <!-- ภาพหลัก ใช้ไฟล์เดียว -->
 
-        <img
-            src="hero-changboy.png"
-            alt="ช่างบอยซ่อมแอร์เคลื่อนที่"
-            loading="eager"
-            width="800"
-            height="600">
+        <div class="hero-image-frame">
 
 
-        <!-- SVG สำรอง/ภาพประกอบเวกเตอร์ -->
+            <div class="hero-image-glow"></div>
 
-        <div class="hero-svg-wrapper">
+
+            <img
+                src="hero-changboy.png"
+                alt="ช่างบอยซ่อมแอร์เคลื่อนที่"
+                width="800"
+                height="600"
+                loading="eager"
+                fetchpriority="high">
+
+
+            <!-- SVG ไอคอนเล็ก ๆ -->
 
             <svg
-                class="hero-svg"
-                viewBox="0 0 800 500"
+                class="hero-icon hero-icon-snow"
+                viewBox="0 0 80 80"
                 xmlns="http://www.w3.org/2000/svg"
-                role="img"
-                aria-labelledby="heroSvgTitle heroSvgDesc"
-            >
-
-                <title id="heroSvgTitle">
-                    ช่างบอยซ่อมแอร์เคลื่อนที่
-                </title>
-
-                <desc id="heroSvgDesc">
-                    ภาพประกอบช่างกำลังตรวจซ่อมแอร์เคลื่อนที่
-                </desc>
-
-
-                <!-- พื้นหลัง -->
-
-                <rect
-                    width="800"
-                    height="500"
-                    rx="30"
-                    fill="#f5fbff"
-                />
-
-
-                <!-- วงกลมตกแต่ง -->
+                aria-hidden="true">
 
                 <circle
-                    cx="650"
-                    cy="100"
-                    r="65"
-                    fill="#dff4ff"
-                />
+                    cx="40"
+                    cy="40"
+                    r="34"
+                    fill="#ffffff"
+                    opacity="0.95"/>
+
+                <path
+                    d="M40 18
+                       L40 62
+                       M18 40
+                       L62 40
+                       M25 25
+                       L55 55
+                       M55 25
+                       L25 55"
+                    stroke="#1687c7"
+                    stroke-width="4"
+                    stroke-linecap="round"/>
 
                 <circle
-                    cx="120"
-                    cy="400"
-                    r="80"
-                    fill="#e8f8ff"
-                />
-
-
-                <!-- อากาศเย็น -->
-
-                <g fill="#4aa9df">
-
-                    <circle cx="650" cy="80" r="5"/>
-
-                    <circle cx="690" cy="115" r="7"/>
-
-                    <circle cx="625" cy="125" r="6"/>
-
-                    <circle cx="705" cy="75" r="4"/>
-
-                </g>
-
-
-                <!-- แอร์เคลื่อนที่ -->
-
-                <g transform="translate(445 115)">
-
-                    <!-- ตัวเครื่อง -->
-
-                    <rect
-                        x="0"
-                        y="0"
-                        width="220"
-                        height="290"
-                        rx="28"
-                        fill="#ffffff"
-                        stroke="#1d5f85"
-                        stroke-width="6"
-                    />
-
-
-                    <!-- แผงด้านบน -->
-
-                    <rect
-                        x="25"
-                        y="25"
-                        width="170"
-                        height="55"
-                        rx="12"
-                        fill="#eaf7fc"
-                    />
-
-
-                    <!-- หน้าจอ -->
-
-                    <rect
-                        x="45"
-                        y="42"
-                        width="55"
-                        height="22"
-                        rx="5"
-                        fill="#164f70"
-                    />
-
-                    <text
-                        x="72"
-                        y="59"
-                        text-anchor="middle"
-                        font-size="13"
-                        font-family="Arial, sans-serif"
-                        fill="#ffffff"
-                    >
-                        25°C
-                    </text>
-
-
-                    <!-- ปุ่ม -->
-
-                    <circle
-                        cx="140"
-                        cy="53"
-                        r="9"
-                        fill="#4aa9df"
-                    />
-
-                    <circle
-                        cx="170"
-                        cy="53"
-                        r="9"
-                        fill="#4aa9df"
-                    />
-
-
-                    <!-- ช่องลม -->
-
-                    <rect
-                        x="35"
-                        y="105"
-                        width="150"
-                        height="105"
-                        rx="15"
-                        fill="#dff4ff"
-                        stroke="#4aa9df"
-                        stroke-width="4"
-                    />
-
-
-                    <!-- พัดลม -->
-
-                    <circle
-                        cx="110"
-                        cy="157"
-                        r="38"
-                        fill="#ffffff"
-                        stroke="#4aa9df"
-                        stroke-width="4"
-                    />
-
-
-                    <g fill="#4aa9df">
-
-                        <path d="M110 157 C85 135 87 115 104 119 C119 123 119 143 110 157Z"/>
-
-                        <path d="M110 157 C132 132 151 137 147 153 C143 168 124 169 110 157Z"/>
-
-                        <path d="M110 157 C135 178 129 197 113 193 C98 189 99 171 110 157Z"/>
-
-                        <path d="M110 157 C87 181 69 174 75 158 C80 145 98 145 110 157Z"/>
-
-                    </g>
-
-
-                    <circle
-                        cx="110"
-                        cy="157"
-                        r="8"
-                        fill="#164f70"
-                    />
-
-
-                    <!-- แผงล่าง -->
-
-                    <rect
-                        x="35"
-                        y="230"
-                        width="150"
-                        height="35"
-                        rx="8"
-                        fill="#edf8fc"
-                    />
-
-
-                    <!-- ล้อ -->
-
-                    <circle
-                        cx="45"
-                        cy="280"
-                        r="13"
-                        fill="#164f70"
-                    />
-
-                    <circle
-                        cx="175"
-                        cy="280"
-                        r="13"
-                        fill="#164f70"
-                    />
-
-
-                    <!-- ท่อระบายความร้อน -->
-
-                    <path
-                        d="M190 125
-                           C245 120 260 155 250 190
-                           C240 225 270 250 310 245"
-                        fill="none"
-                        stroke="#9aaeb8"
-                        stroke-width="20"
-                        stroke-linecap="round"
-                    />
-
-                    <path
-                        d="M190 125
-                           C245 120 260 155 250 190
-                           C240 225 270 250 310 245"
-                        fill="none"
-                        stroke="#d7e0e5"
-                        stroke-width="11"
-                        stroke-linecap="round"
-                    />
-
-                </g>
-
-
-                <!-- ช่าง -->
-
-                <g transform="translate(120 100)">
-
-                    <!-- ขา -->
-
-                    <path
-                        d="M125 300 L110 395"
-                        stroke="#263746"
-                        stroke-width="28"
-                        stroke-linecap="round"
-                    />
-
-                    <path
-                        d="M190 300 L220 395"
-                        stroke="#263746"
-                        stroke-width="28"
-                        stroke-linecap="round"
-                    />
-
-
-                    <!-- รองเท้า -->
-
-                    <path
-                        d="M90 395
-                           Q110 380 135 395
-                           L150 415
-                           L80 415
-                           Q75 405 90 395Z"
-                        fill="#164f70"
-                    />
-
-                    <path
-                        d="M205 395
-                           Q225 380 245 395
-                           L270 415
-                           L200 415
-                           Q195 405 205 395Z"
-                        fill="#164f70"
-                    />
-
-
-                    <!-- ลำตัว -->
-
-                    <path
-                        d="M90 165
-                           Q150 135 210 165
-                           L230 305
-                           Q150 330 70 305Z"
-                        fill="#1687c7"
-                        stroke="#145675"
-                        stroke-width="5"
-                    />
-
-
-                    <!-- เสื้อ -->
-
-                    <path
-                        d="M105 180
-                           L145 205
-                           L125 290
-                           L80 275Z"
-                        fill="#ffffff"
-                        opacity="0.9"
-                    />
-
-
-                    <!-- แขนซ้าย -->
-
-                    <path
-                        d="M90 185
-                           Q50 205 35 250"
-                        fill="none"
-                        stroke="#1687c7"
-                        stroke-width="32"
-                        stroke-linecap="round"
-                    />
-
-
-                    <!-- แขนขวา -->
-
-                    <path
-                        d="M205 185
-                           Q245 205 270 235"
-                        fill="none"
-                        stroke="#1687c7"
-                        stroke-width="32"
-                        stroke-linecap="round"
-                    />
-
-
-                    <!-- มือ -->
-
-                    <circle
-                        cx="35"
-                        cy="250"
-                        r="17"
-                        fill="#f2bd91"
-                    />
-
-                    <circle
-                        cx="270"
-                        cy="235"
-                        r="17"
-                        fill="#f2bd91"
-                    />
-
-
-                    <!-- ประแจ -->
-
-                    <path
-                        d="M270 225 L315 180"
-                        stroke="#777f85"
-                        stroke-width="10"
-                        stroke-linecap="round"
-                    />
-
-                    <path
-                        d="M305 175
-                           C315 165 330 165 338 175
-                           L325 185
-                           L338 198
-                           C330 205 315 202 307 195
-                           C299 187 299 180 305 175Z"
-                        fill="#777f85"
-                    />
-
-
-                    <!-- คอ -->
-
-                    <rect
-                        x="135"
-                        y="130"
-                        width="35"
-                        height="45"
-                        rx="15"
-                        fill="#f2bd91"
-                    />
-
-
-                    <!-- ใบหน้า -->
-
-                    <circle
-                        cx="152"
-                        cy="105"
-                        r="55"
-                        fill="#f2bd91"
-                        stroke="#c68d65"
-                        stroke-width="4"
-                    />
-
-
-                    <!-- หู -->
-
-                    <circle
-                        cx="98"
-                        cy="110"
-                        r="12"
-                        fill="#f2bd91"
-                    />
-
-                    <circle
-                        cx="206"
-                        cy="110"
-                        r="12"
-                        fill="#f2bd91"
-                    />
-
-
-                    <!-- ผม -->
-
-                    <path
-                        d="M100 90
-                           Q105 35 155 40
-                           Q205 40 210 90
-                           Q190 65 165 72
-                           Q135 60 100 90Z"
-                        fill="#263746"
-                    />
-
-
-                    <!-- หมวกช่าง -->
-
-                    <path
-                        d="M95 65
-                           Q105 20 155 20
-                           Q205 20 215 65
-                           L95 65Z"
-                        fill="#ffffff"
-                        stroke="#1687c7"
-                        stroke-width="6"
-                    />
-
-                    <path
-                        d="M90 65 L220 65"
-                        stroke="#1687c7"
-                        stroke-width="12"
-                        stroke-linecap="round"
-                    />
-
-
-                    <!-- ตา -->
-
-                    <circle
-                        cx="132"
-                        cy="105"
-                        r="5"
-                        fill="#263746"
-                    />
-
-                    <circle
-                        cx="174"
-                        cy="105"
-                        r="5"
-                        fill="#263746"
-                    />
-
-
-                    <!-- จมูก -->
-
-                    <path
-                        d="M153 108
-                           L148 123
-                           L158 123"
-                        fill="none"
-                        stroke="#b47755"
-                        stroke-width="3"
-                    />
-
-
-                    <!-- ยิ้ม -->
-
-                    <path
-                        d="M137 132
-                           Q153 145 170 132"
-                        fill="none"
-                        stroke="#8d513b"
-                        stroke-width="4"
-                        stroke-linecap="round"
-                    />
-
-
-                    <!-- โลโก้ -->
-
-                    <circle
-                        cx="150"
-                        cy="205"
-                        r="25"
-                        fill="#ffffff"
-                    />
-
-                    <text
-                        x="150"
-                        y="211"
-                        text-anchor="middle"
-                        font-size="12"
-                        font-weight="bold"
-                        font-family="Arial, sans-serif"
-                        fill="#1687c7"
-                    >
-                        AC
-                    </text>
-
-                </g>
-
-
-                <!-- ประกาย -->
-
-                <g
-                    fill="none"
-                    stroke="#4aa9df"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                >
-
-                    <path d="M65 105 L65 135"/>
-
-                    <path d="M50 120 L80 120"/>
-
-                    <path d="M700 300 L700 330"/>
-
-                    <path d="M685 315 L715 315"/>
-
-                </g>
-
-
-                <!-- ชื่อร้าน -->
-
-                <text
-                    x="400"
-                    y="465"
-                    text-anchor="middle"
-                    font-size="26"
-                    font-weight="bold"
-                    font-family="Arial, 'Noto Sans Thai', sans-serif"
-                    fill="#164f70"
-                >
-                    ช่างบอย ซ่อมแอร์เคลื่อนที่
-                </text>
+                    cx="40"
+                    cy="40"
+                    r="6"
+                    fill="#1687c7"/>
 
             </svg>
+
+
+            <!-- SVG เครื่องมือ -->
+
+            <svg
+                class="hero-icon hero-icon-tool"
+                viewBox="0 0 80 80"
+                xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+
+                <circle
+                    cx="40"
+                    cy="40"
+                    r="34"
+                    fill="#ffffff"
+                    opacity="0.95"/>
+
+                <path
+                    d="M24 52
+                       L50 26"
+                    stroke="#164f70"
+                    stroke-width="8"
+                    stroke-linecap="round"/>
+
+                <path
+                    d="M48 25
+                       C55 18 65 21 68 28
+                       L58 35
+                       L51 28Z"
+                    fill="#1687c7"/>
+
+                <circle
+                    cx="24"
+                    cy="52"
+                    r="7"
+                    fill="#4aa9df"/>
+
+            </svg>
+
 
         </div>
 
@@ -1000,8 +641,6 @@
     <div class="card-grid">
 
 
-        <!-- ARTICLE 1 -->
-
         <div class="card">
 
             <h3>
@@ -1023,8 +662,6 @@
         </div>
 
 
-
-        <!-- ARTICLE 2 -->
 
         <div class="card">
 
@@ -1048,8 +685,6 @@
 
 
 
-        <!-- ARTICLE 3 -->
-
         <div class="card">
 
             <h3>
@@ -1072,8 +707,6 @@
 
 
 
-        <!-- ARTICLE 4 -->
-
         <div class="card">
 
             <h3>
@@ -1095,8 +728,6 @@
         </div>
 
 
-
-        <!-- ARTICLE 5 -->
 
         <div class="card">
 
@@ -1249,8 +880,6 @@
     <div class="contact-box">
 
 
-        <!-- PHONE -->
-
         <p>
 
             <strong>
@@ -1263,8 +892,6 @@
 
         </p>
 
-
-        <!-- LINE -->
 
         <p>
 
@@ -1283,8 +910,6 @@
         </p>
 
 
-        <!-- FACEBOOK -->
-
         <p>
 
             <strong>
@@ -1301,8 +926,6 @@
 
         </p>
 
-
-        <!-- YOUTUBE -->
 
         <p>
 
@@ -1321,8 +944,6 @@
         </p>
 
 
-        <!-- TIKTOK -->
-
         <p>
 
             <strong>
@@ -1340,8 +961,6 @@
         </p>
 
 
-        <!-- AREA -->
-
         <p>
 
             <strong>
@@ -1352,8 +971,6 @@
 
         </p>
 
-
-        <!-- CONTACT BUTTONS -->
 
         <div class="hero-button"
              style="justify-content:center; margin-top:30px;">
@@ -1379,8 +996,6 @@
 
         </div>
 
-
-        <!-- SOCIAL BUTTONS -->
 
         <div class="hero-button"
              style="justify-content:center; margin-top:15px;">
@@ -1485,6 +1100,161 @@
 ================================================== -->
 
 <script src="script.js"></script>
+
+<!-- =================================================
+     HERO SVG DECORATION CSS
+================================================== -->
+
+<style>
+
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-decoration {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero-decoration-top {
+    width: 120px;
+    height: 120px;
+    top: 35px;
+    right: 8%;
+    animation: heroFloat 5s ease-in-out infinite;
+}
+
+.hero-decoration-bottom {
+    width: 140px;
+    height: 100px;
+    bottom: 30px;
+    left: 4%;
+    animation: heroFloat 6s ease-in-out infinite reverse;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 3;
+}
+
+.hero-image-frame {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.hero-image-frame img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.hero-image-glow {
+    position: absolute;
+    width: 75%;
+    height: 75%;
+    left: 12.5%;
+    top: 12.5%;
+    border-radius: 50%;
+    background: #dff4ff;
+    filter: blur(35px);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.hero-icon {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    z-index: 4;
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.12));
+}
+
+.hero-icon-snow {
+    top: 8%;
+    right: 2%;
+    animation: heroFloat 4s ease-in-out infinite;
+}
+
+.hero-icon-tool {
+    bottom: 8%;
+    left: 2%;
+    animation: heroFloat 4.5s ease-in-out infinite reverse;
+}
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 18px;
+    margin-top: 25px;
+    font-size: 15px;
+}
+
+.hero-features span {
+    color: #164f70;
+    font-weight: 600;
+}
+
+@keyframes heroFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-decoration-top {
+        width: 80px;
+        height: 80px;
+        top: 20px;
+        right: 3%;
+    }
+
+    .hero-decoration-bottom {
+        width: 90px;
+        height: 70px;
+        bottom: 10px;
+        left: 1%;
+    }
+
+    .hero-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .hero-icon-snow {
+        right: 0;
+    }
+
+    .hero-icon-tool {
+        left: 0;
+    }
+
+    .hero-features {
+        justify-content: center;
+        font-size: 14px;
+    }
+
+}
+
+</style>
 
 </body>
 
