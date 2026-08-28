@@ -30,13 +30,17 @@
       content="#0d47a1">
 
 
-<!-- ================= CANONICAL ================= -->
+<!-- =================================================
+     CANONICAL
+================================================== -->
 
 <link rel="canonical"
       href="https://changboyportable.github.io/changboy-air/">
 
 
-<!-- ================= OPEN GRAPH ================= -->
+<!-- =================================================
+     OPEN GRAPH
+================================================== -->
 
 <meta property="og:type"
       content="website">
@@ -57,7 +61,9 @@
       content="https://changboyportable.github.io/changboy-air/hero-changboy.png">
 
 
-<!-- ================= TWITTER CARD ================= -->
+<!-- =================================================
+     TWITTER CARD
+================================================== -->
 
 <meta name="twitter:card"
       content="summary_large_image">
@@ -72,15 +78,29 @@
       content="https://changboyportable.github.io/changboy-air/hero-changboy.png">
 
 
-<!-- ================= CSS ================= -->
+<!-- =================================================
+     FAVICON
+================================================== -->
+
+<link rel="icon"
+      type="image/svg+xml"
+      href="logo.svg">
+
+
+<!-- =================================================
+     CSS
+================================================== -->
 
 <link rel="stylesheet"
       href="style.css">
 
 
-<!-- ================= STRUCTURED DATA ================= -->
+<!-- =================================================
+     STRUCTURED DATA
+================================================== -->
 
 <script type="application/ld+json">
+
 {
     "@context": "https://schema.org",
 
@@ -95,6 +115,8 @@
     "url": "https://changboyportable.github.io/changboy-air/",
 
     "telephone": "+66805178615",
+
+    "priceRange": "$$",
 
     "areaServed": {
         "@type": "AdministrativeArea",
@@ -114,6 +136,7 @@
         "https://www.tiktok.com/@changboyair"
     ]
 }
+
 </script>
 ```
 
@@ -125,21 +148,48 @@
      HEADER
 ================================================== -->
 
-<header>
+<header class="site-header">
 
 ```
-<div class="container">
-
-    <div class="logo">
-
-        <h2>
-            ช่างบอยซ่อมแอร์เคลื่อนที่
-        </h2>
-
-    </div>
+<div class="container header-container">
 
 
-    <nav>
+    <!-- =================================================
+         LOGO + SHOP NAME
+    ================================================== -->
+
+    <a href="index.html"
+       class="brand"
+       aria-label="ช่างบอยซ่อมแอร์เคลื่อนที่">
+
+        <img
+            src="logo.svg"
+            alt="โลโก้ช่างบอยซ่อมแอร์เคลื่อนที่"
+            class="brand-logo"
+            width="60"
+            height="60">
+
+        <div class="brand-name">
+
+            <strong>
+                ช่างบอย
+            </strong>
+
+            <span>
+                ซ่อมแอร์เคลื่อนที่
+            </span>
+
+        </div>
+
+    </a>
+
+
+    <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+    <nav class="main-nav"
+         aria-label="เมนูหลัก">
 
         <ul>
 
@@ -149,13 +199,11 @@
                 </a>
             </li>
 
-
             <li>
                 <a href="index.html#services">
                     บริการ
                 </a>
             </li>
-
 
             <li>
                 <a href="index.html#why-us">
@@ -163,13 +211,11 @@
                 </a>
             </li>
 
-
             <li>
                 <a href="articles.html">
                     บทความ
                 </a>
             </li>
-
 
             <li>
                 <a href="index.html#contact">
@@ -197,7 +243,9 @@
 <div class="hero-overlay"></div>
 
 
-<!-- SVG ตกแต่งด้านบน -->
+<!-- =================================================
+     SVG DECORATION 1
+================================================== -->
 
 <svg
     class="hero-decoration hero-decoration-top"
@@ -208,36 +256,38 @@
     <circle
         cx="60"
         cy="60"
-        r="52"
+        r="50"
         fill="none"
         stroke="#4aa9df"
-        stroke-width="4"
+        stroke-width="3"
         opacity="0.25"/>
 
     <path
         d="M60 25
-           C50 40 40 48 40 65
+           C50 40 40 50 40 65
            C40 80 49 92 60 92
            C71 92 80 80 80 65
-           C80 48 70 40 60 25Z"
+           C80 50 70 40 60 25Z"
         fill="#4aa9df"
-        opacity="0.18"/>
+        opacity="0.16"/>
 
     <path
         d="M60 38
-           L60 82
+           V82
            M42 60
-           L78 60"
+           H78"
         stroke="#1687c7"
         stroke-width="4"
         stroke-linecap="round"
-        opacity="0.5"/>
+        opacity="0.45"/>
 
 </svg>
 
 
 
-<!-- SVG ตกแต่งด้านล่าง -->
+<!-- =================================================
+     SVG DECORATION 2
+================================================== -->
 
 <svg
     class="hero-decoration hero-decoration-bottom"
@@ -250,24 +300,24 @@
         cy="50"
         r="38"
         fill="#ffffff"
-        opacity="0.7"/>
+        opacity="0.65"/>
 
     <path
         d="M70 20
-           L70 80
+           V80
            M40 50
-           L100 50"
+           H100"
         stroke="#4aa9df"
         stroke-width="5"
         stroke-linecap="round"
-        opacity="0.45"/>
+        opacity="0.4"/>
 
     <circle
         cx="70"
         cy="50"
-        r="12"
+        r="11"
         fill="#1687c7"
-        opacity="0.55"/>
+        opacity="0.5"/>
 
 </svg>
 
@@ -276,7 +326,9 @@
 <div class="container hero-content">
 
 
-    <!-- ================= HERO TEXT ================= -->
+    <!-- =================================================
+         HERO TEXT
+    ================================================== -->
 
     <div class="hero-text">
 
@@ -311,6 +363,10 @@
         </p>
 
 
+        <!-- =================================================
+             HERO BUTTONS
+        ================================================== -->
+
         <div class="hero-button">
 
 
@@ -335,7 +391,9 @@
         </div>
 
 
-        <!-- จุดเด่น -->
+        <!-- =================================================
+             HERO FEATURES
+        ================================================== -->
 
         <div class="hero-features">
 
@@ -344,7 +402,7 @@
             </span>
 
             <span>
-                ✓ แจ้งรายละเอียดก่อนซ่อม
+                ✓ วิเคราะห์สาเหตุก่อนซ่อม
             </span>
 
             <span>
@@ -353,16 +411,17 @@
 
         </div>
 
+
     </div>
 
 
 
-    <!-- ================= HERO IMAGE ================= -->
+    <!-- =================================================
+         HERO IMAGE
+    ================================================== -->
 
     <div class="hero-image">
 
-
-        <!-- ภาพหลัก ใช้ไฟล์เดียว -->
 
         <div class="hero-image-frame">
 
@@ -370,16 +429,20 @@
             <div class="hero-image-glow"></div>
 
 
+            <!-- ภาพหลักเพียงภาพเดียว -->
+
             <img
                 src="hero-changboy.png"
-                alt="ช่างบอยซ่อมแอร์เคลื่อนที่"
+                alt="ช่างบอยกำลังตรวจซ่อมแอร์เคลื่อนที่"
                 width="800"
                 height="600"
                 loading="eager"
                 fetchpriority="high">
 
 
-            <!-- SVG ไอคอนเล็ก ๆ -->
+            <!-- =================================================
+                 SVG SNOW ICON
+            ================================================== -->
 
             <svg
                 class="hero-icon hero-icon-snow"
@@ -396,9 +459,9 @@
 
                 <path
                     d="M40 18
-                       L40 62
+                       V62
                        M18 40
-                       L62 40
+                       H62
                        M25 25
                        L55 55
                        M55 25
@@ -416,7 +479,10 @@
             </svg>
 
 
-            <!-- SVG เครื่องมือ -->
+
+            <!-- =================================================
+                 SVG TOOL ICON
+            ================================================== -->
 
             <svg
                 class="hero-icon hero-icon-tool"
@@ -507,6 +573,7 @@
         </div>
 
 
+
         <div class="card">
 
             <h3>
@@ -524,6 +591,7 @@
         </div>
 
 
+
         <div class="card">
 
             <h3>
@@ -539,6 +607,7 @@
             </p>
 
         </div>
+
 
 
         <div class="card">
@@ -641,6 +710,8 @@
     <div class="card-grid">
 
 
+        <!-- ARTICLE 1 -->
+
         <div class="card">
 
             <h3>
@@ -662,6 +733,8 @@
         </div>
 
 
+
+        <!-- ARTICLE 2 -->
 
         <div class="card">
 
@@ -685,6 +758,8 @@
 
 
 
+        <!-- ARTICLE 3 -->
+
         <div class="card">
 
             <h3>
@@ -707,6 +782,8 @@
 
 
 
+        <!-- ARTICLE 4 -->
+
         <div class="card">
 
             <h3>
@@ -728,6 +805,8 @@
         </div>
 
 
+
+        <!-- ARTICLE 5 -->
 
         <div class="card">
 
@@ -1096,16 +1175,94 @@
 </div>
 
 <!-- =================================================
-     JAVASCRIPT
-================================================== -->
-
-<script src="script.js"></script>
-
-<!-- =================================================
-     HERO SVG DECORATION CSS
+     HERO SVG / HEADER CSS
 ================================================== -->
 
 <style>
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.97);
+    border-bottom: 1px solid #e5eef4;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(10px);
+}
+
+.header-container {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: inherit;
+    flex-shrink: 0;
+}
+
+.brand-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+
+.brand-name strong {
+    font-size: 21px;
+    color: #0d47a1;
+    font-weight: 800;
+}
+
+.brand-name span {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #1687c7;
+    font-weight: 600;
+}
+
+.main-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.main-nav a {
+    display: block;
+    padding: 10px 13px;
+    color: #164f70;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
+}
+
+.main-nav a:hover {
+    color: #ffffff;
+    background: #1687c7;
+}
+
+
+/* =================================================
+   HERO SVG
+================================================= */
 
 .hero {
     position: relative;
@@ -1205,6 +1362,11 @@
     font-weight: 600;
 }
 
+
+/* =================================================
+   ANIMATION
+================================================= */
+
 @keyframes heroFloat {
 
     0%,
@@ -1218,7 +1380,71 @@
 
 }
 
-@media (max-width: 768px) {
+
+/* =================================================
+   TABLET
+================================================= */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        gap: 10px;
+    }
+
+    .brand {
+        justify-content: center;
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    .main-nav a {
+        padding: 8px 9px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* =================================================
+   MOBILE
+================================================= */
+
+@media (max-width: 600px) {
+
+    .brand-logo {
+        width: 50px;
+        height: 50px;
+    }
+
+    .brand-name strong {
+        font-size: 18px;
+    }
+
+    .brand-name span {
+        font-size: 13px;
+    }
+
+    .main-nav {
+        width: 100%;
+    }
+
+    .main-nav ul {
+        width: 100%;
+        gap: 3px;
+    }
+
+    .main-nav a {
+        padding: 7px 6px;
+        font-size: 12px;
+    }
 
     .hero-decoration-top {
         width: 80px;
@@ -1255,6 +1481,12 @@
 }
 
 </style>
+
+<!-- =================================================
+     JAVASCRIPT
+================================================== -->
+
+<script src="script.js"></script>
 
 </body>
 
