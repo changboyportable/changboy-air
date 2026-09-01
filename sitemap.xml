@@ -1,101 +1,162 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-```
-<!-- =========================================
-     หน้าเว็บไซต์หลัก
-========================================== -->
+    <!-- หน้าแรก -->
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/index.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/articles.html</loc>
-</url>
+    <!-- หน้าบทความ -->
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/articles.html</loc>
+    </url>
 
+    <!-- ============================= -->
+    <!-- ความรู้และการใช้งานทั่วไป -->
+    <!-- ============================= -->
 
-<!-- =========================================
-     บทความความรู้
-========================================== -->
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-25-26-degree.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/capacitor.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-btu-guide.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/thermistor.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-electricity-use.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-filter-cleaning.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-save-electricity.html</loc>
+    </url>
 
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-placement.html</loc>
+    </url>
 
-<!-- =========================================
-     ระบบคอมเพรสเซอร์
-========================================== -->
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-filter-cleaning.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/compressor-not-start.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-filter-care.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/compressor-runs-but-not-cold.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-exhaust-hose.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-compressor-overheat.html</loc>
-</url>
+    <!-- ============================= -->
+    <!-- ระบบคอมเพรสเซอร์ -->
+    <!-- ============================= -->
 
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-compressor-function.html</loc>
+    </url>
 
-<!-- =========================================
-     ระบบพัดลม
-========================================== -->
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/compressor-not-start.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/fan-not-work.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/compressor-runs-but-not-cold.html</loc>
+    </url>
 
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-compressor-overheat.html</loc>
+    </url>
 
-<!-- =========================================
-     อาการเสีย
-     ไฟล์ยังอยู่ในเว็บไซต์
-     แต่แยกออกจากหน้า Articles
-========================================== -->
+    <!-- ============================= -->
+    <!-- ระบบพัดลมและการไหลเวียนอากาศ -->
+    <!-- ============================= -->
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/air-not-cold.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-fan-function.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-cold.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/fan-not-work.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-start.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-fan-slow.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-water-leak.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-airflow-weak.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/water-leak.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/loud-noise.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/loud-noise.html</loc>
-</url>
+    <!-- ============================= -->
+    <!-- อุปกรณ์ไฟฟ้าและเซนเซอร์ -->
+    <!-- ============================= -->
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/high-electricity.html</loc>
-</url>
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/capacitor.html</loc>
+    </url>
 
-<url>
-    <loc>https://changboyportable.github.io/changboy-air/ice-on-coil.html</loc>
-</url>
-```
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-pcb.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-relay.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-temperature-sensor.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/thermistor.html</loc>
+    </url>
+
+    <!-- ============================= -->
+    <!-- ระบบน้ำและการระบายน้ำ -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-drain-hose.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-water-leak.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/water-leak.html</loc>
+    </url>
+
+    <!-- ============================= -->
+    <!-- อาการเสียและการตรวจสอบ -->
+    <!-- ============================= -->
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-cold.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-start.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/air-not-cold.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/ice-on-coil.html</loc>
+    </url>
+
+    <url>
+        <loc>https://changboyportable.github.io/changboy-air/high-electricity.html</loc>
+    </url>
 
 </urlset>
