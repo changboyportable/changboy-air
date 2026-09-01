@@ -2,95 +2,108 @@
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- หน้าแรก -->
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/</loc>
-    </url>
+```
+<!-- หน้าแรก -->
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <!-- หน้ารวมบทความ -->
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/articles.html</loc>
-    </url>
+<!-- หน้ารวมบทความ -->
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/articles.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
+<!-- =========================
+     อาการเสียที่พบบ่อย
+========================== -->
 
-    <!-- =========================
-         อาการเสียที่พบบ่อย
-    ========================== -->
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/air-not-cold.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/air-not-cold.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-cold.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-cold.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-start.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-start.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-water-leak.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-water-leak.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/water-leak.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/water-leak.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/loud-noise.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/loud-noise.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/high-electricity.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/high-electricity.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/ice-on-coil.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/ice-on-coil.html</loc>
-    </url>
+<!-- =========================
+     ระบบคอมเพรสเซอร์
+========================== -->
 
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/compressor-not-start.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <!-- =========================
-         ระบบคอมเพรสเซอร์
-    ========================== -->
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/compressor-runs-but-not-cold.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/compressor-not-start.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-compressor-overheat.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/compressor-runs-but-not-cold.html</loc>
-    </url>
+<!-- =========================
+     ระบบพัดลม
+========================== -->
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-compressor-overheat.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/fan-not-work.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
+<!-- =========================
+     อุปกรณ์และอะไหล่
+========================== -->
 
-    <!-- =========================
-         ระบบพัดลม
-    ========================== -->
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/capacitor.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
 
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/fan-not-work.html</loc>
-    </url>
+<!-- =========================
+     การดูแลรักษา
+========================== -->
 
-
-    <!-- =========================
-         อุปกรณ์และอะไหล่
-    ========================== -->
-
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/capacitor.html</loc>
-    </url>
-
-
-    <!-- =========================
-         การดูแลรักษา
-    ========================== -->
-
-    <url>
-        <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-filter-cleaning.html</loc>
-    </url>
+<url>
+    <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-filter-cleaning.html</loc>
+    <lastmod>2026-09-01</lastmod>
+</url>
+```
 
 </urlset>
