@@ -12,10 +12,6 @@
 </url>
 
 <url>
-    <loc>https://changboyportable.github.io/changboy-air/index.html</loc>
-</url>
-
-<url>
     <loc>https://changboyportable.github.io/changboy-air/articles.html</loc>
 </url>
 
@@ -65,8 +61,8 @@
 
 <!-- =========================================
      อาการเสีย
-     ไฟล์ยังคงอยู่ ไม่ได้ลบออก
-     แต่ไม่แสดงในหน้า Articles
+     ไฟล์ยังอยู่ในเว็บไซต์
+     แต่แยกออกจากหน้า Articles
 ========================================== -->
 
 <url>
