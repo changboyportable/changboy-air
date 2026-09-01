@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- หน้าแรก -->
+    <!-- หน้าเว็บไซต์หลัก -->
     <url>
         <loc>https://changboyportable.github.io/changboy-air/</loc>
     </url>
@@ -10,14 +10,14 @@
         <loc>https://changboyportable.github.io/changboy-air/index.html</loc>
     </url>
 
-    <!-- หน้าบทความ -->
     <url>
         <loc>https://changboyportable.github.io/changboy-air/articles.html</loc>
     </url>
 
-    <!-- ============================= -->
-    <!-- ความรู้และการใช้งานทั่วไป -->
-    <!-- ============================= -->
+
+    <!-- =========================================
+         หมวดความรู้และการใช้งานทั่วไป
+         ========================================= -->
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-25-26-degree.html</loc>
@@ -51,9 +51,10 @@
         <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-exhaust-hose.html</loc>
     </url>
 
-    <!-- ============================= -->
-    <!-- ระบบคอมเพรสเซอร์ -->
-    <!-- ============================= -->
+
+    <!-- =========================================
+         หมวดระบบคอมเพรสเซอร์
+         ========================================= -->
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-compressor-function.html</loc>
@@ -71,9 +72,10 @@
         <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-compressor-overheat.html</loc>
     </url>
 
-    <!-- ============================= -->
-    <!-- ระบบพัดลมและการไหลเวียนอากาศ -->
-    <!-- ============================= -->
+
+    <!-- =========================================
+         หมวดระบบพัดลมและการไหลเวียนอากาศ
+         ========================================= -->
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-fan-function.html</loc>
@@ -95,9 +97,10 @@
         <loc>https://changboyportable.github.io/changboy-air/loud-noise.html</loc>
     </url>
 
-    <!-- ============================= -->
-    <!-- อุปกรณ์ไฟฟ้าและเซนเซอร์ -->
-    <!-- ============================= -->
+
+    <!-- =========================================
+         หมวดอุปกรณ์ไฟฟ้าและเซนเซอร์
+         ========================================= -->
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/capacitor.html</loc>
@@ -119,9 +122,10 @@
         <loc>https://changboyportable.github.io/changboy-air/thermistor.html</loc>
     </url>
 
-    <!-- ============================= -->
-    <!-- ระบบน้ำและการระบายน้ำ -->
-    <!-- ============================= -->
+
+    <!-- =========================================
+         หมวดระบบน้ำและการระบายน้ำ
+         ========================================= -->
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-drain-hose.html</loc>
@@ -135,9 +139,10 @@
         <loc>https://changboyportable.github.io/changboy-air/water-leak.html</loc>
     </url>
 
-    <!-- ============================= -->
-    <!-- อาการเสียและการตรวจสอบ -->
-    <!-- ============================= -->
+
+    <!-- =========================================
+         หมวดอาการเสียและการตรวจสอบ
+         ========================================= -->
 
     <url>
         <loc>https://changboyportable.github.io/changboy-air/portable-air-conditioner-not-cold.html</loc>
