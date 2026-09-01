@@ -1,1183 +1,780 @@
 <!DOCTYPE html>
+
 <html lang="th">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+```
+<title>บทความความรู้แอร์เคลื่อนที่ | ช่างบอยซ่อมแอร์เคลื่อนที่</title>
 
-    <title>
-        บทความความรู้แอร์เคลื่อนที่ | ช่างบอยซ่อมแอร์เคลื่อนที่
-    </title>
+<meta name="description"
+      content="รวมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่ อาการเสีย วิธีตรวจสอบ การดูแลรักษา คอมเพรสเซอร์ พัดลม คาปาซิเตอร์ เทอร์มิสเตอร์ และระบบต่าง ๆ โดยช่างบอยซ่อมแอร์เคลื่อนที่">
 
-    <meta name="description"
-          content="รวมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่ อาการเสีย แอร์ไม่เย็น เปิดไม่ติด น้ำหยด น้ำแข็งเกาะคอยล์ พัดลมไม่หมุน คอมเพรสเซอร์ไม่ทำงาน คาปาซิเตอร์ กินไฟ และวิธีดูแลรักษา">
+<meta name="keywords"
+      content="แอร์เคลื่อนที่, บทความแอร์เคลื่อนที่, ความรู้แอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, แอร์เคลื่อนที่เปิดไม่ติด, แอร์เคลื่อนที่น้ำหยด, น้ำแข็งเกาะคอยล์, คอมเพรสเซอร์แอร์เคลื่อนที่, คาปาซิเตอร์แอร์เคลื่อนที่, เทอร์มิสเตอร์แอร์เคลื่อนที่, ซ่อมแอร์เคลื่อนที่">
 
-    <meta name="keywords"
-          content="บทความแอร์เคลื่อนที่, ความรู้แอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, แอร์เคลื่อนที่เปิดไม่ติด, น้ำหยด, น้ำแข็งเกาะคอยล์, พัดลมไม่หมุน, คอมเพรสเซอร์ไม่ทำงาน, คาปาซิเตอร์แอร์เคลื่อนที่, แอร์กินไฟ, ซ่อมแอร์เคลื่อนที่">
+<meta name="robots" content="index, follow">
 
-    <meta name="author"
-          content="ช่างบอยซ่อมแอร์เคลื่อนที่">
+<link rel="canonical"
+      href="https://changboyportable.github.io/changboy-air/articles.html">
 
-    <meta name="robots"
-          content="index, follow">
+<link rel="stylesheet" href="style.css">
 
-    <meta name="theme-color"
-          content="#0d47a1">
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="บทความความรู้แอร์เคลื่อนที่ | ช่างบอยซ่อมแอร์เคลื่อนที่">
+<meta property="og:description"
+      content="รวมความรู้เกี่ยวกับแอร์เคลื่อนที่ อาการเสีย การดูแลรักษา และระบบต่าง ๆ ภายในเครื่อง">
+<meta property="og:url"
+      content="https://changboyportable.github.io/changboy-air/articles.html">
+<meta property="og:image"
+      content="https://changboyportable.github.io/changboy-air/hero-changboy.png">
 
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="บทความความรู้แอร์เคลื่อนที่ | ช่างบอยซ่อมแอร์เคลื่อนที่">
+<meta name="twitter:description"
+      content="รวมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่ อาการเสีย การดูแลรักษา และอุปกรณ์ภายในเครื่อง">
+<meta name="twitter:image"
+      content="https://changboyportable.github.io/changboy-air/hero-changboy.png">
 
-    <!-- =================================================
-         CANONICAL
-    ================================================= -->
+<style>
 
-    <link rel="canonical"
-          href="https://changboyportable.github.io/changboy-air/articles.html">
+    .articles-hero {
+        padding: 80px 20px 60px;
+        text-align: center;
+        background: linear-gradient(135deg, #eaf7ff, #ffffff);
+    }
 
+    .articles-hero h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
 
-    <!-- =================================================
-         OPEN GRAPH
-    ================================================= -->
+    .articles-hero p {
+        max-width: 800px;
+        margin: 0 auto;
+        line-height: 1.8;
+        font-size: 18px;
+    }
 
-    <meta property="og:type"
-          content="website">
+    .articles-section {
+        padding: 60px 20px;
+    }
 
-    <meta property="og:title"
-          content="บทความความรู้แอร์เคลื่อนที่ | ช่างบอยซ่อมแอร์เคลื่อนที่">
+    .articles-intro {
+        max-width: 850px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
 
-    <meta property="og:description"
-          content="รวมความรู้เกี่ยวกับอาการเสีย ระบบทำความเย็น ระบบไฟฟ้า อะไหล่ และวิธีดูแลแอร์เคลื่อนที่">
+    .articles-intro h2 {
+        margin-bottom: 15px;
+    }
 
-    <meta property="og:url"
-          content="https://changboyportable.github.io/changboy-air/articles.html">
+    .articles-intro p {
+        line-height: 1.8;
+    }
 
-    <meta property="og:site_name"
-          content="ช่างบอยซ่อมแอร์เคลื่อนที่">
+    .articles-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 
+    .article-card {
+        background: #ffffff;
+        border-radius: 16px;
+        padding: 28px;
+        border: 1px solid #e8e8e8;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+        display: flex;
+        flex-direction: column;
+    }
 
-    <!-- =================================================
-         CSS
-    ================================================= -->
+    .article-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+    }
 
-    <link rel="stylesheet"
-          href="style.css">
+    .article-icon {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
 
+    .article-category {
+        display: inline-block;
+        width: fit-content;
+        margin-bottom: 15px;
+        padding: 5px 12px;
+        border-radius: 20px;
+        background: #eef7ff;
+        font-size: 13px;
+        font-weight: bold;
+    }
 
-    <!-- =================================================
-         STRUCTURED DATA
-    ================================================= -->
+    .article-card h2 {
+        font-size: 21px;
+        margin-bottom: 12px;
+        line-height: 1.5;
+    }
 
-    <script type="application/ld+json">
+    .article-card p {
+        line-height: 1.7;
+        color: #555;
+        margin-bottom: 0;
+    }
 
-    {
-        "@context": "https://schema.org",
+    .article-card a {
+        display: inline-block;
+        margin-top: auto;
+        padding-top: 18px;
+        text-decoration: none;
+        font-weight: bold;
+    }
 
-        "@type": "CollectionPage",
+    .article-card a:hover {
+        text-decoration: underline;
+    }
 
-        "name": "บทความความรู้แอร์เคลื่อนที่",
+    .article-note {
+        max-width: 900px;
+        margin: 50px auto 0;
+        padding: 25px;
+        background: #f5f9fc;
+        border-radius: 12px;
+        line-height: 1.8;
+    }
 
-        "description": "รวมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่ อาการเสีย ระบบทำความเย็น ระบบไฟฟ้า อะไหล่ และวิธีดูแลรักษา",
+    .article-note h3 {
+        margin-bottom: 10px;
+    }
 
-        "url": "https://changboyportable.github.io/changboy-air/articles.html",
+    .article-note p {
+        margin-bottom: 0;
+    }
 
-        "isPartOf": {
-            "@type": "WebSite",
-            "name": "ช่างบอยซ่อมแอร์เคลื่อนที่",
-            "url": "https://changboyportable.github.io/changboy-air/"
+    .back-home {
+        text-align: center;
+        margin: 30px 0 40px;
+    }
+
+    .back-home a {
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    @media (max-width: 900px) {
+
+        .articles-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .articles-hero h1 {
+            font-size: 34px;
         }
     }
 
-    </script>
+    @media (max-width: 600px) {
+
+        .articles-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .articles-section {
+            padding: 45px 15px;
+        }
+
+        .articles-hero {
+            padding: 60px 15px 45px;
+        }
+
+        .articles-hero h1 {
+            font-size: 30px;
+        }
+
+        .articles-hero p {
+            font-size: 16px;
+        }
+
+        .article-card {
+            padding: 24px;
+        }
+    }
+
+</style>
+```
 
 </head>
 
-
 <body>
 
-
-<!-- =================================================
-     HEADER
-================================================= -->
-
 <header>
-
     <div class="container">
 
-
-        <div class="logo">
-
-            <h2>
-                ช่างบอยซ่อมแอร์เคลื่อนที่
-            </h2>
-
-        </div>
-
-
-        <nav>
-
-            <ul>
-
-                <li>
-                    <a href="index.html">
-                        หน้าแรก
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="index.html#services">
-                        บริการ
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="index.html#why-us">
-                        ทำไมต้องเลือกเรา
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="articles.html">
-                        บทความ
-                    </a>
-                </li>
-
-
-                <li>
-                    <a href="index.html#contact">
-                        ติดต่อเรา
-                    </a>
-                </li>
-
-            </ul>
-
-        </nav>
-
+```
+    <div class="logo">
+        <h2>ช่างบอยซ่อมแอร์เคลื่อนที่</h2>
     </div>
+
+    <nav>
+        <ul>
+
+            <li>
+                <a href="index.html">หน้าแรก</a>
+            </li>
+
+            <li>
+                <a href="index.html#services">บริการ</a>
+            </li>
+
+            <li>
+                <a href="index.html#symptoms">อาการเสีย</a>
+            </li>
+
+            <li>
+                <a href="articles.html" aria-current="page">
+                    บทความ
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html#contact">ติดต่อเรา</a>
+            </li>
+
+        </ul>
+    </nav>
+
+</div>
+```
 
 </header>
 
-
-
-<!-- =================================================
-     MAIN
-================================================= -->
-
 <main>
+
+```
+<!-- HERO -->
+
+<section class="articles-hero">
 
     <div class="container">
 
+        <h1>📚 บทความความรู้แอร์เคลื่อนที่</h1>
 
-        <!-- =================================================
-             BREADCRUMB
-        ================================================= -->
+        <p>
+            รวมความรู้เกี่ยวกับแอร์เคลื่อนที่
+            วิธีใช้งาน การดูแลรักษา
+            อาการเสียที่พบบ่อย
+            และความรู้เกี่ยวกับอุปกรณ์ภายในเครื่อง
+        </p>
 
-        <div class="breadcrumb">
+    </div>
 
-            <a href="index.html">
-                หน้าแรก
-            </a>
+</section>
 
-            <span>›</span>
 
-            บทความความรู้แอร์เคลื่อนที่
+<!-- ARTICLES -->
+
+<section class="articles-section">
+
+    <div class="container">
+
+        <div class="articles-intro">
+
+            <h2>ความรู้แอร์เคลื่อนที่จากช่างบอย</h2>
+
+            <p>
+                เรียนรู้วิธีดูแลแอร์เคลื่อนที่
+                ตรวจสอบอาการผิดปกติเบื้องต้น
+                และทำความเข้าใจระบบต่าง ๆ
+                เพื่อช่วยให้ใช้งานแอร์เคลื่อนที่ได้อย่างเหมาะสม
+            </p>
 
         </div>
 
 
-
-        <!-- =================================================
-             ARTICLE BOX
-        ================================================= -->
-
-        <article class="article-box">
+        <div class="articles-grid">
 
 
-            <!-- =================================================
-                 HEADER
-            ================================================= -->
+            <!-- 1 -->
 
-            <div class="article-header">
+            <article class="article-card">
 
+                <div class="article-icon">❄️</div>
 
-                <div class="article-category">
-
-                    📚 ความรู้แอร์เคลื่อนที่
-
-                </div>
-
-
-                <h1>
-                    บทความความรู้แอร์เคลื่อนที่
-                </h1>
-
-
-                <p class="article-intro">
-
-                    รวมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่
-                    ตั้งแต่อาการเสียที่พบบ่อย
-                    ระบบทำความเย็น
-                    ระบบไฟฟ้า
-                    อะไหล่สำคัญ
-                    วิธีดูแลรักษา
-                    และแนวทางตรวจสอบเบื้องต้น
-
-                </p>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 หมวดที่ 1
-                 อาการเสียที่พบบ่อย
-            ================================================= -->
-
-            <section class="article-section">
-
+                <span class="article-category">
+                    อาการเสีย
+                </span>
 
                 <h2>
-                    🔧 อาการเสียที่พบบ่อย
+                    แอร์เคลื่อนที่ไม่เย็น เกิดจากอะไร?
                 </h2>
-
-
-                <p class="section-description">
-
-                    รวมปัญหาที่ผู้ใช้งานแอร์เคลื่อนที่พบได้บ่อย
-                    พร้อมแนวทางสังเกตอาการเบื้องต้น
-
-                </p>
-
-
-                <div class="card-grid">
-
-
-                    <!-- 1 -->
-
-                    <div class="card">
-
-                        <h3>
-                            🧊 แอร์เคลื่อนที่ไม่เย็น
-                        </h3>
-
-                        <p>
-                            เปิดเครื่องแล้วมีลมออก
-                            แต่ห้องไม่เย็น
-                            เกิดจากสาเหตุอะไรได้บ้าง?
-                        </p>
-
-                        <a href="air-not-cold.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 2 -->
-
-                    <div class="card">
-
-                        <h3>
-                            ❄️ แอร์เคลื่อนที่ไม่เย็น
-                        </h3>
-
-                        <p>
-                            เจาะลึกสาเหตุที่ทำให้
-                            แอร์เคลื่อนที่ทำงานแต่ความเย็นไม่เพียงพอ
-                        </p>
-
-                        <a href="portable-air-conditioner-not-cold.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 3 -->
-
-                    <div class="card">
-
-                        <h3>
-                            🔌 แอร์เคลื่อนที่เปิดไม่ติด
-                        </h3>
-
-                        <p>
-                            กดเปิดเครื่องแล้วไม่มีการทำงาน
-                            ควรตรวจสอบจุดใดก่อน?
-                        </p>
-
-                        <a href="portable-air-conditioner-not-start.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 4 -->
-
-                    <div class="card">
-
-                        <h3>
-                            💧 แอร์เคลื่อนที่น้ำหยด
-                        </h3>
-
-                        <p>
-                            มีน้ำหยดหรือน้ำรั่วออกจากตัวเครื่อง
-                            อาจเกิดจากอะไร?
-                        </p>
-
-                        <a href="water-leak.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 5 -->
-
-                    <div class="card">
-
-                        <h3>
-                            💦 แอร์เคลื่อนที่น้ำรั่ว
-                        </h3>
-
-                        <p>
-                            ตรวจสอบสาเหตุของน้ำรั่ว
-                            และระบบระบายน้ำของเครื่อง
-                        </p>
-
-                        <a href="portable-air-conditioner-water-leak.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 6 -->
-
-                    <div class="card">
-
-                        <h3>
-                            🔊 แอร์เคลื่อนที่เสียงดัง
-                        </h3>
-
-                        <p>
-                            เครื่องมีเสียงดัง
-                            เสียงสั่น หรือเสียงผิดปกติ
-                            เกิดจากอะไร?
-                        </p>
-
-                        <a href="loud-noise.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 7 -->
-
-                    <div class="card">
-
-                        <h3>
-                            ⚡ แอร์เคลื่อนที่กินไฟมาก
-                        </h3>
-
-                        <p>
-                            เครื่องใช้ไฟมากกว่าปกติ
-                            มีสาเหตุอะไรบ้าง?
-                        </p>
-
-                        <a href="high-electricity.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 8 -->
-
-                    <div class="card">
-
-                        <h3>
-                            ❄️ น้ำแข็งเกาะคอยล์
-                        </h3>
-
-                        <p>
-                            น้ำแข็งเกาะคอยล์เย็น
-                            เกิดจากอะไรและควรตรวจสอบอย่างไร?
-                        </p>
-
-                        <a href="ice-on-coil.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 9 -->
-
-                    <div class="card">
-
-                        <h3>
-                            🌬️ พัดลมแอร์ไม่หมุน
-                        </h3>
-
-                        <p>
-                            พัดลมไม่หมุน หมุนช้า
-                            หรือมีเสียงผิดปกติ
-                            เกิดจากอะไร?
-                        </p>
-
-                        <a href="fan-not-work.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 10 -->
-
-                    <div class="card">
-
-                        <h3>
-                            ❤️ คอมเพรสเซอร์ไม่ทำงาน
-                        </h3>
-
-                        <p>
-                            พัดลมทำงานแต่คอมเพรสเซอร์ไม่ทำงาน
-                            ควรตรวจสอบอะไร?
-                        </p>
-
-                        <a href="compressor-not-start.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 11 -->
-
-                    <div class="card">
-
-                        <h3>
-                            ❄️ คอมเพรสเซอร์ทำงานแต่ไม่เย็น
-                        </h3>
-
-                        <p>
-                            คอมเพรสเซอร์ทำงาน
-                            แต่แอร์ยังไม่เย็น
-                            เกิดจากสาเหตุอะไร?
-                        </p>
-
-                        <a href="compressor-runs-but-not-cold.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- 12 -->
-
-                    <div class="card">
-
-                        <h3>
-                            🔥 คอมเพรสเซอร์ร้อนผิดปกติ
-                        </h3>
-
-                        <p>
-                            คอมเพรสเซอร์มีความร้อนสูง
-                            หรือหยุดทำงานเป็นช่วง ๆ
-                        </p>
-
-                        <a href="portable-air-conditioner-compressor-overheat.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 หมวดที่ 2
-                 ระบบทำความเย็น
-            ================================================= -->
-
-            <section class="article-section">
-
-
-                <h2>
-                    ❄️ ระบบทำความเย็น
-                </h2>
-
-
-                <p class="section-description">
-
-                    ทำความเข้าใจระบบทำความเย็น
-                    และส่วนสำคัญที่ส่งผลต่อประสิทธิภาพของแอร์เคลื่อนที่
-
-                </p>
-
-
-                <div class="card-grid">
-
-
-                    <div class="card">
-
-                        <h3>
-                            🧊 คอยล์เย็นและน้ำแข็งเกาะคอยล์
-                        </h3>
-
-                        <p>
-                            ทำความเข้าใจคอยล์เย็น
-                            และสาเหตุที่น้ำแข็งสามารถเกาะบนคอยล์ได้
-                        </p>
-
-                        <a href="ice-on-coil.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            ❤️ คอมเพรสเซอร์ทำงานแต่ไม่เย็น
-                        </h3>
-
-                        <p>
-                            คอมเพรสเซอร์ทำงานแล้ว
-                            แต่ความเย็นยังไม่เพียงพอ
-                        </p>
-
-                        <a href="compressor-runs-but-not-cold.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            ❤️ คอมเพรสเซอร์ไม่ทำงาน
-                        </h3>
-
-                        <p>
-                            สาเหตุที่คอมเพรสเซอร์ไม่เริ่มทำงาน
-                            และจุดที่ควรตรวจสอบ
-                        </p>
-
-                        <a href="compressor-not-start.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            🔥 คอมเพรสเซอร์ร้อนเกินไป
-                        </h3>
-
-                        <p>
-                            สาเหตุที่ทำให้คอมเพรสเซอร์
-                            มีความร้อนสูงผิดปกติ
-                        </p>
-
-                        <a href="portable-air-conditioner-compressor-overheat.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 หมวดที่ 3
-                 ระบบไฟฟ้าและอุปกรณ์
-            ================================================= -->
-
-            <section class="article-section">
-
-
-                <h2>
-                    ⚡ ระบบไฟฟ้าและอุปกรณ์
-                </h2>
-
-
-                <p class="section-description">
-
-                    รู้จักอุปกรณ์ไฟฟ้าที่เกี่ยวข้องกับ
-                    การทำงานของแอร์เคลื่อนที่
-                    และอาการเมื่ออุปกรณ์มีปัญหา
-
-                </p>
-
-
-                <div class="card-grid">
-
-
-                    <!-- CAPACITOR -->
-
-                    <div class="card">
-
-                        <h3>
-                            ⚡ คาปาซิเตอร์แอร์เคลื่อนที่
-                        </h3>
-
-                        <p>
-                            คาปาซิเตอร์คืออะไร
-                            ทำหน้าที่อะไร
-                            และมีอาการอย่างไรเมื่อเริ่มเสื่อม
-                        </p>
-
-                        <a href="capacitor.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- FAN -->
-
-                    <div class="card">
-
-                        <h3>
-                            🌬️ มอเตอร์พัดลม
-                        </h3>
-
-                        <p>
-                            มอเตอร์พัดลมทำงานอย่างไร
-                            และอาการพัดลมไม่หมุนเกิดจากอะไร?
-                        </p>
-
-                        <a href="fan-not-work.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- PCB -->
-
-                    <div class="card">
-
-                        <h3>
-                            🧠 แผงวงจร PCB
-                        </h3>
-
-                        <p>
-                            แผงวงจรควบคุมระบบต่าง ๆ
-                            ภายในแอร์เคลื่อนที่
-                        </p>
-
-                        <a href="portable-air-conditioner-not-start.html">
-                            ดูข้อมูลที่เกี่ยวข้อง →
-                        </a>
-
-                    </div>
-
-
-                    <!-- SENSOR -->
-
-                    <div class="card">
-
-                        <h3>
-                            🌡️ เซ็นเซอร์อุณหภูมิ
-                        </h3>
-
-                        <p>
-                            เซ็นเซอร์ตรวจวัดอุณหภูมิ
-                            มีผลต่อการควบคุมเครื่องอย่างไร?
-                        </p>
-
-                        <a href="portable-air-conditioner-not-start.html">
-                            ดูข้อมูลที่เกี่ยวข้อง →
-                        </a>
-
-                    </div>
-
-
-                    <!-- OVERLOAD -->
-
-                    <div class="card">
-
-                        <h3>
-                            🛡️ โอเวอร์โหลด
-                        </h3>
-
-                        <p>
-                            อุปกรณ์ป้องกันคอมเพรสเซอร์
-                            เมื่อมีความร้อนหรือกระแสไฟผิดปกติ
-                        </p>
-
-                        <a href="portable-air-conditioner-compressor-overheat.html">
-                            ดูข้อมูลที่เกี่ยวข้อง →
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 หมวดที่ 4
-                 อะไหล่และส่วนประกอบ
-            ================================================= -->
-
-            <section class="article-section">
-
-
-                <h2>
-                    ⚙️ อะไหล่และส่วนประกอบสำคัญ
-                </h2>
-
-
-                <p class="section-description">
-
-                    ทำความรู้จักส่วนประกอบสำคัญภายใน
-                    แอร์เคลื่อนที่และหน้าที่ของแต่ละชิ้นส่วน
-
-                </p>
-
-
-                <div class="card-grid">
-
-
-                    <div class="card">
-
-                        <h3>
-                            🌬️ มอเตอร์พัดลม
-                        </h3>
-
-                        <p>
-                            ส่วนประกอบที่ช่วยหมุนใบพัด
-                            เพื่อหมุนเวียนอากาศภายในเครื่อง
-                        </p>
-
-                        <a href="fan-not-work.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            ⚡ คาปาซิเตอร์
-                        </h3>
-
-                        <p>
-                            อุปกรณ์ที่ช่วยในการทำงานของมอเตอร์
-                            ตามรูปแบบวงจรของเครื่อง
-                        </p>
-
-                        <a href="capacitor.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            ❤️ คอมเพรสเซอร์
-                        </h3>
-
-                        <p>
-                            หัวใจสำคัญของระบบทำความเย็น
-                            และเป็นส่วนสำคัญในการอัดสารทำความเย็น
-                        </p>
-
-                        <a href="compressor-not-start.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 หมวดที่ 5
-                 วิธีใช้และดูแลรักษา
-            ================================================= -->
-
-            <section class="article-section">
-
-
-                <h2>
-                    🧹 วิธีใช้และดูแลรักษา
-                </h2>
-
-
-                <p class="section-description">
-
-                    วิธีดูแลแอร์เคลื่อนที่
-                    เพื่อช่วยให้เครื่องทำงานได้อย่างเหมาะสม
-                    และลดปัญหาที่อาจเกิดขึ้นจากการใช้งาน
-
-                </p>
-
-
-                <div class="card-grid">
-
-
-                    <!-- FILTER -->
-
-                    <div class="card">
-
-                        <h3>
-                            🧹 การทำความสะอาดแผ่นกรอง
-                        </h3>
-
-                        <p>
-                            แผ่นกรองอากาศสกปรก
-                            สามารถส่งผลต่อการไหลเวียนอากาศ
-                            และประสิทธิภาพการทำความเย็น
-                        </p>
-
-                        <a href="portable-air-conditioner-filter-cleaning.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <!-- EXHAUST -->
-
-                    <div class="card">
-
-                        <h3>
-                            🌬️ การดูแลท่อลมร้อน
-                        </h3>
-
-                        <p>
-                            ตรวจสอบท่อระบายลมร้อน
-                            ไม่ให้พับงอหรือมีสิ่งกีดขวาง
-                        </p>
-
-                        <a href="air-not-cold.html">
-                            ดูข้อมูลที่เกี่ยวข้อง →
-                        </a>
-
-                    </div>
-
-
-                    <!-- WATER -->
-
-                    <div class="card">
-
-                        <h3>
-                            💧 ดูแลระบบน้ำ
-                        </h3>
-
-                        <p>
-                            ตรวจสอบระบบระบายน้ำ
-                            และน้ำที่สะสมในตัวเครื่อง
-                        </p>
-
-                        <a href="water-leak.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 หมวดที่ 6
-                 ตรวจเช็กเบื้องต้น
-            ================================================= -->
-
-            <section class="article-section">
-
-
-                <h2>
-                    🛠️ ตรวจเช็กเบื้องต้น
-                </h2>
-
-
-                <p class="section-description">
-
-                    จุดที่ผู้ใช้งานสามารถสังเกตอาการเบื้องต้น
-                    ก่อนติดต่อช่างเพื่อตรวจสอบเพิ่มเติม
-
-                </p>
-
-
-                <div class="card-grid">
-
-
-                    <div class="card">
-
-                        <h3>
-                            🔍 แอร์ไม่เย็นควรตรวจอะไร?
-                        </h3>
-
-                        <p>
-                            ตรวจสอบแผ่นกรอง
-                            ท่อลมร้อน
-                            การระบายอากาศ
-                            และอาการของเครื่อง
-                        </p>
-
-                        <a href="air-not-cold.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            🌬️ พัดลมไม่หมุน
-                        </h3>
-
-                        <p>
-                            ตรวจสอบอาการพัดลม
-                            และสังเกตเสียงหรือการหมุนผิดปกติ
-                        </p>
-
-                        <a href="fan-not-work.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            ❤️ คอมเพรสเซอร์ไม่ทำงาน
-                        </h3>
-
-                        <p>
-                            เมื่อพัดลมทำงาน
-                            แต่คอมเพรสเซอร์ไม่ทำงาน
-                            ควรตรวจสอบอะไร?
-                        </p>
-
-                        <a href="compressor-not-start.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            ❄️ คอมเพรสเซอร์ทำงานแต่ไม่เย็น
-                        </h3>
-
-                        <p>
-                            คอมเพรสเซอร์ทำงาน
-                            แต่ความเย็นไม่เพียงพอ
-                            ควรตรวจสอบระบบใดบ้าง?
-                        </p>
-
-                        <a href="compressor-runs-but-not-cold.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            🔥 คอมเพรสเซอร์ร้อนผิดปกติ
-                        </h3>
-
-                        <p>
-                            หากคอมเพรสเซอร์ร้อนมาก
-                            หรือหยุดทำงานเป็นช่วง ๆ
-                            ควรตรวจสอบสาเหตุ
-                        </p>
-
-                        <a href="portable-air-conditioner-compressor-overheat.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                    <div class="card">
-
-                        <h3>
-                            💧 น้ำรั่วจากเครื่อง
-                        </h3>
-
-                        <p>
-                            ตรวจสอบถังน้ำ
-                            ท่อน้ำ
-                            และระบบระบายน้ำเบื้องต้น
-                        </p>
-
-                        <a href="portable-air-conditioner-water-leak.html">
-                            อ่านบทความ →
-                        </a>
-
-                    </div>
-
-
-                </div>
-
-            </section>
-
-
-
-            <!-- =================================================
-                 CONTACT
-            ================================================= -->
-
-            <section class="article-contact">
-
-
-                <h2>
-                    ต้องการให้ช่างช่วยตรวจสอบ?
-                </h2>
-
 
                 <p>
-
-                    หากแอร์เคลื่อนที่มีอาการผิดปกติ
-                    สามารถสอบถามอาการเบื้องต้น
-                    กับช่างบอยได้
-
+                    รวมสาเหตุที่ทำให้แอร์เคลื่อนที่เปิดแล้ว
+                    แต่ความเย็นไม่เพียงพอ
+                    พร้อมแนวทางตรวจสอบเบื้องต้น
                 </p>
 
+                <a href="portable-air-conditioner-not-cold.html">
+                    อ่านบทความ →
+                </a>
 
-                <div class="hero-button"
-                     style="justify-content:center;">
-
-
-                    <a href="tel:0805178615"
-                       class="btn btn-primary">
-
-                        📞 โทรหาช่าง
-
-                    </a>
+            </article>
 
 
-                    <a href="https://line.me/R/ti/p/@365jdxhc"
-                       class="btn btn-line"
-                       target="_blank"
-                       rel="noopener noreferrer">
+            <!-- 2 -->
 
-                        💬 LINE
+            <article class="article-card">
 
-                    </a>
+                <div class="article-icon">🔌</div>
+
+                <span class="article-category">
+                    อาการเสีย
+                </span>
+
+                <h2>
+                    แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?
+                </h2>
+
+                <p>
+                    รวมสาเหตุที่ทำให้แอร์เคลื่อนที่เปิดไม่ติด
+                    เครื่องไม่ทำงาน หรือเปิดแล้วตัด
+                    พร้อมแนวทางตรวจสอบเบื้องต้น
+                </p>
+
+                <a href="portable-air-conditioner-not-start.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
 
 
-                </div>
+            <!-- 3 -->
 
-            </section>
+            <article class="article-card">
+
+                <div class="article-icon">💧</div>
+
+                <span class="article-category">
+                    อาการเสีย
+                </span>
+
+                <h2>
+                    แอร์เคลื่อนที่น้ำหยด เกิดจากอะไร?
+                </h2>
+
+                <p>
+                    รวมสาเหตุที่ทำให้แอร์เคลื่อนที่มีน้ำหยด
+                    น้ำรั่ว หรือน้ำไหลออกจากตัวเครื่อง
+                    พร้อมวิธีตรวจสอบเบื้องต้น
+                </p>
+
+                <a href="portable-air-conditioner-water-leak.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
 
 
-        </article>
+            <!-- 4 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">🧊</div>
+
+                <span class="article-category">
+                    อาการเสีย
+                </span>
+
+                <h2>
+                    น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ เกิดจากอะไร?
+                </h2>
+
+                <p>
+                    ทำความเข้าใจสาเหตุที่ทำให้คอยล์เย็น
+                    กลายเป็นน้ำแข็ง
+                    และสิ่งที่ควรตรวจสอบ
+                </p>
+
+                <a href="ice-on-coil.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 5 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">🔊</div>
+
+                <span class="article-category">
+                    อาการเสีย
+                </span>
+
+                <h2>
+                    แอร์เคลื่อนที่เสียงดังผิดปกติ
+                </h2>
+
+                <p>
+                    สาเหตุที่ทำให้แอร์เคลื่อนที่มีเสียงดัง
+                    สั่น หรือมีเสียงผิดปกติ
+                    พร้อมแนวทางตรวจสอบเบื้องต้น
+                </p>
+
+                <a href="loud-noise.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 6 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">⚡</div>
+
+                <span class="article-category">
+                    ระบบไฟฟ้า
+                </span>
+
+                <h2>
+                    แอร์เคลื่อนที่กินไฟมาก เกิดจากอะไร?
+                </h2>
+
+                <p>
+                    สาเหตุที่ทำให้แอร์เคลื่อนที่ใช้ไฟมากกว่าปกติ
+                    และสิ่งที่ควรตรวจสอบ
+                </p>
+
+                <a href="high-electricity.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 7 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">🧰</div>
+
+                <span class="article-category">
+                    ระบบคอมเพรสเซอร์
+                </span>
+
+                <h2>
+                    คอมเพรสเซอร์แอร์เคลื่อนที่เปิดไม่ติด
+                </h2>
+
+                <p>
+                    ตรวจสอบสาเหตุที่คอมเพรสเซอร์ไม่เริ่มทำงาน
+                    และปัญหาที่เกี่ยวข้องกับระบบไฟฟ้า
+                </p>
+
+                <a href="compressor-not-start.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 8 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">❄️</div>
+
+                <span class="article-category">
+                    ระบบคอมเพรสเซอร์
+                </span>
+
+                <h2>
+                    คอมเพรสเซอร์ทำงาน แต่แอร์ไม่เย็น
+                </h2>
+
+                <p>
+                    สาเหตุที่คอมเพรสเซอร์ทำงาน
+                    แต่ระบบทำความเย็นยังไม่สามารถทำความเย็นได้เต็มที่
+                </p>
+
+                <a href="compressor-runs-but-not-cold.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 9 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">🌡️</div>
+
+                <span class="article-category">
+                    ระบบคอมเพรสเซอร์
+                </span>
+
+                <h2>
+                    คอมเพรสเซอร์แอร์เคลื่อนที่ร้อนจัด
+                </h2>
+
+                <p>
+                    ทำความเข้าใจสาเหตุที่คอมเพรสเซอร์ร้อน
+                    และระบบป้องกันที่อาจทำให้เครื่องหยุดทำงาน
+                </p>
+
+                <a href="portable-air-conditioner-compressor-overheat.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 10 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">🌀</div>
+
+                <span class="article-category">
+                    ระบบพัดลม
+                </span>
+
+                <h2>
+                    พัดลมแอร์เคลื่อนที่ไม่ทำงาน
+                </h2>
+
+                <p>
+                    ตรวจสอบสาเหตุที่พัดลมไม่หมุน
+                    แรงลมเบา หรือระบบพัดลมทำงานผิดปกติ
+                </p>
+
+                <a href="fan-not-work.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 11 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">🔌</div>
+
+                <span class="article-category">
+                    อุปกรณ์
+                </span>
+
+                <h2>
+                    คาปาซิเตอร์แอร์เคลื่อนที่ทำหน้าที่อะไร?
+                </h2>
+
+                <p>
+                    ทำความรู้จักคาปาซิเตอร์
+                    และอาการที่อาจพบเมื่อคาปาซิเตอร์เริ่มเสื่อม
+                </p>
+
+                <a href="capacitor.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 12 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">🌡️</div>
+
+                <span class="article-category">
+                    อุปกรณ์
+                </span>
+
+                <h2>
+                    เทอร์มิสเตอร์แอร์เคลื่อนที่คืออะไร?
+                </h2>
+
+                <p>
+                    ทำความรู้จักเทอร์มิสเตอร์
+                    เซนเซอร์วัดอุณหภูมิ
+                    และบทบาทในการควบคุมการทำงานของแอร์เคลื่อนที่
+                </p>
+
+                <a href="thermistor.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 13 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">💧</div>
+
+                <span class="article-category">
+                    การดูแลรักษา
+                </span>
+
+                <h2>
+                    วิธีดูแลและทำความสะอาดฟิลเตอร์แอร์เคลื่อนที่
+                </h2>
+
+                <p>
+                    ฟิลเตอร์สกปรกส่งผลต่อแรงลมและความเย็นอย่างไร
+                    พร้อมแนวทางดูแลเบื้องต้น
+                </p>
+
+                <a href="portable-air-conditioner-filter-cleaning.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 14 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">💦</div>
+
+                <span class="article-category">
+                    ระบบน้ำ
+                </span>
+
+                <h2>
+                    แอร์เคลื่อนที่น้ำรั่วหรือน้ำหยด
+                </h2>
+
+                <p>
+                    ตรวจสอบสาเหตุของน้ำรั่ว น้ำหยด
+                    และปัญหาระบบระบายน้ำของแอร์เคลื่อนที่
+                </p>
+
+                <a href="water-leak.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <!-- 15 -->
+
+            <article class="article-card">
+
+                <div class="article-icon">❄️</div>
+
+                <span class="article-category">
+                    อาการเสีย
+                </span>
+
+                <h2>
+                    แอร์เคลื่อนที่ไม่เย็น ตรวจสอบอะไรบ้าง?
+                </h2>
+
+                <p>
+                    แนวทางตรวจสอบอาการแอร์เคลื่อนที่ไม่เย็น
+                    ตั้งแต่การใช้งานไปจนถึงระบบทำความเย็น
+                </p>
+
+                <a href="air-not-cold.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- NOTE -->
+
+        <div class="article-note">
+
+            <h3>💡 เกี่ยวกับบทความ</h3>
+
+            <p>
+                ช่างบอย ซ่อมแอร์เคลื่อนที่
+                จัดทำบทความความรู้เกี่ยวกับแอร์เคลื่อนที่
+                เพื่อให้ผู้ใช้งานสามารถศึกษาอาการเสีย
+                วิธีดูแลรักษา และความรู้เกี่ยวกับอุปกรณ์ต่าง ๆ
+                ภายในเครื่องได้ง่ายขึ้น
+                โดยจะมีการเพิ่มบทความใหม่อย่างต่อเนื่อง
+            </p>
+
+        </div>
 
     </div>
+
+</section>
+```
 
 </main>
 
-
-
-<!-- =================================================
-     FOOTER
-================================================= -->
-
-<footer>
-
-    <div class="container">
-
-
-        <p>
-            © 2026 ช่างบอยซ่อมแอร์เคลื่อนที่
-        </p>
-
-
-        <p>
-            รับซ่อม ล้าง ตรวจเช็ก
-            และเปลี่ยนอะไหล่แอร์เคลื่อนที่
-            ปทุมธานี
-        </p>
-
-
-    </div>
-
-</footer>
-
-
-
-<!-- =================================================
-     FLOATING CONTACT
-================================================= -->
+<!-- FLOATING CONTACT BUTTONS -->
 
 <div class="floating-contact">
 
+```
+<a href="https://line.me/R/ti/p/@365jdxhc"
+   class="floating-line"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="ติดต่อผ่าน LINE">
+    💬 LINE
+</a>
 
-    <a href="https://line.me/R/ti/p/@365jdxhc"
-       class="floating-line"
-       target="_blank"
-       rel="noopener noreferrer">
-
-        💬 LINE
-
-    </a>
-
-
-    <a href="tel:0805178615"
-       class="floating-phone">
-
-        📞 โทร
-
-    </a>
-
+<a href="tel:0805178615"
+   class="floating-phone"
+   aria-label="โทรหาช่างบอย">
+    📞 โทรหาเรา
+</a>
+```
 
 </div>
 
+<!-- BACK HOME -->
 
+<div class="back-home">
 
-<!-- =================================================
-     JAVASCRIPT
-================================================= -->
+```
+<a href="index.html">
+    ← กลับหน้าแรก
+</a>
+```
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+```
+<div class="container">
+
+    <p>
+        © 2026 ช่างบอยซ่อมแอร์เคลื่อนที่
+    </p>
+
+</div>
+```
+
+</footer>
 
 <script src="script.js"></script>
 
-
 </body>
-
 </html>
