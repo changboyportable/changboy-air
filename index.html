@@ -7,31 +7,31 @@
 
 <title>ช่างบอย ซ่อมแอร์เคลื่อนที่ | รับซ่อม ล้าง ตรวจเช็ก ทุกยี่ห้อ ทั่วประเทศ</title>
 
-<meta name="description" content="ช่างบอย ซ่อมแอร์เคลื่อนที่ รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ วิเคราะห์อาการเสียตามจริง พร้อมให้คำแนะนำก่อนซ่อม กรุงเทพฯ ปริมณฑล ปทุมธานี และต่างจังหวัด">
-
-<meta name="keywords" content="ซ่อมแอร์เคลื่อนที่, ช่างซ่อมแอร์เคลื่อนที่, ล้างแอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, ซ่อมบอร์ดแอร์เคลื่อนที่, ซ่อมแอร์เคลื่อนที่ทั่วประเทศ, ซ่อมแอร์เคลื่อนที่กรุงเทพ, ซ่อมแอร์เคลื่อนที่ปทุมธานี, คลองหลวง">
-
+<meta name="description" content="ช่างบอย ซ่อมแอร์เคลื่อนที่ รับซ่อม ล้าง ตรวจเช็ก แอร์เคลื่อนที่ทุกยี่ห้อ ให้คำแนะนำเรื่องแอร์เคลื่อนที่ อะไหล่ ระบบไฟ ระบบทำความเย็น และอาการเสียต่าง ๆ">
+<meta name="keywords" content="ช่างบอย ซ่อมแอร์เคลื่อนที่, ซ่อมแอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, แอร์เคลื่อนที่เปิดไม่ติด, ล้างแอร์เคลื่อนที่, ตรวจเช็กแอร์เคลื่อนที่, ซ่อมแอร์ ปทุมธานี">
 <meta name="author" content="ช่างบอย ซ่อมแอร์เคลื่อนที่">
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow">
-<meta name="theme-color" content="#0b74de">
+<meta name="theme-color" content="#0b6efd">
 
 <link rel="canonical" href="https://changboyportable.github.io/changboy-air/">
+
 <link rel="icon" type="image/png" href="./logo.png">
 <link rel="apple-touch-icon" href="./logo.png">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="ช่างบอย ซ่อมแอร์เคลื่อนที่">
-<meta property="og:description" content="รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ">
+<meta property="og:description" content="รับซ่อม ล้าง ตรวจเช็ก แอร์เคลื่อนที่ทุกยี่ห้อ พร้อมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่">
 <meta property="og:url" content="https://changboyportable.github.io/changboy-air/">
 <meta property="og:image" content="https://changboyportable.github.io/changboy-air/hero-changboy.png">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="ช่างบอย ซ่อมแอร์เคลื่อนที่">
-<meta name="twitter:description" content="รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ">
+<meta name="twitter:description" content="รับซ่อม ล้าง ตรวจเช็ก แอร์เคลื่อนที่ทุกยี่ห้อ">
 <meta name="twitter:image" content="https://changboyportable.github.io/changboy-air/hero-changboy.png">
 
 <style>
+
 * {
     box-sizing: border-box;
 }
@@ -43,9 +43,14 @@ html {
 body {
     margin: 0;
     font-family: Arial, "Noto Sans Thai", Tahoma, sans-serif;
+    color: #172033;
+    background: #ffffff;
     line-height: 1.7;
-    color: #1f2937;
-    background: #f5f9ff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -53,25 +58,22 @@ a {
     text-decoration: none;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
 .container {
-    width: min(1180px, 92%);
+    width: min(1180px, calc(100% - 32px));
     margin: 0 auto;
 }
+
+/* =========================
+   HEADER
+========================= */
 
 header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255,255,255,.97);
-    border-bottom: 1px solid #e5e7eb;
-    box-shadow: 0 3px 18px rgba(15,23,42,.08);
-    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.97);
+    border-bottom: 1px solid #e7edf5;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.05);
 }
 
 .header-container {
@@ -79,7 +81,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 22px;
+    gap: 20px;
 }
 
 .brand {
@@ -87,39 +89,35 @@ header {
     align-items: center;
     gap: 12px;
     min-width: 0;
+    transition: transform 0.25s ease;
+}
+
+.brand:hover {
+    transform: translateY(-2px);
 }
 
 .brand img {
-    width: 60px;
-    height: 60px;
+    width: 58px;
+    height: 58px;
     object-fit: contain;
-    flex: 0 0 auto;
+    flex-shrink: 0;
 }
 
 .brand-text {
+    display: flex;
+    flex-direction: column;
     line-height: 1.25;
 }
 
 .brand-name {
-    font-size: 1.08rem;
+    font-size: 20px;
     font-weight: 800;
-    color: #075985;
-    transition: color .25s ease;
+    color: #075ecf;
 }
 
 .brand-sub {
-    font-size: .78rem;
-    color: #64748b;
-    margin-top: 4px;
-    transition: color .25s ease;
-}
-
-.brand:hover .brand-name {
-    color: #0ea5e9;
-}
-
-.brand:hover .brand-sub {
-    color: #0b74de;
+    font-size: 12px;
+    color: #667085;
 }
 
 nav {
@@ -132,323 +130,438 @@ nav {
 
 nav a {
     position: relative;
-    padding: 9px 13px;
+    padding: 9px 12px;
     border-radius: 10px;
+    font-size: 14px;
     font-weight: 700;
-    font-size: .92rem;
-    color: #334155;
-    transition: color .25s ease, background .25s ease, transform .25s ease;
+    color: #344054;
+    transition: all 0.25s ease;
 }
 
 nav a::after {
     content: "";
     position: absolute;
-    left: 13px;
-    right: 13px;
-    bottom: 5px;
+    left: 12px;
+    right: 12px;
+    bottom: 4px;
     height: 2px;
-    border-radius: 10px;
-    background: #0ea5e9;
+    background: #0b6efd;
     transform: scaleX(0);
     transform-origin: center;
-    transition: transform .25s ease;
+    transition: transform 0.25s ease;
 }
 
 nav a:hover {
-    color: #075985;
-    background: #eaf6ff;
-    transform: translateY(-1px);
+    color: #075ecf;
+    background: #eef6ff;
+    transform: translateY(-2px);
 }
 
 nav a:hover::after {
     transform: scaleX(1);
 }
 
+/* =========================
+   HERO
+========================= */
+
 .hero {
-    padding: 70px 0;
     background:
-        radial-gradient(circle at 90% 10%, rgba(14,165,233,.18), transparent 32%),
-        radial-gradient(circle at 10% 90%, rgba(11,116,222,.08), transparent 30%),
-        linear-gradient(135deg, #eff8ff 0%, #ffffff 55%, #eaf6ff 100%);
+        radial-gradient(circle at top right, rgba(11,110,253,0.12), transparent 35%),
+        linear-gradient(135deg, #f7fbff 0%, #ffffff 60%, #eef7ff 100%);
+    padding: 72px 0 78px;
+    overflow: hidden;
 }
 
+/*
+   จุดสำคัญ:
+   บนคอมพิวเตอร์ Hero เป็น 2 คอลัมน์
+   ซ้าย = ข้อความ
+   ขวา = รูป
+*/
 .hero-grid {
+    width: min(1180px, calc(100% - 32px));
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     align-items: center;
-    gap: 48px;
+    column-gap: 64px;
+    row-gap: 35px;
 }
 
 .hero-content {
     min-width: 0;
+    text-align: left;
 }
 
 .hero h1 {
     margin: 0 0 18px;
-    font-size: clamp(2rem, 4vw, 3.3rem);
-    line-height: 1.2;
-    color: #075985;
-    transition: color .25s ease;
+    font-size: clamp(34px, 4vw, 58px);
+    line-height: 1.18;
+    color: #0b3b78;
+    font-weight: 900;
+    transition: color 0.25s ease, transform 0.25s ease;
 }
 
 .hero h1:hover {
-    color: #0b74de;
+    color: #075ecf;
+    transform: translateY(-2px);
 }
 
 .hero p {
     margin: 0 0 18px;
-    font-size: 1.08rem;
-    color: #475569;
+    font-size: 18px;
+    color: #475467;
 }
 
 .hero-highlight {
-    margin: 20px 0;
-    padding: 15px 18px;
-    border-left: 5px solid #0ea5e9;
-    background: #ffffff;
+    display: inline-block;
+    margin: 0 0 25px;
+    padding: 10px 17px;
     border-radius: 12px;
-    box-shadow: 0 7px 25px rgba(15,23,42,.07);
-    font-weight: 700;
-    color: #075985;
-    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    background: #e8f3ff;
+    color: #075ecf;
+    font-weight: 800;
+    transition: all 0.25s ease;
 }
 
 .hero-highlight:hover {
-    transform: translateY(-3px);
-    border-color: #0b74de;
-    box-shadow: 0 12px 30px rgba(11,116,222,.12);
+    background: #d8ebff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(11,110,253,0.12);
 }
 
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
-    margin-top: 22px;
 }
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
-    min-height: 46px;
-    padding: 11px 18px;
-    border-radius: 11px;
+    min-height: 48px;
+    padding: 12px 22px;
+    border-radius: 12px;
     font-weight: 800;
-    border: 1px solid transparent;
-    transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
-}
-
-.btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 22px rgba(15,23,42,.15);
+    border: 2px solid transparent;
+    transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 .btn-primary {
-    background: #0b74de;
-    color: #fff;
+    background: #0b6efd;
+    color: #ffffff;
 }
 
 .btn-primary:hover {
-    background: #075985;
+    background: #075ecf;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(11,110,253,0.25);
 }
 
 .btn-line {
-    background: #16a34a;
-    color: #fff;
+    background: #15b86a;
+    color: #ffffff;
 }
 
 .btn-line:hover {
-    background: #15803d;
+    background: #0d9e59;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(21,184,106,0.25);
 }
 
 .btn-light {
-    background: #fff;
-    border-color: #cbd5e1;
-    color: #075985;
+    background: #ffffff;
+    border-color: #d7e2ef;
+    color: #175ea8;
 }
 
 .btn-light:hover {
-    background: #eaf6ff;
-    border-color: #0ea5e9;
-    color: #0b74de;
+    background: #eef6ff;
+    border-color: #0b6efd;
+    color: #075ecf;
+    transform: translateY(-3px);
 }
 
 .hero-image {
-    position: relative;
-    background: #fff;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 18px 50px rgba(15,23,42,.14);
-    transition: transform .35s ease, box-shadow .35s ease;
-}
-
-.hero-image:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 25px 60px rgba(11,116,222,.18);
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 .hero-image img {
+    display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
+    max-width: 540px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+    transition: transform 0.35s ease, filter 0.35s ease;
 }
 
+.hero-image:hover img {
+    transform: translateY(-7px) scale(1.015);
+    filter: drop-shadow(0 18px 28px rgba(20,65,110,0.18));
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
 section {
-    padding: 68px 0;
+    padding: 72px 0;
 }
 
 .section-title {
     text-align: center;
+    margin: 0 auto 42px;
+    max-width: 850px;
+}
+
+.section-title h2 {
     margin: 0 0 10px;
-    color: #075985;
-    font-size: clamp(1.7rem, 3vw, 2.35rem);
-    transition: color .25s ease, transform .25s ease;
+    font-size: clamp(28px, 3vw, 40px);
+    color: #0b3b78;
+    line-height: 1.25;
+    transition: color 0.25s ease;
 }
 
-.section-title:hover {
-    color: #0b74de;
-    transform: translateY(-2px);
+.section-title h2:hover {
+    color: #075ecf;
 }
 
-.section-lead {
-    max-width: 760px;
-    margin: 0 auto 35px;
-    text-align: center;
-    color: #64748b;
+.section-title p {
+    margin: 0;
+    color: #667085;
 }
+
+/* =========================
+   CARDS
+========================= */
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
 }
 
 .card {
-    background: #fff;
-    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    border: 1px solid #e4ebf3;
     border-radius: 18px;
-    padding: 24px;
-    box-shadow: 0 7px 24px rgba(15,23,42,.05);
-    transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+    padding: 28px;
+    box-shadow: 0 8px 25px rgba(16,24,40,0.05);
+    transition: all 0.28s ease;
 }
 
 .card:hover {
     transform: translateY(-7px);
-    border-color: #7dd3fc;
-    box-shadow: 0 16px 35px rgba(15,23,42,.11);
+    border-color: #8fc1ff;
+    box-shadow: 0 18px 38px rgba(16,24,40,0.11);
 }
 
 .card-icon {
-    font-size: 2rem;
-    margin-bottom: 8px;
-    transition: transform .25s ease;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 17px;
+    border-radius: 15px;
+    background: #eaf4ff;
+    font-size: 28px;
+    transition: transform 0.25s ease, background 0.25s ease;
 }
 
 .card:hover .card-icon {
-    transform: scale(1.12);
+    transform: scale(1.08) rotate(-2deg);
+    background: #dceeff;
 }
 
 .card h3 {
     margin: 0 0 9px;
-    color: #075985;
-    font-size: 1.15rem;
-    transition: color .25s ease;
+    font-size: 20px;
+    color: #123d6b;
+    transition: color 0.25s ease;
 }
 
 .card:hover h3 {
-    color: #0b74de;
+    color: #075ecf;
 }
 
 .card p {
     margin: 0;
-    color: #64748b;
+    color: #667085;
 }
 
+/* =========================
+   COVERAGE
+========================= */
+
 .coverage {
-    background: #eaf6ff;
+    background: #f6faff;
 }
 
 .coverage-box {
-    background: #fff;
-    border-radius: 18px;
-    padding: 30px;
-    text-align: center;
-    box-shadow: 0 8px 30px rgba(15,23,42,.06);
-    transition: box-shadow .28s ease, transform .28s ease;
+    padding: 32px;
+    border-radius: 22px;
+    background: #ffffff;
+    border: 1px solid #dce8f5;
+    box-shadow: 0 10px 30px rgba(16,24,40,0.05);
+    transition: all 0.3s ease;
 }
 
 .coverage-box:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(15,23,42,.1);
+    box-shadow: 0 18px 38px rgba(16,24,40,0.09);
+    border-color: #9bc8ff;
 }
 
 .coverage-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 12px;
+    justify-content: center;
 }
 
 .coverage-item {
-    padding: 10px 15px;
-    background: #f0f9ff;
-    border: 1px solid #bae6fd;
+    padding: 10px 18px;
     border-radius: 999px;
-    color: #075985;
-    font-weight: 700;
-    transition: background .25s ease, color .25s ease, transform .25s ease;
+    background: #eef6ff;
+    color: #075ecf;
+    font-weight: 800;
+    transition: all 0.25s ease;
 }
 
 .coverage-item:hover {
-    background: #0b74de;
-    color: #fff;
-    transform: translateY(-2px);
+    background: #0b6efd;
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(11,110,253,0.2);
 }
 
-.works-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* =========================
+   ARTICLES
+========================= */
+
+.articles {
+    background: #ffffff;
 }
 
-.works-card .btn {
-    margin-top: 18px;
-    width: 100%;
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
 }
 
 .article-card {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    background: #ffffff;
+    border: 1px solid #e3eaf2;
+    border-radius: 16px;
+    padding: 23px;
+    box-shadow: 0 7px 22px rgba(16,24,40,0.04);
+    transition: all 0.28s ease;
 }
 
-.article-card .read-more {
-    display: inline-block;
-    margin-top: 16px;
-    color: #0b74de;
+.article-card:hover {
+    transform: translateY(-6px);
+    border-color: #9bc8ff;
+    box-shadow: 0 16px 32px rgba(16,24,40,0.1);
+}
+
+.article-card h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #123d6b;
+}
+
+.article-card p {
+    margin: 0 0 18px;
+    color: #667085;
+    flex: 1;
+}
+
+.read-more {
+    color: #0b6efd;
     font-weight: 800;
-    transition: color .25s ease, transform .25s ease;
+    transition: color 0.2s ease, transform 0.2s ease;
 }
 
-.article-card .read-more:hover {
-    color: #075985;
-    text-decoration: underline;
+.read-more:hover {
+    color: #064ca8;
     transform: translateX(4px);
 }
 
 .more-box {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .more-box .btn {
-    margin: 5px;
+    margin: 0 auto;
 }
 
+/* =========================
+   REVIEWS
+========================= */
+
+.reviews {
+    background: #f8fbff;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.review-card {
+    background: #ffffff;
+    border: 1px solid #e1e9f2;
+    border-radius: 18px;
+    padding: 26px;
+    box-shadow: 0 8px 24px rgba(16,24,40,0.05);
+    transition: all 0.28s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 17px 35px rgba(16,24,40,0.1);
+    border-color: #9bc8ff;
+}
+
+.stars {
+    color: #f59e0b;
+    font-size: 21px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.review-card p {
+    color: #475467;
+    margin: 0 0 14px;
+}
+
+.review-name {
+    font-weight: 800;
+    color: #123d6b;
+}
+
+/* =========================
+   FAQ
+========================= */
+
 .faq {
-    background: #f8fafc;
+    background: #ffffff;
 }
 
 .faq-list {
@@ -457,200 +570,256 @@ section {
 }
 
 details {
-    background: #fff;
-    border: 1px solid #e2e8f0;
-    border-radius: 13px;
-    margin-bottom: 12px;
-    overflow: hidden;
-    transition: border-color .25s ease, box-shadow .25s ease;
+    background: #ffffff;
+    border: 1px solid #dfe7f0;
+    border-radius: 14px;
+    margin-bottom: 13px;
+    padding: 0 20px;
+    transition: all 0.25s ease;
 }
 
 details:hover {
-    border-color: #7dd3fc;
-    box-shadow: 0 8px 24px rgba(15,23,42,.07);
+    border-color: #91c2ff;
+    box-shadow: 0 8px 22px rgba(16,24,40,0.06);
 }
 
 details[open] {
-    border-color: #38bdf8;
+    border-color: #0b6efd;
+    box-shadow: 0 10px 25px rgba(11,110,253,0.08);
 }
 
 summary {
     cursor: pointer;
-    padding: 17px 20px;
+    list-style: none;
+    padding: 18px 0;
     font-weight: 800;
-    color: #075985;
-    transition: color .25s ease, background .25s ease;
+    color: #123d6b;
+}
+
+summary::-webkit-details-marker {
+    display: none;
 }
 
 summary:hover {
-    color: #0b74de;
-    background: #f0f9ff;
+    color: #075ecf;
 }
 
 details p {
-    padding: 0 20px 18px;
     margin: 0;
-    color: #475569;
+    padding: 0 0 20px;
+    color: #667085;
+}
+
+/* =========================
+   MAP
+========================= */
+
+.location {
+    background: #f6faff;
 }
 
 .map-box {
     overflow: hidden;
-    border-radius: 18px;
-    box-shadow: 0 8px 30px rgba(15,23,42,.08);
-    background: #fff;
-    transition: transform .28s ease, box-shadow .28s ease;
+    border-radius: 20px;
+    border: 1px solid #dce7f2;
+    background: #ffffff;
+    box-shadow: 0 10px 28px rgba(16,24,40,0.06);
+    transition: all 0.3s ease;
 }
 
 .map-box:hover {
     transform: translateY(-4px);
-    box-shadow: 0 15px 35px rgba(15,23,42,.12);
+    box-shadow: 0 18px 38px rgba(16,24,40,0.1);
 }
 
 .map-box iframe {
-    width: 100%;
-    min-height: 360px;
-    border: 0;
     display: block;
+    width: 100%;
+    height: 430px;
+    border: 0;
 }
+
+.map-info {
+    padding: 25px;
+    text-align: center;
+}
+
+.map-info strong {
+    color: #123d6b;
+}
+
+/* =========================
+   CONTACT
+========================= */
 
 .contact {
-    background: linear-gradient(135deg, #075985, #0b74de);
-    color: #fff;
+    background: linear-gradient(135deg, #075ecf, #0b6efd);
+    color: #ffffff;
 }
 
-.contact .section-title,
-.contact .section-lead {
-    color: #fff;
+.contact .section-title h2,
+.contact .section-title p {
+    color: #ffffff;
 }
 
 .contact-box {
-    max-width: 850px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
 }
 
 .contact-info {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 10px 22px;
-    margin: 25px 0;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .contact-info a {
-    font-weight: 700;
-    transition: color .25s ease, transform .25s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 12px 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.13);
+    border: 1px solid rgba(255,255,255,0.3);
+    color: #ffffff;
+    font-weight: 800;
+    transition: all 0.25s ease;
 }
 
 .contact-info a:hover {
-    color: #bae6fd;
-    transform: translateY(-2px);
+    background: #ffffff;
+    color: #075ecf;
+    transform: translateY(-3px);
 }
 
-.contact-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.contact .btn-light {
-    background: #fff;
-    color: #075985;
-    border: none;
-}
+/* =========================
+   FOOTER
+========================= */
 
 footer {
-    background: #0f172a;
-    color: #cbd5e1;
-    padding: 35px 0;
+    background: #071a30;
+    color: #d0d5dd;
+    padding: 40px 0 90px;
 }
 
-.footer-grid {
+.footer-content {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .footer-brand {
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 5px;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 19px;
 }
 
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px 15px;
+    gap: 8px;
 }
 
 .footer-links a {
-    transition: color .25s ease, transform .25s ease;
+    padding: 7px 10px;
+    border-radius: 8px;
+    transition: all 0.25s ease;
 }
 
 .footer-links a:hover {
-    color: #38bdf8;
-    transform: translateY(-1px);
+    color: #ffffff;
+    background: rgba(255,255,255,0.1);
 }
 
-.copyright {
-    margin-top: 20px;
-    padding-top: 18px;
-    border-top: 1px solid rgba(255,255,255,.12);
-    text-align: center;
-    font-size: .9rem;
-}
+/* =========================
+   FLOATING BUTTONS
+========================= */
 
 .float-buttons {
     position: fixed;
     right: 18px;
     bottom: 18px;
-    z-index: 1100;
+    z-index: 1200;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .float-btn {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
+    width: 54px;
+    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    font-size: 1.35rem;
-    box-shadow: 0 7px 20px rgba(0,0,0,.2);
-    transition: transform .25s ease, box-shadow .25s ease;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 24px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+    transition: all 0.25s ease;
 }
 
 .float-btn:hover {
-    transform: scale(1.1) translateY(-2px);
-    box-shadow: 0 12px 28px rgba(0,0,0,.25);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 13px 28px rgba(0,0,0,0.25);
 }
 
 .float-phone {
-    background: #0b74de;
+    background: #0b6efd;
 }
 
 .float-line {
-    background: #16a34a;
+    background: #15b86a;
 }
 
-@media (max-width: 950px) {
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+
     .header-container {
         flex-direction: column;
-        padding: 10px 0;
+        justify-content: center;
+        padding: 12px 0;
     }
 
     nav {
         justify-content: center;
     }
 
+    .cards,
+    .article-grid,
+    .review-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
     .hero-grid {
+        column-gap: 40px;
+    }
+}
+
+@media (max-width: 950px) {
+
+    /*
+       มือถือและแท็บเล็ต:
+       เปลี่ยน Hero เป็นบน-ล่าง
+       เพื่อไม่ให้ข้อความกับรูปเบียดกัน
+    */
+
+    .hero {
+        padding: 55px 0 60px;
+    }
+
+    .hero-grid {
+        width: min(720px, calc(100% - 32px));
         grid-template-columns: 1fr;
-        gap: 30px;
+        gap: 35px;
+        text-align: center;
     }
 
     .hero-content {
@@ -661,96 +830,101 @@ footer {
         justify-content: center;
     }
 
-    .cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-links {
+    .hero-image {
         justify-content: center;
-    }
-}
-
-@media (max-width: 600px) {
-    .container {
-        width: min(94%, 1180px);
-    }
-
-    .hero {
-        padding: 45px 0;
-    }
-
-    section {
-        padding: 48px 0;
-    }
-
-    .cards {
-        grid-template-columns: 1fr;
-    }
-
-    .brand-name {
-        font-size: .98rem;
-    }
-
-    .brand-sub {
-        font-size: .72rem;
-    }
-
-    nav a {
-        font-size: .83rem;
-        padding: 7px 9px;
-    }
-
-    .hero p {
-        font-size: 1rem;
     }
 
     .hero-image img {
-        aspect-ratio: 4 / 3;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .container {
+        width: min(100% - 24px, 1180px);
+    }
+
+    .brand-name {
+        font-size: 18px;
+    }
+
+    .brand-sub {
+        font-size: 11px;
+    }
+
+    .brand img {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav {
+        gap: 2px;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+
+    section {
+        padding: 55px 0;
+    }
+
+    .cards,
+    .article-grid,
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .coverage-box {
+        padding: 22px 16px;
+    }
+
+    .map-box iframe {
+        height: 350px;
     }
 
     .float-buttons {
         right: 12px;
         bottom: 12px;
     }
-}
 
-@media (max-width: 380px) {
-    nav {
-        gap: 2px;
-    }
-
-    nav a {
-        padding: 6px 7px;
-        font-size: .78rem;
-    }
-
-    .hero-buttons,
-    .contact-buttons {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
+    .float-btn {
+        width: 50px;
+        height: 50px;
     }
 }
+
 </style>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "@id": "https://changboyportable.github.io/changboy-air/#business",
   "name": "ช่างบอย ซ่อมแอร์เคลื่อนที่",
   "image": [
     "https://changboyportable.github.io/changboy-air/logo.png",
     "https://changboyportable.github.io/changboy-air/hero-changboy.png"
   ],
-  "description": "รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ วิเคราะห์อาการเสียตามจริง พร้อมให้คำแนะนำก่อนซ่อม",
+  "description": "รับซ่อม ล้าง ตรวจเช็ก แอร์เคลื่อนที่ทุกยี่ห้อ พร้อมให้ความรู้เกี่ยวกับระบบแอร์เคลื่อนที่",
   "url": "https://changboyportable.github.io/changboy-air/",
   "telephone": "+66805178615",
   "priceRange": "$$",
@@ -760,12 +934,12 @@ footer {
       "name": "Thailand"
     },
     {
-      "@type": "City",
-      "name": "Bangkok"
+      "@type": "AdministrativeArea",
+      "name": "Pathum Thani"
     },
     {
       "@type": "AdministrativeArea",
-      "name": "Pathum Thani"
+      "name": "Bangkok"
     },
     {
       "@type": "AdministrativeArea",
@@ -784,8 +958,8 @@ footer {
   },
   "sameAs": [
     "https://www.facebook.com/videoair1",
-    "https://www.tiktok.com/@changboyair",
-    "https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่"
+    "https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่",
+    "https://www.tiktok.com/@changboyair"
   ]
 }
 </script>
@@ -806,66 +980,66 @@ footer {
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "ช่างบอยรับซ่อมแอร์เคลื่อนที่รุ่นไหนและยี่ห้ออะไรบ้าง?",
+      "name": "แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "รับตรวจเช็กและซ่อมแอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ โดยจะวิเคราะห์อาการและตรวจสอบสาเหตุก่อนแนะนำแนวทางซ่อม"
+        "text": "อาจเกิดจากระบบไฟ ฟิวส์ แผงวงจร รีเลย์ คาปาซิเตอร์ หรือระบบป้องกันของเครื่อง ควรตรวจสอบตามขั้นตอนอย่างเป็นระบบ"
       }
     },
     {
       "@type": "Question",
-      "name": "ช่างบอยรับซ่อมแอร์เคลื่อนที่พื้นที่ไหนบ้าง?",
+      "name": "แอร์เคลื่อนที่เปิดแล้วแต่ไม่เย็นเกิดจากอะไร",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "รับงานแอร์เคลื่อนที่ทั่วประเทศ รวมกรุงเทพฯ ปริมณฑล ปทุมธานี และต่างจังหวัด"
+        "text": "อาจเกิดจากแผ่นกรองอากาศสกปรก ทางลมระบายความร้อนไม่ดี น้ำยา ระบบคอมเพรสเซอร์ หรือเซ็นเซอร์"
       }
     },
     {
       "@type": "Question",
-      "name": "แอร์เคลื่อนที่ไม่เย็นซ่อมได้ไหม?",
+      "name": "แอร์เคลื่อนที่มีน้ำหยดเกิดจากอะไร",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "แอร์เคลื่อนที่ไม่เย็นสามารถตรวจเช็กและซ่อมได้ในหลายกรณี แต่ต้องตรวจหาสาเหตุก่อน"
+        "text": "อาจเกิดจากถังน้ำเต็ม ท่อน้ำทิ้งอุดตัน เครื่องวางไม่สมดุล หรือมีน้ำแข็งเกาะคอยล์แล้วละลาย"
       }
     },
     {
       "@type": "Question",
-      "name": "แอร์เคลื่อนที่เปิดติดแต่คอมเพรสเซอร์ไม่ทำงานเกิดจากอะไร?",
+      "name": "ควรล้างแผ่นกรองแอร์เคลื่อนที่บ่อยแค่ไหน",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "อาจเกิดจากคาปาซิเตอร์ รีเลย์ ระบบควบคุม แผงวงจร เซนเซอร์ อุปกรณ์ป้องกันคอมเพรสเซอร์ หรือคอมเพรสเซอร์เอง"
+        "text": "โดยทั่วไปควรตรวจและทำความสะอาดทุก 2 ถึง 4 สัปดาห์ ขึ้นอยู่กับฝุ่นและระยะเวลาการใช้งาน"
       }
     },
     {
       "@type": "Question",
-      "name": "แอร์เคลื่อนที่มีน้ำหยดต้องเปลี่ยนอะไหล่ไหม?",
+      "name": "แอร์เคลื่อนที่ควรตั้งอุณหภูมิเท่าไร",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ไม่จำเป็นต้องเปลี่ยนอะไหล่ทุกกรณี น้ำหยดอาจเกิดจากถาดน้ำ ท่อน้ำทิ้ง ระบบระบายน้ำ ปั๊มน้ำ หรือสิ่งสกปรกภายในเครื่อง"
+        "text": "โดยทั่วไปสามารถเริ่มที่ประมาณ 25 ถึง 26 องศาเซลเซียส แล้วปรับตามความรู้สึกและสภาพห้อง"
       }
     },
     {
       "@type": "Question",
-      "name": "แอร์เคลื่อนที่เปิดติดแล้วดับเองเกิดจากอะไร?",
+      "name": "ทำไมแอร์เคลื่อนที่กินไฟมาก",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "อาจเกิดจากระบบป้องกันความร้อนสูง เซนเซอร์ ระบบไฟฟ้า แผงวงจร พัดลม หรือคอมเพรสเซอร์"
+        "text": "อาจมาจากกำลังเครื่อง การตั้งอุณหภูมิต่ำเกินไป การระบายความร้อนไม่ดี แผ่นกรองสกปรก หรือระบบทำความเย็นทำงานหนัก"
       }
     },
     {
       "@type": "Question",
-      "name": "แอร์เคลื่อนที่มีเสียงดังผิดปกติเกิดจากอะไร?",
+      "name": "ท่อระบายลมร้อนมีผลต่อความเย็นหรือไม่",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "เสียงดังอาจเกิดจากพัดลม มอเตอร์ ลูกปืน ชิ้นส่วนหลวม การสั่นสะเทือน หรือคอมเพรสเซอร์"
+        "text": "มีผลมาก หากท่อร้อนรั่ว ยาวเกินไป หักงอ หรือระบายลมไม่ดี จะทำให้เครื่องทำงานหนักและห้องเย็นช้าลง"
       }
     },
     {
       "@type": "Question",
-      "name": "แอร์เคลื่อนที่น้ำแข็งเกาะคอยล์เกิดจากอะไร?",
+      "name": "แอร์เคลื่อนที่เสียงดังผิดปกติเกิดจากอะไร",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "น้ำแข็งเกาะคอยล์อาจเกี่ยวข้องกับลมผ่านคอยล์ไม่เพียงพอ แผ่นกรองสกปรก พัดลม ระบบทำความเย็น หรือเซนเซอร์"
+        "text": "อาจเกิดจากพัดลม มอเตอร์ คอมเพรสเซอร์ ชิ้นส่วนหลวม หรือเครื่องวางบนพื้นที่ไม่เรียบ"
       }
     }
   ]
@@ -880,21 +1054,21 @@ footer {
     <div class="container header-container">
 
 ```
-    <a class="brand" href="./index.html" aria-label="ช่างบอย ซ่อมแอร์เคลื่อนที่ หน้าแรก">
-        <img src="./logo.png" alt="โลโก้ ช่างบอย ซ่อมแอร์เคลื่อนที่" width="60" height="60">
-        <div class="brand-text">
-            <div class="brand-name">ช่างบอย ซ่อมแอร์เคลื่อนที่</div>
-            <div class="brand-sub">ปทุมธานี • รับซ่อมทั่วประเทศ</div>
-        </div>
+    <a class="brand" href="./index.html">
+        <img src="./logo.png" alt="โลโก้ ช่างบอย ซ่อมแอร์เคลื่อนที่">
+        <span class="brand-text">
+            <span class="brand-name">ช่างบอย ซ่อมแอร์เคลื่อนที่</span>
+            <span class="brand-sub">รับซ่อม ล้าง ตรวจเช็ก แอร์เคลื่อนที่</span>
+        </span>
     </a>
 
     <nav aria-label="เมนูหลัก">
         <a href="./index.html">หน้าแรก</a>
         <a href="#services">บริการ</a>
         <a href="#articles">บทความ</a>
-        <a href="#faq">FAQ</a>
-        <a href="#location">แผนที่</a>
-        <a href="#contact">ติดต่อ</a>
+        <a href="#reviews">รีวิว</a>
+        <a href="#faq">คำถามที่พบบ่อย</a>
+        <a href="#location">ติดต่อ</a>
     </nav>
 
 </div>
@@ -905,7 +1079,7 @@ footer {
 <main>
 
 <section class="hero">
-    <div class="container hero-grid">
+    <div class="hero-grid">
 
 ```
     <div class="hero-content">
@@ -913,13 +1087,12 @@ footer {
         <h1>ช่างบอย ซ่อมแอร์เคลื่อนที่</h1>
 
         <p>
-            รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่
-            ทุกรุ่นทุกยี่ห้อ วิเคราะห์อาการเสียตามจริง
-            พร้อมให้คำแนะนำก่อนซ่อม
+            รับซ่อม ล้าง ตรวจเช็ก และวิเคราะห์อาการเสีย
+            แอร์เคลื่อนที่ทุกยี่ห้อ
         </p>
 
         <div class="hero-highlight">
-            📍 รับงานแอร์เคลื่อนที่ทั่วประเทศ กรุงเทพฯ ปริมณฑล ปทุมธานี และต่างจังหวัด
+            ดูแลระบบแอร์เคลื่อนที่อย่างละเอียด พร้อมให้คำแนะนำ
         </div>
 
         <div class="hero-buttons">
@@ -927,11 +1100,12 @@ footer {
                 📞 โทร 080-517-8615
             </a>
 
-            <a class="btn btn-line"
-               href="https://line.me/R/ti/p/@365jdxhc"
-               target="_blank"
-               rel="noopener noreferrer">
+            <a class="btn btn-line" href="https://line.me/ti/p/@365jdxhc" target="_blank" rel="noopener">
                 💬 LINE @365jdxhc
+            </a>
+
+            <a class="btn btn-light" href="#articles">
+                📚 ดูบทความความรู้
             </a>
         </div>
 
@@ -940,10 +1114,9 @@ footer {
     <div class="hero-image">
         <img
             src="./hero-changboy.png"
-            alt="ช่างบอยรับซ่อมแอร์เคลื่อนที่ทุกรุ่นทุกยี่ห้อ"
-            width="800"
-            height="800"
-            loading="eager">
+            alt="ช่างบอย ซ่อมแอร์เคลื่อนที่"
+            loading="eager"
+        >
     </div>
 
 </div>
@@ -955,72 +1128,72 @@ footer {
     <div class="container">
 
 ```
-    <h2 class="section-title">🔧 บริการช่างบอย</h2>
-
-    <p class="section-lead">
-        รับซ่อมและดูแลแอร์เคลื่อนที่โดยเฉพาะ ทุกรุ่นทุกยี่ห้อ
-        เน้นตรวจสอบอาการและวิเคราะห์สาเหตุก่อนซ่อม
-    </p>
+    <div class="section-title">
+        <h2>บริการของ ช่างบอย ซ่อมแอร์เคลื่อนที่</h2>
+        <p>
+            ดูแลและตรวจสอบระบบแอร์เคลื่อนที่ตั้งแต่ระบบไฟ
+            ระบบลม ระบบทำความเย็น ไปจนถึงชิ้นส่วนภายใน
+        </p>
+    </div>
 
     <div class="cards">
 
-        <article class="card">
+        <div class="card">
             <div class="card-icon">🔧</div>
-            <h3>รับซ่อมแอร์เคลื่อนที่</h3>
+            <h3>ตรวจเช็กอาการเสีย</h3>
             <p>
-                รับตรวจเช็กและซ่อมแอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ
-                ไม่ว่าจะเป็นแอร์ไม่เย็น เปิดไม่ติด คอมเพรสเซอร์ไม่ทำงาน
-                น้ำหยด เสียงดัง หรืออาการผิดปกติต่าง ๆ
+                วิเคราะห์อาการแอร์เคลื่อนที่เปิดไม่ติด ไม่เย็น
+                ตัดการทำงาน หรือทำงานผิดปกติ
             </p>
-        </article>
+        </div>
 
-        <article class="card">
-            <div class="card-icon">🧹</div>
-            <h3>ล้างทำความสะอาด</h3>
-            <p>
-                ทำความสะอาดส่วนต่าง ๆ ของแอร์เคลื่อนที่
-                ช่วยลดฝุ่น สิ่งสกปรก และคราบสะสมภายในเครื่อง
-            </p>
-        </article>
-
-        <article class="card">
-            <div class="card-icon">🔍</div>
-            <h3>ตรวจเช็กและวิเคราะห์อาการ</h3>
-            <p>
-                ตรวจสอบระบบไฟฟ้า พัดลม คอมเพรสเซอร์ เซนเซอร์
-                ระบบน้ำ และระบบทำความเย็น เพื่อหาสาเหตุของอาการเสีย
-            </p>
-        </article>
-
-        <article class="card">
-            <div class="card-icon">⚡</div>
-            <h3>ตรวจสอบระบบไฟฟ้า</h3>
-            <p>
-                ตรวจสอบคาปาซิเตอร์ รีเลย์ แผงวงจร สายไฟ
-                และอุปกรณ์ควบคุมต่าง ๆ ที่เกี่ยวข้องกับการทำงานของเครื่อง
-            </p>
-        </article>
-
-        <article class="card">
+        <div class="card">
             <div class="card-icon">❄️</div>
-            <h3>ตรวจสอบระบบทำความเย็น</h3>
+            <h3>ตรวจระบบความเย็น</h3>
             <p>
-                วิเคราะห์กรณีคอมเพรสเซอร์ทำงานแต่แอร์ไม่เย็น
-                ลมไม่เย็น หรือมีน้ำแข็งเกาะคอยล์
-                พร้อมตรวจสอบระบบที่เกี่ยวข้อง
+                ตรวจสอบระบบคอมเพรสเซอร์ คอยล์ พัดลม
+                และส่วนที่เกี่ยวข้องกับการทำความเย็น
             </p>
-        </article>
+        </div>
 
-        <article class="card">
-            <div class="card-icon">💧</div>
-            <h3>ตรวจสอบระบบน้ำ</h3>
+        <div class="card">
+            <div class="card-icon">🧼</div>
+            <h3>ทำความสะอาด</h3>
             <p>
-                ตรวจสอบน้ำหยด น้ำรั่ว ถาดน้ำ ท่อน้ำทิ้ง
-                ระบบระบายน้ำ และปั๊มน้ำในรุ่นที่มีระบบดังกล่าว
+                ดูแลแผ่นกรอง คอยล์ และส่วนต่าง ๆ
+                ที่มีผลต่อประสิทธิภาพการทำงานของเครื่อง
             </p>
-        </article>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>ตรวจระบบไฟ</h3>
+            <p>
+                ตรวจฟิวส์ รีเลย์ คาปาซิเตอร์ สายไฟ
+                ขั้วต่อ และอุปกรณ์ควบคุมที่เกี่ยวข้อง
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🌀</div>
+            <h3>ตรวจระบบพัดลม</h3>
+            <p>
+                ตรวจมอเตอร์พัดลม ใบพัด คาปาซิเตอร์
+                และปัญหาลมเบาหรือพัดลมไม่ทำงาน
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">📋</div>
+            <h3>ให้คำแนะนำการใช้งาน</h3>
+            <p>
+                แนะนำการตั้งอุณหภูมิ การจัดวางเครื่อง
+                การดูแลแผ่นกรอง และการใช้ท่อระบายลมร้อน
+            </p>
+        </div>
 
     </div>
+
 </div>
 ```
 
@@ -1030,25 +1203,23 @@ footer {
     <div class="container">
 
 ```
-    <h2 class="section-title">📍 รับซ่อมแอร์เคลื่อนที่ทั่วประเทศ</h2>
-
-    <p class="section-lead">
-        ช่างบอยรับตรวจเช็กและซ่อมแอร์เคลื่อนที่
-        ทุกรุ่นทุกยี่ห้อ สามารถสอบถามรายละเอียด
-        และแนวทางการรับงานได้โดยตรง
-    </p>
+    <div class="section-title">
+        <h2>พื้นที่ให้บริการและดูแลลูกค้า</h2>
+        <p>
+            ช่างบอย ซ่อมแอร์เคลื่อนที่ ให้บริการและรับงานในพื้นที่ที่กำหนด
+        </p>
+    </div>
 
     <div class="coverage-box">
-        <strong>ครอบคลุมพื้นที่ทั่วประเทศไทย</strong>
 
         <div class="coverage-list">
-            <span class="coverage-item">🏙️ กรุงเทพฯ</span>
-            <span class="coverage-item">📍 ปทุมธานี</span>
-            <span class="coverage-item">📍 นนทบุรี</span>
-            <span class="coverage-item">📍 สมุทรปราการ</span>
-            <span class="coverage-item">📍 ปริมณฑล</span>
-            <span class="coverage-item">🇹🇭 ต่างจังหวัด</span>
+            <span class="coverage-item">ปทุมธานี</span>
+            <span class="coverage-item">กรุงเทพมหานคร</span>
+            <span class="coverage-item">นนทบุรี</span>
+            <span class="coverage-item">สมุทรปราการ</span>
+            <span class="coverage-item">พื้นที่ใกล้เคียง</span>
         </div>
+
     </div>
 
 </div>
@@ -1056,143 +1227,96 @@ footer {
 
 </section>
 
-<section id="why-us">
+<section>
     <div class="container">
 
 ```
-    <h2 class="section-title">⭐ ทำไมควรให้ช่างบอยตรวจสอบ</h2>
-
-    <p class="section-lead">
-        เน้นการวิเคราะห์อาการจากสาเหตุจริง
-        เพื่อช่วยให้เจ้าของเครื่องเข้าใจปัญหา
-        ก่อนตัดสินใจซ่อม
-    </p>
+    <div class="section-title">
+        <h2>ทำไมลูกค้าจึงเลือก ช่างบอย</h2>
+        <p>
+            เน้นการตรวจสอบอาการอย่างเป็นระบบและให้ข้อมูลที่เข้าใจง่าย
+        </p>
+    </div>
 
     <div class="cards">
 
-        <article class="card">
+        <div class="card">
             <div class="card-icon">🔍</div>
-            <h3>ตรวจสอบก่อนสรุปสาเหตุ</h3>
+            <h3>ตรวจสอบอย่างเป็นขั้นตอน</h3>
             <p>
-                อาการเดียวกันอาจเกิดจากหลายสาเหตุ
-                จึงควรตรวจสอบระบบที่เกี่ยวข้องก่อน
-                เพื่อให้ทราบแนวทางการซ่อมที่เหมาะสม
+                วิเคราะห์อาการจากระบบที่เกี่ยวข้อง
+                ไม่มองเฉพาะอาการที่เห็นภายนอก
             </p>
-        </article>
+        </div>
 
-        <article class="card">
-            <div class="card-icon">🧰</div>
+        <div class="card">
+            <div class="card-icon">💡</div>
+            <h3>อธิบายเข้าใจง่าย</h3>
+            <p>
+                อธิบายสาเหตุและแนวทางแก้ไข
+                ให้ลูกค้าเข้าใจระบบแอร์เคลื่อนที่มากขึ้น
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon">🛠️</div>
             <h3>เน้นแอร์เคลื่อนที่โดยเฉพาะ</h3>
             <p>
-                ให้ความสำคัญกับระบบของแอร์เคลื่อนที่โดยเฉพาะ
-                ตั้งแต่ระบบไฟฟ้า ระบบลม ระบบน้ำ
-                ไปจนถึงระบบทำความเย็น
+                เนื้อหาและความรู้บนเว็บไซต์เน้นระบบ
+                และปัญหาของแอร์เคลื่อนที่เป็นหลัก
             </p>
-        </article>
-
-        <article class="card">
-            <div class="card-icon">📚</div>
-            <h3>มีบทความความรู้ให้ศึกษา</h3>
-            <p>
-                รวมความรู้เกี่ยวกับระบบต่าง ๆ
-                อาการเสียที่พบบ่อย วิธีดูแลรักษา
-                และความรู้เกี่ยวกับอะไหล่
-            </p>
-        </article>
+        </div>
 
     </div>
+
 </div>
 ```
 
 </section>
 
-<section id="works">
+<section id="reviews" class="reviews">
     <div class="container">
 
 ```
-    <h2 class="section-title">🎬 ผลงานและรีวิว</h2>
-
-    <p class="section-lead">
-        ติดตามผลงานและเนื้อหาเกี่ยวกับ
-        การซ่อม ล้าง ตรวจเช็ก และดูแลแอร์เคลื่อนที่
-    </p>
-
-    <div class="cards">
-
-        <article class="card works-card">
-            <div>
-                <div class="card-icon">▶️</div>
-                <h3>ผลงานการซ่อม</h3>
-                <p>
-                    ชมตัวอย่างการตรวจสอบและวิเคราะห์อาการ
-                    แอร์เคลื่อนที่
-                </p>
-            </div>
-
-            <a class="btn btn-light"
-               href="https://www.tiktok.com/@changboyair"
-               target="_blank"
-               rel="noopener noreferrer">
-                ▶ ดูผลงานบน TikTok
-            </a>
-        </article>
-
-        <article class="card works-card">
-            <div>
-                <div class="card-icon">🧹</div>
-                <h3>ล้างทำความสะอาด</h3>
-                <p>
-                    ตัวอย่างงานล้างและทำความสะอาดแอร์เคลื่อนที่
-                </p>
-            </div>
-
-            <a class="btn btn-light"
-               href="https://www.tiktok.com/@changboyair"
-               target="_blank"
-               rel="noopener noreferrer">
-                ▶ ดูผลงานบน TikTok
-            </a>
-        </article>
-
-        <article class="card works-card">
-            <div>
-                <div class="card-icon">📺</div>
-                <h3>วิดีโอความรู้</h3>
-                <p>
-                    ติดตามวิดีโอและความรู้เกี่ยวกับแอร์เคลื่อนที่
-                </p>
-            </div>
-
-            <a class="btn btn-light"
-               href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่/featured"
-               target="_blank"
-               rel="noopener noreferrer">
-                ▶ ดู YouTube
-            </a>
-        </article>
-
-    </div>
-
-    <div class="more-box">
-
+    <div class="section-title">
+        <h2>รีวิวและผลงาน</h2>
         <p>
-            ต้องการดูผลงานเพิ่มเติม
-            และติดตามวิดีโอใหม่จากช่างบอย
+            ติดตามผลงานและข้อมูลเพิ่มเติมจากช่องทางของ ช่างบอย
         </p>
+    </div>
 
-        <a class="btn btn-light"
-           href="https://www.google.com/search?q=ช่างบอย+ซ่อมแอร์เคลื่อนที่"
-           target="_blank"
-           rel="noopener noreferrer">
-            ⭐ ดูรีวิวเพิ่มเติม
-        </a>
+    <div class="review-grid">
 
-        <a class="btn btn-primary"
-           href="https://www.tiktok.com/@changboyair"
-           target="_blank"
-           rel="noopener noreferrer">
-            🎵 ดูผลงานทั้งหมดใน TikTok
-        </a>
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                รีวิวจากลูกค้าจะนำมาแสดงในส่วนนี้
+                เพื่อให้ผู้เข้าชมเว็บไซต์สามารถดูประสบการณ์จากลูกค้าได้ง่ายขึ้น
+            </p>
+            <div class="review-name">ลูกค้าช่างบอย</div>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                สามารถติดตามผลงานและคลิปเกี่ยวกับ
+                การซ่อมแอร์เคลื่อนที่ได้จากช่องทางออนไลน์
+            </p>
+            <div class="review-name">ผลงานและความรู้</div>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>
+                หากต้องการอ่านรีวิวเพิ่มเติม
+                สามารถดูข้อมูลจาก Google ได้
+            </p>
+            <div class="review-name">
+                <a href="https://www.google.com/search?q=ช่างบอย+ซ่อมแอร์เคลื่อนที่" target="_blank" rel="noopener">
+                    ⭐ ดูรีวิวเพิ่มเติม
+                </a>
+            </div>
+        </div>
 
     </div>
 
@@ -1201,165 +1325,89 @@ footer {
 
 </section>
 
-<section id="articles">
+<section id="articles" class="articles">
     <div class="container">
 
 ```
-    <h2 class="section-title">📚 บทความความรู้แอร์เคลื่อนที่</h2>
+    <div class="section-title">
+        <h2>บทความความรู้แอร์เคลื่อนที่</h2>
+        <p>
+            รวมความรู้เกี่ยวกับอาการเสีย วิธีดูแล และส่วนประกอบสำคัญของแอร์เคลื่อนที่
+        </p>
+    </div>
 
-    <p class="section-lead">
-        รวมบทความเกี่ยวกับปัญหาแอร์เคลื่อนที่
-        สาเหตุอาการเสีย วิธีดูแลรักษา
-        และความรู้เกี่ยวกับอะไหล่และระบบต่าง ๆ
-    </p>
+    <div class="article-grid">
 
-    <div class="cards">
-
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🧊</div>
-                <h3>แอร์เคลื่อนที่ไม่เย็น เกิดจากอะไร?</h3>
-                <p>
-                    รวมสาเหตุที่ทำให้แอร์เคลื่อนที่เปิดติด
-                    แต่ลมไม่เย็น พร้อมแนวทางตรวจสอบเบื้องต้น
-                </p>
-            </div>
-            <a class="read-more" href="./air-not-cold.html">อ่านบทความ →</a>
+        <article class="article-card">
+            <h3>แอร์เคลื่อนที่ควรตั้ง 25–26 องศาหรือไม่</h3>
+            <p>ทำความเข้าใจเรื่องอุณหภูมิที่เหมาะสมและการใช้งานให้มีประสิทธิภาพ</p>
+            <a class="read-more" href="./portable-air-conditioner-25-26-degree.html">อ่านบทความ →</a>
         </article>
 
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">💧</div>
-                <h3>แอร์เคลื่อนที่น้ำหยด น้ำรั่ว</h3>
-                <p>
-                    น้ำหยดจากแอร์เคลื่อนที่เกิดจากอะไร
-                    ตรวจสอบถาดน้ำ ท่อน้ำทิ้ง และระบบระบายน้ำอย่างไร
-                </p>
-            </div>
-            <a class="read-more" href="./water-leak.html">อ่านบทความ →</a>
+        <article class="article-card">
+            <h3>เลือก BTU แอร์เคลื่อนที่อย่างไร</h3>
+            <p>แนวทางเลือกขนาด BTU ให้เหมาะกับห้องและลักษณะการใช้งาน</p>
+            <a class="read-more" href="./portable-air-conditioner-btu-guide.html">อ่านบทความ →</a>
         </article>
 
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🔊</div>
-                <h3>แอร์เคลื่อนที่เสียงดังผิดปกติ</h3>
-                <p>
-                    วิเคราะห์สาเหตุเสียงดัง เสียงสั่น
-                    เสียงจากพัดลม มอเตอร์ ลูกปืน และคอมเพรสเซอร์
-                </p>
-            </div>
-            <a class="read-more" href="./loud-noise.html">อ่านบทความ →</a>
+        <article class="article-card">
+            <h3>แอร์เคลื่อนที่กินไฟเท่าไร</h3>
+            <p>ทำความเข้าใจการใช้ไฟและปัจจัยที่ทำให้ค่าไฟเพิ่มขึ้น</p>
+            <a class="read-more" href="./portable-air-conditioner-electricity-use.html">อ่านบทความ →</a>
         </article>
 
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">❄️</div>
-                <h3>น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่</h3>
-                <p>
-                    น้ำแข็งเกาะคอยล์เกิดจากอะไร
-                    แผ่นกรองอากาศ พัดลม ระบบทำความเย็น
-                    และเซนเซอร์เกี่ยวข้องอย่างไร
-                </p>
-            </div>
-            <a class="read-more" href="./ice-on-coil.html">อ่านบทความ →</a>
+        <article class="article-card">
+            <h3>วิธีใช้แอร์เคลื่อนที่ให้ประหยัดไฟ</h3>
+            <p>เคล็ดลับลดภาระการทำงานของเครื่องและช่วยประหยัดพลังงาน</p>
+            <a class="read-more" href="./portable-air-conditioner-save-electricity.html">อ่านบทความ →</a>
         </article>
 
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">⚡</div>
-                <h3>แอร์เคลื่อนที่กินไฟมาก</h3>
-                <p>
-                    สาเหตุที่ทำให้แอร์เคลื่อนที่ใช้ไฟมากกว่าปกติ
-                    และสิ่งที่ควรตรวจสอบ
-                </p>
-            </div>
-            <a class="read-more" href="./high-electricity.html">อ่านบทความ →</a>
+        <article class="article-card">
+            <h3>การจัดวางแอร์เคลื่อนที่</h3>
+            <p>ตำแหน่งวางเครื่องและทิศทางลมมีผลต่อประสิทธิภาพอย่างไร</p>
+            <a class="read-more" href="./portable-air-conditioner-placement.html">อ่านบทความ →</a>
         </article>
 
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🔧</div>
-                <h3>คอมเพรสเซอร์ไม่ทำงาน</h3>
-                <p>
-                    ตรวจสอบสาเหตุที่คอมเพรสเซอร์ไม่เริ่มทำงาน
-                    เช่น คาปาซิเตอร์ รีเลย์ เซนเซอร์ และระบบควบคุม
-                </p>
-            </div>
+        <article class="article-card">
+            <h3>ทำความสะอาดแผ่นกรองแอร์เคลื่อนที่</h3>
+            <p>แผ่นกรองสกปรกส่งผลต่อแรงลมและความเย็นอย่างไร</p>
+            <a class="read-more" href="./portable-air-conditioner-filter-cleaning.html">อ่านบทความ →</a>
+        </article>
+
+        <article class="article-card">
+            <h3>ดูแลแผ่นกรองอย่างไร</h3>
+            <p>วิธีดูแลแผ่นกรองเพื่อช่วยให้เครื่องทำงานได้ดีขึ้น</p>
+            <a class="read-more" href="./portable-air-conditioner-filter-care.html">อ่านบทความ →</a>
+        </article>
+
+        <article class="article-card">
+            <h3>ท่อระบายลมร้อนมีปัญหา</h3>
+            <p>ผลของท่อระบายลมร้อนต่อความเย็นและการทำงานของเครื่อง</p>
+            <a class="read-more" href="./portable-air-conditioner-exhaust-hose.html">อ่านบทความ →</a>
+        </article>
+
+        <article class="article-card">
+            <h3>ท่อน้ำทิ้งแอร์เคลื่อนที่</h3>
+            <p>รู้จักระบบระบายน้ำและสาเหตุที่ทำให้น้ำระบายไม่ออก</p>
+            <a class="read-more" href="./portable-air-conditioner-drain-hose.html">อ่านบทความ →</a>
+        </article>
+
+        <article class="article-card">
+            <h3>คอมเพรสเซอร์แอร์เคลื่อนที่ทำงานอย่างไร</h3>
+            <p>หน้าที่ของคอมเพรสเซอร์และความสำคัญต่อระบบทำความเย็น</p>
+            <a class="read-more" href="./portable-air-conditioner-compressor-function.html">อ่านบทความ →</a>
+        </article>
+
+        <article class="article-card">
+            <h3>กดเปิดแล้วคอมเพรสเซอร์ไม่ทำงาน</h3>
+            <p>สาเหตุที่คอมเพรสเซอร์ไม่เริ่มทำงานและสิ่งที่ควรตรวจสอบ</p>
             <a class="read-more" href="./compressor-not-start.html">อ่านบทความ →</a>
         </article>
 
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🌬️</div>
-                <h3>พัดลมแอร์เคลื่อนที่ไม่ทำงาน</h3>
-                <p>
-                    พัดลมไม่หมุน ลมออกน้อย
-                    หรือมอเตอร์พัดลมทำงานผิดปกติ
-                </p>
-            </div>
-            <a class="read-more" href="./fan-not-work.html">อ่านบทความ →</a>
-        </article>
-
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🧰</div>
-                <h3>คอมเพรสเซอร์ทำงานแต่แอร์ไม่เย็น</h3>
-                <p>
-                    หากคอมเพรสเซอร์ทำงานแต่แอร์ไม่เย็น
-                    ควรตรวจสอบระบบทำความเย็นและส่วนประกอบที่เกี่ยวข้อง
-                </p>
-            </div>
+        <article class="article-card">
+            <h3>คอมเพรสเซอร์ทำงานแต่ไม่เย็น</h3>
+            <p>สาเหตุที่คอมเพรสเซอร์ทำงานแต่ห้องยังไม่เย็น</p>
             <a class="read-more" href="./compressor-runs-but-not-cold.html">อ่านบทความ →</a>
-        </article>
-
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🔌</div>
-                <h3>แอร์เคลื่อนที่เปิดไม่ติด</h3>
-                <p>
-                    รวมสาเหตุเบื้องต้นที่ทำให้แอร์เคลื่อนที่เปิดไม่ติด
-                    ตั้งแต่ระบบไฟจนถึงแผงวงจร
-                </p>
-            </div>
-            <a class="read-more" href="./portable-air-conditioner-not-start.html">อ่านบทความ →</a>
-        </article>
-
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🌡️</div>
-                <h3>แอร์เคลื่อนที่เปิดแล้วดับเอง</h3>
-                <p>
-                    เครื่องเปิดทำงานได้สักพักแล้วหยุด
-                    อาจเกี่ยวข้องกับเซนเซอร์ ความร้อน ระบบไฟ
-                    หรืออุปกรณ์ป้องกัน
-                </p>
-            </div>
-            <a class="read-more" href="./portable-air-conditioner-not-start.html">อ่านบทความ →</a>
-        </article>
-
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">⚙️</div>
-                <h3>คาปาซิเตอร์แอร์เคลื่อนที่เสีย</h3>
-                <p>
-                    ทำความรู้จักคาปาซิเตอร์
-                    อาการที่พบเมื่อคาปาซิเตอร์มีปัญหา
-                    และผลต่อพัดลมกับคอมเพรสเซอร์
-                </p>
-            </div>
-            <a class="read-more" href="./capacitor.html">อ่านบทความ →</a>
-        </article>
-
-        <article class="card article-card">
-            <div>
-                <div class="card-icon">🖥️</div>
-                <h3>แผงวงจร PCB แอร์เคลื่อนที่ทำหน้าที่อะไร?</h3>
-                <p>
-                    รู้จักหน้าที่ของแผงวงจรควบคุม
-                    และอาการที่อาจเกิดขึ้นเมื่อ PCB มีปัญหา
-                </p>
-            </div>
-            <a class="read-more" href="./portable-air-conditioner-pcb.html">อ่านบทความ →</a>
         </article>
 
     </div>
@@ -1379,161 +1427,114 @@ footer {
     <div class="container">
 
 ```
-    <h2 class="section-title">❓ คำถามที่ลูกค้าถามบ่อย</h2>
-
-    <p class="section-lead">
-        รวมคำถามเกี่ยวกับการซ่อม ตรวจเช็ก
-        และดูแลแอร์เคลื่อนที่
-    </p>
+    <div class="section-title">
+        <h2>คำถามที่พบบ่อย</h2>
+        <p>
+            รวมคำถามเกี่ยวกับอาการเสียและการใช้งานแอร์เคลื่อนที่
+        </p>
+    </div>
 
     <div class="faq-list">
 
         <details>
-            <summary>ช่างบอยรับซ่อมแอร์เคลื่อนที่รุ่นไหนและยี่ห้ออะไรบ้าง?</summary>
+            <summary>แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?</summary>
             <p>
-                รับตรวจเช็กและซ่อมแอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ
-                โดยจะวิเคราะห์อาการ และตรวจสอบสาเหตุก่อนแนะนำแนวทางซ่อม
+                อาจเกิดจากระบบไฟ ฟิวส์ แผงวงจร รีเลย์ คาปาซิเตอร์
+                หรือระบบป้องกันของเครื่อง ควรตรวจสอบตามขั้นตอน
             </p>
         </details>
 
         <details>
-            <summary>ช่างบอยรับซ่อมแอร์เคลื่อนที่พื้นที่ไหนบ้าง?</summary>
+            <summary>แอร์เคลื่อนที่เปิดแล้วแต่ไม่เย็นเกิดจากอะไร?</summary>
             <p>
-                รับงานแอร์เคลื่อนที่ทั่วประเทศ รวมกรุงเทพฯ ปริมณฑล
-                ปทุมธานี และต่างจังหวัด สามารถสอบถามรายละเอียด
-                และแนวทางการรับงานได้โดยตรง
+                อาจเกิดจากแผ่นกรองสกปรก ทางลมระบายความร้อนไม่ดี
+                ระบบทำความเย็น คอมเพรสเซอร์ หรือเซ็นเซอร์
             </p>
         </details>
 
         <details>
-            <summary>แอร์เคลื่อนที่ไม่เย็นซ่อมได้ไหม?</summary>
+            <summary>แอร์เคลื่อนที่มีน้ำหยดเกิดจากอะไร?</summary>
             <p>
-                แอร์เคลื่อนที่ไม่เย็นสามารถตรวจเช็กและซ่อมได้ในหลายกรณี
-                แต่ต้องตรวจหาสาเหตุก่อน สาเหตุอาจเกี่ยวข้องกับระบบทำความเย็น
-                พัดลม คอยล์ สารทำความเย็น เซนเซอร์ แผงวงจร
-                หรืออุปกรณ์ควบคุมต่าง ๆ
-                <br><br>
-                <a href="./air-not-cold.html" class="read-more">
-                    อ่านเพิ่มเติม: แอร์เคลื่อนที่ไม่เย็น →
-                </a>
+                อาจเกิดจากถังน้ำเต็ม ท่อน้ำทิ้งอุดตัน
+                เครื่องวางไม่สมดุล หรือมีน้ำแข็งเกาะคอยล์
             </p>
         </details>
 
         <details>
-            <summary>แอร์เคลื่อนที่เปิดติดแต่คอมเพรสเซอร์ไม่ทำงานเกิดจากอะไร?</summary>
+            <summary>ควรล้างแผ่นกรองบ่อยแค่ไหน?</summary>
             <p>
-                อาจเกิดจากหลายสาเหตุ เช่น คาปาซิเตอร์ รีเลย์ ระบบควบคุม
-                แผงวงจร เซนเซอร์ อุปกรณ์ป้องกันคอมเพรสเซอร์
-                หรือคอมเพรสเซอร์เอง
-                <br><br>
-                <a href="./compressor-not-start.html" class="read-more">
-                    อ่านเพิ่มเติม: คอมเพรสเซอร์ไม่ทำงาน →
-                </a>
+                โดยทั่วไปควรตรวจและทำความสะอาดทุก 2–4 สัปดาห์
+                ขึ้นอยู่กับปริมาณฝุ่นและระยะเวลาการใช้งาน
             </p>
         </details>
 
         <details>
-            <summary>แอร์เคลื่อนที่มีน้ำหยดต้องเปลี่ยนอะไหล่ไหม?</summary>
+            <summary>ควรตั้งอุณหภูมิแอร์เคลื่อนที่เท่าไร?</summary>
             <p>
-                ไม่จำเป็นต้องเปลี่ยนอะไหล่ทุกกรณี น้ำหยดอาจเกิดจากถาดน้ำ
-                ท่อน้ำทิ้ง ระบบระบายน้ำ ปั๊มน้ำในบางรุ่น
-                หรือสิ่งสกปรกภายในเครื่อง
-                <br><br>
-                <a href="./water-leak.html" class="read-more">
-                    อ่านเพิ่มเติม: แอร์เคลื่อนที่น้ำหยด →
-                </a>
+                สามารถเริ่มที่ประมาณ 25–26 องศาเซลเซียส
+                แล้วปรับตามสภาพห้องและความรู้สึกสบาย
             </p>
         </details>
 
         <details>
-            <summary>แอร์เคลื่อนที่เปิดติดแล้วดับเองเกิดจากอะไร?</summary>
+            <summary>ทำไมแอร์เคลื่อนที่กินไฟมาก?</summary>
             <p>
-                อาจเกิดจากระบบป้องกันความร้อนสูง เซนเซอร์ ระบบไฟฟ้า
-                แผงวงจร พัดลม หรือคอมเพรสเซอร์
-                ควรตรวจสอบอาการและระบบที่เกี่ยวข้องก่อนสรุปสาเหตุ
+                อาจเกิดจากการตั้งอุณหภูมิต่ำเกินไป
+                การระบายความร้อนไม่ดี แผ่นกรองสกปรก
+                หรือระบบทำความเย็นทำงานหนัก
             </p>
         </details>
 
         <details>
-            <summary>แอร์เคลื่อนที่มีเสียงดังผิดปกติเกิดจากอะไร?</summary>
+            <summary>ท่อระบายลมร้อนมีผลต่อความเย็นหรือไม่?</summary>
             <p>
-                เสียงดังอาจเกิดจากพัดลม มอเตอร์ ลูกปืน ชิ้นส่วนหลวม
-                การสั่นสะเทือน หรือคอมเพรสเซอร์
-                <br><br>
-                <a href="./loud-noise.html" class="read-more">
-                    อ่านเพิ่มเติม: แอร์เคลื่อนที่เสียงดัง →
-                </a>
+                มีผลมาก หากท่อร้อนรั่ว ยาวเกินไป หักงอ
+                หรือระบายลมไม่ดี เครื่องจะทำงานหนักและห้องเย็นช้าลง
             </p>
         </details>
 
         <details>
-            <summary>แอร์เคลื่อนที่น้ำแข็งเกาะคอยล์เกิดจากอะไร?</summary>
+            <summary>แอร์เคลื่อนที่เสียงดังผิดปกติเกิดจากอะไร?</summary>
             <p>
-                น้ำแข็งเกาะคอยล์อาจเกี่ยวข้องกับลมผ่านคอยล์ไม่เพียงพอ
-                แผ่นกรองสกปรก พัดลม ระบบทำความเย็น หรือเซนเซอร์
-                <br><br>
-                <a href="./ice-on-coil.html" class="read-more">
-                    อ่านเพิ่มเติม: น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ →
-                </a>
+                อาจเกิดจากพัดลม มอเตอร์ คอมเพรสเซอร์
+                ชิ้นส่วนหลวม หรือเครื่องวางบนพื้นที่ไม่เรียบ
             </p>
         </details>
 
     </div>
+
 </div>
 ```
 
 </section>
 
-<section id="location">
+<section id="location" class="location">
     <div class="container">
 
 ```
-    <h2 class="section-title">📍 ที่ตั้งช่างบอย ซ่อมแอร์เคลื่อนที่</h2>
-
-    <p class="section-lead">
-        คลองสอง อำเภอคลองหลวง จังหวัดปทุมธานี
-    </p>
+    <div class="section-title">
+        <h2>ติดต่อ ช่างบอย ซ่อมแอร์เคลื่อนที่</h2>
+        <p>
+            พิกัดพื้นที่ตั้ง: 3J6J+6X
+        </p>
+    </div>
 
     <div class="map-box">
+
         <iframe
-            src="https://www.google.com/maps?q=3J6J%2B6X%20Khlong%20Luang%20Pathum%20Thani&output=embed"
-            title="แผนที่ตำแหน่งช่างบอย ซ่อมแอร์เคลื่อนที่"
+            src="https://www.google.com/maps?q=3J6J%2B6X%2C%20Khlong%20Luang%2C%20Pathum%20Thani&output=embed"
             loading="lazy"
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-    </div>
 
-    <div class="coverage-box" style="margin-top:20px;">
-
-        <p>
-            <strong>พื้นที่ตั้ง:</strong>
-            คลองสอง อำเภอคลองหลวง จังหวัดปทุมธานี
-        </p>
-
-        <p>
-            <strong>Plus Code:</strong> 3J6J+6X
-        </p>
-
-        <p>
-            รับงานแอร์เคลื่อนที่ทั่วประเทศ
-            ทั้งกรุงเทพฯ ปริมณฑล และต่างจังหวัด
-            สามารถสอบถามรายละเอียดก่อนใช้บริการ
-        </p>
-
-        <p>
-            สามารถใช้ Plus Code
-            <strong>3J6J+6X</strong>
-            ค้นหาตำแหน่งบน Google Maps ได้
-        </p>
-
-        <a
-            class="btn btn-primary"
-            href="https://www.google.com/maps?q=3J6J%2B6X%20Khlong%20Luang%20Pathum%20Thani"
-            target="_blank"
-            rel="noopener noreferrer">
-            📍 เปิดตำแหน่งใน Google Maps
-        </a>
+        <div class="map-info">
+            <strong>ช่างบอย ซ่อมแอร์เคลื่อนที่</strong>
+            <br>
+            โทรศัพท์: 080-517-8615
+            <br>
+            LINE: @365jdxhc
+        </div>
 
     </div>
 
@@ -1542,76 +1543,45 @@ footer {
 
 </section>
 
-<section id="contact" class="contact">
+<section class="contact">
     <div class="container">
 
 ```
-    <div class="contact-box">
-
-        <h2 class="section-title">ติดต่อช่างบอย ซ่อมแอร์เคลื่อนที่</h2>
-
-        <p class="section-lead">
-            สอบถามอาการแอร์เคลื่อนที่
-            สอบถามงานซ่อม หรือสอบถามรายละเอียดการรับงาน
+    <div class="section-title">
+        <h2>ติดต่อ ช่างบอย ซ่อมแอร์เคลื่อนที่</h2>
+        <p>
+            สอบถามอาการแอร์เคลื่อนที่และรายละเอียดเพิ่มเติม
         </p>
+    </div>
+
+    <div class="contact-box">
 
         <div class="contact-info">
 
             <a href="tel:0805178615">
-                📞 โทร: 080-517-8615
+                📞 080-517-8615
             </a>
 
-            <a
-                href="https://line.me/R/ti/p/@365jdxhc"
-                target="_blank"
-                rel="noopener noreferrer">
-                💬 LINE: @365jdxhc
+            <a href="https://line.me/ti/p/@365jdxhc" target="_blank" rel="noopener">
+                💬 LINE @365jdxhc
             </a>
 
-            <a
-                href="https://www.facebook.com/videoair1"
-                target="_blank"
-                rel="noopener noreferrer">
-                🔵 Facebook: ช่างบอยซ่อมแอร์เคลื่อนที่
+            <a href="https://www.facebook.com/videoair1" target="_blank" rel="noopener">
+                📘 Facebook
             </a>
 
-            <a
-                href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่"
-                target="_blank"
-                rel="noopener noreferrer">
-                ▶️ YouTube: ช่างบอย ซ่อมแอร์เคลื่อนที่
+            <a href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่" target="_blank" rel="noopener">
+                ▶️ YouTube
             </a>
 
-            <a
-                href="https://www.tiktok.com/@changboyair"
-                target="_blank"
-                rel="noopener noreferrer">
-                🎵 TikTok: @changboyair
-            </a>
-
-        </div>
-
-        <p>
-            📍 พื้นที่: รับงานทั่วประเทศ กรุงเทพฯ ปริมณฑล ปทุมธานี และต่างจังหวัด
-        </p>
-
-        <div class="contact-buttons">
-
-            <a class="btn btn-light" href="tel:0805178615">
-                📞 โทรหาช่าง
-            </a>
-
-            <a
-                class="btn btn-line"
-                href="https://line.me/R/ti/p/@365jdxhc"
-                target="_blank"
-                rel="noopener noreferrer">
-                💬 ติดต่อ LINE
+            <a href="https://www.tiktok.com/@changboyair" target="_blank" rel="noopener">
+                🎵 TikTok
             </a>
 
         </div>
 
     </div>
+
 </div>
 ```
 
@@ -1623,33 +1593,21 @@ footer {
     <div class="container">
 
 ```
-    <div class="footer-grid">
+    <div class="footer-content">
 
         <div>
-            <div class="footer-brand">
-                ช่างบอย ซ่อมแอร์เคลื่อนที่
-            </div>
-
-            <div>
-                รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่
-                ทุกรุ่นทุกยี่ห้อ
-            </div>
-
-            <div>
-                รับงานทั่วประเทศ กรุงเทพฯ ปริมณฑล ปทุมธานี และต่างจังหวัด
-            </div>
+            <div class="footer-brand">ช่างบอย ซ่อมแอร์เคลื่อนที่</div>
+            <div>ความรู้และบริการเกี่ยวกับแอร์เคลื่อนที่</div>
         </div>
 
         <div class="footer-links">
             <a href="./index.html">หน้าแรก</a>
             <a href="./articles.html">บทความทั้งหมด</a>
-            <a href="#contact">ติดต่อ</a>
+            <a href="./symptoms.html">อาการเสีย</a>
+            <a href="#faq">คำถามที่พบบ่อย</a>
+            <a href="#location">ติดต่อ</a>
         </div>
 
-    </div>
-
-    <div class="copyright">
-        © 2026 ช่างบอย ซ่อมแอร์เคลื่อนที่
     </div>
 
 </div>
@@ -1657,22 +1615,22 @@ footer {
 
 </footer>
 
-<div class="float-buttons" aria-label="ช่องทางติดต่อ">
+<div class="float-buttons">
 
 ```
 <a
     class="float-btn float-phone"
     href="tel:0805178615"
-    aria-label="โทรหาช่างบอย">
+    aria-label="โทรศัพท์ 080-517-8615">
     📞
 </a>
 
 <a
     class="float-btn float-line"
-    href="https://line.me/R/ti/p/@365jdxhc"
+    href="https://line.me/ti/p/@365jdxhc"
     target="_blank"
-    rel="noopener noreferrer"
-    aria-label="ติดต่อ LINE ช่างบอย">
+    rel="noopener"
+    aria-label="LINE @365jdxhc">
     💬
 </a>
 ```
