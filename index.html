@@ -8,14 +8,15 @@
 <title>ช่างบอย ซ่อมแอร์เคลื่อนที่ | รับซ่อม ล้าง ตรวจเช็ก ทุกยี่ห้อ ทั่วประเทศ</title>
 
 <meta name="description" content="ช่างบอย ซ่อมแอร์เคลื่อนที่ รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ วิเคราะห์อาการเสียตามจริง พร้อมให้คำแนะนำก่อนซ่อม กรุงเทพฯ ปริมณฑล ปทุมธานี และต่างจังหวัด">
+
 <meta name="keywords" content="ซ่อมแอร์เคลื่อนที่, ช่างซ่อมแอร์เคลื่อนที่, ล้างแอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, ซ่อมบอร์ดแอร์เคลื่อนที่, ซ่อมแอร์เคลื่อนที่ทั่วประเทศ, ซ่อมแอร์เคลื่อนที่กรุงเทพ, ซ่อมแอร์เคลื่อนที่ปทุมธานี, คลองหลวง">
+
 <meta name="author" content="ช่างบอย ซ่อมแอร์เคลื่อนที่">
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow">
 <meta name="theme-color" content="#0b74de">
 
 <link rel="canonical" href="https://changboyportable.github.io/changboy-air/">
-
 <link rel="icon" type="image/png" href="./logo.png">
 <link rel="apple-touch-icon" href="./logo.png">
 
@@ -69,15 +70,16 @@ header {
     z-index: 1000;
     background: rgba(255,255,255,.97);
     border-bottom: 1px solid #e5e7eb;
-    box-shadow: 0 2px 12px rgba(0,0,0,.06);
+    box-shadow: 0 3px 18px rgba(15,23,42,.08);
+    backdrop-filter: blur(8px);
 }
 
 .header-container {
-    min-height: 76px;
+    min-height: 78px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 22px;
 }
 
 .brand {
@@ -99,15 +101,25 @@ header {
 }
 
 .brand-name {
-    font-size: 1.05rem;
+    font-size: 1.08rem;
     font-weight: 800;
     color: #075985;
+    transition: color .25s ease;
 }
 
 .brand-sub {
     font-size: .78rem;
     color: #64748b;
-    margin-top: 3px;
+    margin-top: 4px;
+    transition: color .25s ease;
+}
+
+.brand:hover .brand-name {
+    color: #0ea5e9;
+}
+
+.brand:hover .brand-sub {
+    color: #0b74de;
 }
 
 nav {
@@ -115,34 +127,60 @@ nav {
     align-items: center;
     justify-content: flex-end;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 5px;
 }
 
 nav a {
-    padding: 9px 12px;
-    border-radius: 9px;
+    position: relative;
+    padding: 9px 13px;
+    border-radius: 10px;
     font-weight: 700;
     font-size: .92rem;
     color: #334155;
+    transition: color .25s ease, background .25s ease, transform .25s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    right: 13px;
+    bottom: 5px;
+    height: 2px;
+    border-radius: 10px;
+    background: #0ea5e9;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform .25s ease;
 }
 
 nav a:hover {
-    background: #eaf4ff;
     color: #075985;
+    background: #eaf6ff;
+    transform: translateY(-1px);
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
 }
 
 .hero {
     padding: 70px 0;
     background:
-        radial-gradient(circle at top right, rgba(14,165,233,.15), transparent 35%),
+        radial-gradient(circle at 90% 10%, rgba(14,165,233,.18), transparent 32%),
+        radial-gradient(circle at 10% 90%, rgba(11,116,222,.08), transparent 30%),
         linear-gradient(135deg, #eff8ff 0%, #ffffff 55%, #eaf6ff 100%);
 }
 
 .hero-grid {
     display: grid;
-    grid-template-columns: 1.05fr .95fr;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, .95fr);
     align-items: center;
-    gap: 45px;
+    gap: 48px;
+}
+
+.hero-content {
+    min-width: 0;
 }
 
 .hero h1 {
@@ -150,6 +188,11 @@ nav a:hover {
     font-size: clamp(2rem, 4vw, 3.3rem);
     line-height: 1.2;
     color: #075985;
+    transition: color .25s ease;
+}
+
+.hero h1:hover {
+    color: #0b74de;
 }
 
 .hero p {
@@ -160,13 +203,20 @@ nav a:hover {
 
 .hero-highlight {
     margin: 20px 0;
-    padding: 14px 18px;
+    padding: 15px 18px;
     border-left: 5px solid #0ea5e9;
     background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(15,23,42,.06);
+    border-radius: 12px;
+    box-shadow: 0 7px 25px rgba(15,23,42,.07);
     font-weight: 700;
     color: #075985;
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.hero-highlight:hover {
+    transform: translateY(-3px);
+    border-color: #0b74de;
+    box-shadow: 0 12px 30px rgba(11,116,222,.12);
 }
 
 .hero-buttons {
@@ -183,14 +233,15 @@ nav a:hover {
     gap: 7px;
     min-height: 46px;
     padding: 11px 18px;
-    border-radius: 10px;
+    border-radius: 11px;
     font-weight: 800;
     border: 1px solid transparent;
-    transition: .2s ease;
+    transition: transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
 }
 
 .btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(15,23,42,.15);
 }
 
 .btn-primary {
@@ -198,9 +249,17 @@ nav a:hover {
     color: #fff;
 }
 
+.btn-primary:hover {
+    background: #075985;
+}
+
 .btn-line {
     background: #16a34a;
     color: #fff;
+}
+
+.btn-line:hover {
+    background: #15803d;
 }
 
 .btn-light {
@@ -209,11 +268,24 @@ nav a:hover {
     color: #075985;
 }
 
+.btn-light:hover {
+    background: #eaf6ff;
+    border-color: #0ea5e9;
+    color: #0b74de;
+}
+
 .hero-image {
+    position: relative;
     background: #fff;
-    border-radius: 22px;
+    border-radius: 24px;
     overflow: hidden;
-    box-shadow: 0 15px 45px rgba(15,23,42,.12);
+    box-shadow: 0 18px 50px rgba(15,23,42,.14);
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+
+.hero-image:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 60px rgba(11,116,222,.18);
 }
 
 .hero-image img {
@@ -223,7 +295,7 @@ nav a:hover {
 }
 
 section {
-    padding: 65px 0;
+    padding: 68px 0;
 }
 
 .section-title {
@@ -231,6 +303,12 @@ section {
     margin: 0 0 10px;
     color: #075985;
     font-size: clamp(1.7rem, 3vw, 2.35rem);
+    transition: color .25s ease, transform .25s ease;
+}
+
+.section-title:hover {
+    color: #0b74de;
+    transform: translateY(-2px);
 }
 
 .section-lead {
@@ -249,20 +327,37 @@ section {
 .card {
     background: #fff;
     border: 1px solid #e2e8f0;
-    border-radius: 16px;
+    border-radius: 18px;
     padding: 24px;
     box-shadow: 0 7px 24px rgba(15,23,42,.05);
+    transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    border-color: #7dd3fc;
+    box-shadow: 0 16px 35px rgba(15,23,42,.11);
 }
 
 .card-icon {
     font-size: 2rem;
     margin-bottom: 8px;
+    transition: transform .25s ease;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.12);
 }
 
 .card h3 {
     margin: 0 0 9px;
     color: #075985;
     font-size: 1.15rem;
+    transition: color .25s ease;
+}
+
+.card:hover h3 {
+    color: #0b74de;
 }
 
 .card p {
@@ -280,6 +375,12 @@ section {
     padding: 30px;
     text-align: center;
     box-shadow: 0 8px 30px rgba(15,23,42,.06);
+    transition: box-shadow .28s ease, transform .28s ease;
+}
+
+.coverage-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(15,23,42,.1);
 }
 
 .coverage-list {
@@ -297,6 +398,13 @@ section {
     border-radius: 999px;
     color: #075985;
     font-weight: 700;
+    transition: background .25s ease, color .25s ease, transform .25s ease;
+}
+
+.coverage-item:hover {
+    background: #0b74de;
+    color: #fff;
+    transform: translateY(-2px);
 }
 
 .works-card {
@@ -321,10 +429,13 @@ section {
     margin-top: 16px;
     color: #0b74de;
     font-weight: 800;
+    transition: color .25s ease, transform .25s ease;
 }
 
 .article-card .read-more:hover {
+    color: #075985;
     text-decoration: underline;
+    transform: translateX(4px);
 }
 
 .more-box {
@@ -348,9 +459,19 @@ section {
 details {
     background: #fff;
     border: 1px solid #e2e8f0;
-    border-radius: 12px;
+    border-radius: 13px;
     margin-bottom: 12px;
     overflow: hidden;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+details:hover {
+    border-color: #7dd3fc;
+    box-shadow: 0 8px 24px rgba(15,23,42,.07);
+}
+
+details[open] {
+    border-color: #38bdf8;
 }
 
 summary {
@@ -358,6 +479,12 @@ summary {
     padding: 17px 20px;
     font-weight: 800;
     color: #075985;
+    transition: color .25s ease, background .25s ease;
+}
+
+summary:hover {
+    color: #0b74de;
+    background: #f0f9ff;
 }
 
 details p {
@@ -371,6 +498,12 @@ details p {
     border-radius: 18px;
     box-shadow: 0 8px 30px rgba(15,23,42,.08);
     background: #fff;
+    transition: transform .28s ease, box-shadow .28s ease;
+}
+
+.map-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 35px rgba(15,23,42,.12);
 }
 
 .map-box iframe {
@@ -406,6 +539,12 @@ details p {
 
 .contact-info a {
     font-weight: 700;
+    transition: color .25s ease, transform .25s ease;
+}
+
+.contact-info a:hover {
+    color: #bae6fd;
+    transform: translateY(-2px);
 }
 
 .contact-buttons {
@@ -446,8 +585,13 @@ footer {
     gap: 8px 15px;
 }
 
+.footer-links a {
+    transition: color .25s ease, transform .25s ease;
+}
+
 .footer-links a:hover {
-    color: #fff;
+    color: #38bdf8;
+    transform: translateY(-1px);
 }
 
 .copyright {
@@ -478,6 +622,12 @@ footer {
     color: #fff;
     font-size: 1.35rem;
     box-shadow: 0 7px 20px rgba(0,0,0,.2);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.float-btn:hover {
+    transform: scale(1.1) translateY(-2px);
+    box-shadow: 0 12px 28px rgba(0,0,0,.25);
 }
 
 .float-phone {
@@ -500,6 +650,7 @@ footer {
 
     .hero-grid {
         grid-template-columns: 1fr;
+        gap: 30px;
     }
 
     .hero-content {
@@ -623,10 +774,6 @@ footer {
     {
       "@type": "AdministrativeArea",
       "name": "Samut Prakan"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Samut Sakhon"
     }
   ],
   "address": {
@@ -647,13 +794,8 @@ footer {
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://changboyportable.github.io/changboy-air/#website",
-  "url": "https://changboyportable.github.io/changboy-air/",
   "name": "ช่างบอย ซ่อมแอร์เคลื่อนที่",
-  "publisher": {
-    "@id": "https://changboyportable.github.io/changboy-air/#business"
-  },
-  "inLanguage": "th"
+  "url": "https://changboyportable.github.io/changboy-air/"
 }
 </script>
 
@@ -667,7 +809,7 @@ footer {
       "name": "ช่างบอยรับซ่อมแอร์เคลื่อนที่รุ่นไหนและยี่ห้ออะไรบ้าง?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "รับตรวจเช็กและซ่อมแอร์เคลื่อนที่ทุกรุ่นทุกยี่ห้อ โดยจะวิเคราะห์อาการและตรวจสอบสาเหตุก่อนแนะนำแนวทางซ่อม"
+        "text": "รับตรวจเช็กและซ่อมแอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ โดยจะวิเคราะห์อาการและตรวจสอบสาเหตุก่อนแนะนำแนวทางซ่อม"
       }
     },
     {
@@ -699,7 +841,7 @@ footer {
       "name": "แอร์เคลื่อนที่มีน้ำหยดต้องเปลี่ยนอะไหล่ไหม?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ไม่จำเป็นต้องเปลี่ยนอะไหล่ทุกกรณี น้ำหยดอาจเกิดจากถาดน้ำ ท่อน้ำทิ้ง ระบบระบายน้ำ ปั๊มน้ำในบางรุ่น หรือสิ่งสกปรกภายในเครื่อง"
+        "text": "ไม่จำเป็นต้องเปลี่ยนอะไหล่ทุกกรณี น้ำหยดอาจเกิดจากถาดน้ำ ท่อน้ำทิ้ง ระบบระบายน้ำ ปั๊มน้ำ หรือสิ่งสกปรกภายในเครื่อง"
       }
     },
     {
@@ -801,8 +943,7 @@ footer {
             alt="ช่างบอยรับซ่อมแอร์เคลื่อนที่ทุกรุ่นทุกยี่ห้อ"
             width="800"
             height="800"
-            loading="eager"
-        >
+            loading="eager">
     </div>
 
 </div>
@@ -880,7 +1021,6 @@ footer {
         </article>
 
     </div>
-
 </div>
 ```
 
@@ -899,7 +1039,6 @@ footer {
     </p>
 
     <div class="coverage-box">
-
         <strong>ครอบคลุมพื้นที่ทั่วประเทศไทย</strong>
 
         <div class="coverage-list">
@@ -910,7 +1049,6 @@ footer {
             <span class="coverage-item">📍 ปริมณฑล</span>
             <span class="coverage-item">🇹🇭 ต่างจังหวัด</span>
         </div>
-
     </div>
 
 </div>
@@ -963,7 +1101,6 @@ footer {
         </article>
 
     </div>
-
 </div>
 ```
 
@@ -992,11 +1129,10 @@ footer {
                 </p>
             </div>
 
-            <a
-                class="btn btn-light"
-                href="https://www.tiktok.com/@changboyair"
-                target="_blank"
-                rel="noopener noreferrer">
+            <a class="btn btn-light"
+               href="https://www.tiktok.com/@changboyair"
+               target="_blank"
+               rel="noopener noreferrer">
                 ▶ ดูผลงานบน TikTok
             </a>
         </article>
@@ -1010,11 +1146,10 @@ footer {
                 </p>
             </div>
 
-            <a
-                class="btn btn-light"
-                href="https://www.tiktok.com/@changboyair"
-                target="_blank"
-                rel="noopener noreferrer">
+            <a class="btn btn-light"
+               href="https://www.tiktok.com/@changboyair"
+               target="_blank"
+               rel="noopener noreferrer">
                 ▶ ดูผลงานบน TikTok
             </a>
         </article>
@@ -1028,11 +1163,10 @@ footer {
                 </p>
             </div>
 
-            <a
-                class="btn btn-light"
-                href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่/featured"
-                target="_blank"
-                rel="noopener noreferrer">
+            <a class="btn btn-light"
+               href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่/featured"
+               target="_blank"
+               rel="noopener noreferrer">
                 ▶ ดู YouTube
             </a>
         </article>
@@ -1046,19 +1180,17 @@ footer {
             และติดตามวิดีโอใหม่จากช่างบอย
         </p>
 
-        <a
-            class="btn btn-light"
-            href="https://www.google.com/search?q=ช่างบอย+ซ่อมแอร์เคลื่อนที่"
-            target="_blank"
-            rel="noopener noreferrer">
+        <a class="btn btn-light"
+           href="https://www.google.com/search?q=ช่างบอย+ซ่อมแอร์เคลื่อนที่"
+           target="_blank"
+           rel="noopener noreferrer">
             ⭐ ดูรีวิวเพิ่มเติม
         </a>
 
-        <a
-            class="btn btn-primary"
-            href="https://www.tiktok.com/@changboyair"
-            target="_blank"
-            rel="noopener noreferrer">
+        <a class="btn btn-primary"
+           href="https://www.tiktok.com/@changboyair"
+           target="_blank"
+           rel="noopener noreferrer">
             🎵 ดูผลงานทั้งหมดใน TikTok
         </a>
 
@@ -1281,7 +1413,9 @@ footer {
                 พัดลม คอยล์ สารทำความเย็น เซนเซอร์ แผงวงจร
                 หรืออุปกรณ์ควบคุมต่าง ๆ
                 <br><br>
-                <a href="./air-not-cold.html" class="read-more">อ่านเพิ่มเติม: แอร์เคลื่อนที่ไม่เย็น →</a>
+                <a href="./air-not-cold.html" class="read-more">
+                    อ่านเพิ่มเติม: แอร์เคลื่อนที่ไม่เย็น →
+                </a>
             </p>
         </details>
 
@@ -1292,7 +1426,9 @@ footer {
                 แผงวงจร เซนเซอร์ อุปกรณ์ป้องกันคอมเพรสเซอร์
                 หรือคอมเพรสเซอร์เอง
                 <br><br>
-                <a href="./compressor-not-start.html" class="read-more">อ่านเพิ่มเติม: คอมเพรสเซอร์ไม่ทำงาน →</a>
+                <a href="./compressor-not-start.html" class="read-more">
+                    อ่านเพิ่มเติม: คอมเพรสเซอร์ไม่ทำงาน →
+                </a>
             </p>
         </details>
 
@@ -1303,7 +1439,9 @@ footer {
                 ท่อน้ำทิ้ง ระบบระบายน้ำ ปั๊มน้ำในบางรุ่น
                 หรือสิ่งสกปรกภายในเครื่อง
                 <br><br>
-                <a href="./water-leak.html" class="read-more">อ่านเพิ่มเติม: แอร์เคลื่อนที่น้ำหยด →</a>
+                <a href="./water-leak.html" class="read-more">
+                    อ่านเพิ่มเติม: แอร์เคลื่อนที่น้ำหยด →
+                </a>
             </p>
         </details>
 
@@ -1322,7 +1460,9 @@ footer {
                 เสียงดังอาจเกิดจากพัดลม มอเตอร์ ลูกปืน ชิ้นส่วนหลวม
                 การสั่นสะเทือน หรือคอมเพรสเซอร์
                 <br><br>
-                <a href="./loud-noise.html" class="read-more">อ่านเพิ่มเติม: แอร์เคลื่อนที่เสียงดัง →</a>
+                <a href="./loud-noise.html" class="read-more">
+                    อ่านเพิ่มเติม: แอร์เคลื่อนที่เสียงดัง →
+                </a>
             </p>
         </details>
 
@@ -1332,12 +1472,13 @@ footer {
                 น้ำแข็งเกาะคอยล์อาจเกี่ยวข้องกับลมผ่านคอยล์ไม่เพียงพอ
                 แผ่นกรองสกปรก พัดลม ระบบทำความเย็น หรือเซนเซอร์
                 <br><br>
-                <a href="./ice-on-coil.html" class="read-more">อ่านเพิ่มเติม: น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ →</a>
+                <a href="./ice-on-coil.html" class="read-more">
+                    อ่านเพิ่มเติม: น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่ →
+                </a>
             </p>
         </details>
 
     </div>
-
 </div>
 ```
 
@@ -1354,7 +1495,6 @@ footer {
     </p>
 
     <div class="map-box">
-
         <iframe
             src="https://www.google.com/maps?q=3J6J%2B6X%20Khlong%20Luang%20Pathum%20Thani&output=embed"
             title="แผนที่ตำแหน่งช่างบอย ซ่อมแอร์เคลื่อนที่"
@@ -1362,7 +1502,6 @@ footer {
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-
     </div>
 
     <div class="coverage-box" style="margin-top:20px;">
@@ -1473,7 +1612,6 @@ footer {
         </div>
 
     </div>
-
 </div>
 ```
 
