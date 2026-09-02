@@ -62,6 +62,10 @@
 
 <style>
 
+/* =====================================================
+   SYMPTOMS PAGE
+===================================================== */
+
 .symptoms-hero {
     padding: 65px 20px 50px;
     background: linear-gradient(135deg, #eef8ff, #ffffff);
@@ -104,7 +108,9 @@
     border: 1px solid #e1ebf2;
     border-radius: 18px;
     box-shadow: 0 7px 25px rgba(0,0,0,0.06);
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 .symptom-card:hover {
@@ -185,7 +191,9 @@
     color: #164f70;
     font-weight: 700;
     line-height: 1.6;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
 .related-card:hover {
@@ -236,6 +244,10 @@
     color: #ffffff;
 }
 
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
 @media (max-width: 900px) {
 
     .symptoms-grid {
@@ -281,100 +293,108 @@
 
 <body>
 
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
 <header class="site-header">
 
 <div class="container header-container">
 
-```
 <a href="./index.html"
-   class="brand"
-   aria-label="ช่างบอยซ่อมแอร์เคลื่อนที่">
+class="brand"
+aria-label="ช่างบอยซ่อมแอร์เคลื่อนที่">
 
-    <img
-        src="./logo.png"
-        alt="โลโก้ช่างบอยซ่อมแอร์เคลื่อนที่"
-        class="brand-logo"
-        width="60"
-        height="60"
-        loading="eager"
-        decoding="async">
+```
+<img
+    src="./logo.png"
+    alt="โลโก้ช่างบอยซ่อมแอร์เคลื่อนที่"
+    class="brand-logo"
+    width="60"
+    height="60"
+    loading="eager"
+    decoding="async">
 
-    <div class="brand-name">
+<div class="brand-name">
 
-        <strong>
-            ช่างบอย
-        </strong>
+    <strong>
+        ช่างบอย
+    </strong>
 
-        <span>
-            ซ่อมแอร์เคลื่อนที่
-        </span>
+    <span>
+        ซ่อมแอร์เคลื่อนที่
+    </span>
 
-    </div>
+</div>
+```
 
 </a>
-
 
 <nav class="main-nav"
      aria-label="เมนูหลัก">
 
-    <ul>
+```
+<ul>
 
-        <li>
-            <a href="./index.html">
-                หน้าแรก
-            </a>
-        </li>
+    <li>
+        <a href="./index.html">
+            หน้าแรก
+        </a>
+    </li>
 
-        <li>
-            <a href="./index.html#services">
-                บริการ
-            </a>
-        </li>
+    <li>
+        <a href="./index.html#services">
+            บริการ
+        </a>
+    </li>
 
-        <li>
-            <a href="./index.html#why-us">
-                ทำไมต้องเลือกเรา
-            </a>
-        </li>
+    <li>
+        <a href="./index.html#why-us">
+            ทำไมต้องเลือกเรา
+        </a>
+    </li>
 
-        <li>
-            <a href="./index.html#reviews-works">
-                รีวิว / ผลงาน
-            </a>
-        </li>
+    <li>
+        <a href="./index.html#reviews-works">
+            รีวิว / ผลงาน
+        </a>
+    </li>
 
-        <li>
-            <a href="./articles.html">
-                บทความ
-            </a>
-        </li>
+    <li>
+        <a href="./articles.html">
+            บทความ
+        </a>
+    </li>
 
-        <li>
-            <a href="./index.html#faq">
-                FAQ
-            </a>
-        </li>
+    <li>
+        <a href="./index.html#faq">
+            FAQ
+        </a>
+    </li>
 
-        <li>
-            <a href="./index.html#contact">
-                ติดต่อเรา
-            </a>
-        </li>
+    <li>
+        <a href="./index.html#contact">
+            ติดต่อเรา
+        </a>
+    </li>
 
-    </ul>
+</ul>
+```
 
 </nav>
-```
 
 </div>
 
 </header>
 
+<!-- =====================================================
+     HERO
+===================================================== -->
+
 <section class="symptoms-hero">
 
 <div class="container">
 
-```
 <h1>
     🔧 28 อาการเสียแอร์เคลื่อนที่ที่พบบ่อย
 </h1>
@@ -384,11 +404,14 @@
     พร้อมแนวทางตรวจสอบเบื้องต้น
     เพื่อช่วยให้เข้าใจปัญหาก่อนตัดสินใจซ่อม
 </p>
-```
 
 </div>
 
 </section>
+
+<!-- =====================================================
+     28 SYMPTOMS
+===================================================== -->
 
 <section class="symptoms-section">
 
@@ -1017,6 +1040,10 @@ href="./portable-air-conditioner-fan-function.html">
 
 </div>
 
+<!-- =====================================================
+     NOTE
+===================================================== -->
+
 <div class="symptoms-note">
 
 <strong>
@@ -1035,6 +1062,10 @@ href="./portable-air-conditioner-fan-function.html">
 </div>
 
 </section>
+
+<!-- =====================================================
+     RELATED ARTICLES
+===================================================== -->
 
 <section class="related-section">
 
@@ -1100,6 +1131,10 @@ href="./portable-air-conditioner-placement.html">
 
 </section>
 
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
 <section class="symptoms-contact">
 
 <div class="container">
@@ -1131,6 +1166,10 @@ rel="noopener noreferrer">
 </div>
 
 </section>
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
 <footer>
 
