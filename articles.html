@@ -1,1327 +1,1368 @@
 <!DOCTYPE html>
 
 <html lang="th">
-
 <head>
 
+```
 <meta charset="UTF-8">
 
-<meta name="viewport"
-   content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>บทความความรู้แอร์เคลื่อนที่ 32 เรื่อง | ช่างบอย ซ่อมแอร์เคลื่อนที่</title>
 
 <meta name="description"
-   content="รวมบทความความรู้แอร์เคลื่อนที่ 32 เรื่อง ครอบคลุมการใช้งาน การดูแลรักษา ระบบคอมเพรสเซอร์ พัดลม อุปกรณ์ไฟฟ้า เซนเซอร์ ระบบน้ำ และอาการเสียแอร์เคลื่อนที่">
+      content="รวมบทความความรู้แอร์เคลื่อนที่ 32 เรื่อง ครอบคลุมการใช้งาน การประหยัดไฟ คอมเพรสเซอร์ พัดลม PCB เซนเซอร์ ระบบน้ำ และวิธีตรวจสอบอาการเสีย">
 
 <meta name="keywords"
-   content="บทความแอร์เคลื่อนที่, ความรู้แอร์เคลื่อนที่, ซ่อมแอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, คอมเพรสเซอร์แอร์เคลื่อนที่, พัดลมแอร์เคลื่อนที่, PCB, Thermistor, รีเลย์, คาปาซิเตอร์">
+      content="บทความแอร์เคลื่อนที่, แอร์เคลื่อนที่, ซ่อมแอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, คอมเพรสเซอร์แอร์เคลื่อนที่, ช่างบอย">
 
-<meta name="author"
-   content="ช่างบอยซ่อมแอร์เคลื่อนที่">
+<meta name="author" content="ช่างบอย ซ่อมแอร์เคลื่อนที่">
 
-<meta name="robots"
-   content="index, follow">
-
-<meta name="googlebot"
-   content="index, follow">
-
-<meta name="theme-color"
-   content="#0d47a1">
+<meta name="robots" content="index, follow">
 
 <link rel="canonical"
       href="https://changboyportable.github.io/changboy-air/articles.html">
 
-<meta property="og:type"
-   content="website">
-
-<meta property="og:locale"
-   content="th_TH">
-
 <meta property="og:title"
-   content="บทความความรู้แอร์เคลื่อนที่ 32 เรื่อง | ช่างบอย">
+      content="บทความความรู้แอร์เคลื่อนที่ 32 เรื่อง | ช่างบอย">
 
 <meta property="og:description"
-   content="ศูนย์รวมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่ 32 เรื่อง">
+      content="รวมความรู้เกี่ยวกับแอร์เคลื่อนที่ การใช้งาน การดูแลรักษา ระบบทำความเย็น และการตรวจสอบอาการเสีย">
+
+<meta property="og:type" content="website">
 
 <meta property="og:url"
-   content="https://changboyportable.github.io/changboy-air/articles.html">
-
-<meta property="og:site_name"
-   content="ช่างบอยซ่อมแอร์เคลื่อนที่">
+      content="https://changboyportable.github.io/changboy-air/articles.html">
 
 <meta property="og:image"
-   content="https://changboyportable.github.io/changboy-air/logo.png">
+      content="https://changboyportable.github.io/changboy-air/logo.png">
 
-<meta property="og:image:alt"
-   content="โลโก้ช่างบอยซ่อมแอร์เคลื่อนที่">
+<link rel="icon" type="image/png" href="./logo.png">
 
-<meta name="twitter:card"
-   content="summary_large_image">
-
-<meta name="twitter:title"
-   content="บทความความรู้แอร์เคลื่อนที่ 32 เรื่อง">
-
-<meta name="twitter:description"
-   content="รวมความรู้เกี่ยวกับแอร์เคลื่อนที่ การดูแลรักษา ระบบทำความเย็น และการตรวจสอบอาการเสีย">
-
-<meta name="twitter:image"
-   content="https://changboyportable.github.io/changboy-air/logo.png">
-
-<link rel="icon"
-      type="image/png"
-      href="./logo.png">
+<link rel="stylesheet" href="./style.css">
 
 <style>
 
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    margin: 0;
-    font-family:
-        Arial,
-        "Noto Sans Thai",
-        Tahoma,
-        sans-serif;
-    background: #f7fbff;
-    color: #263648;
-    line-height: 1.75;
-}
-
-a {
-    text-decoration: none;
-}
-
-.container {
-    width: min(1150px, calc(100% - 30px));
-    margin: 0 auto;
-}
-
-/* HEADER */
-
-.site-header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background: rgba(255,255,255,.97);
-    border-bottom: 1px solid #e5eef4;
-    box-shadow: 0 3px 15px rgba(0,0,0,.06);
-    backdrop-filter: blur(10px);
-}
-
-.header-container {
-    min-height: 78px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    color: inherit;
-    text-decoration: none;
-    font-weight: 800;
-    flex-shrink: 0;
-}
-
-.brand-logo {
-    width: 58px;
-    height: 58px;
-    object-fit: contain;
-    display: block;
-}
-
-.brand-text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.3;
-}
-
-.brand-name {
-    color: #0d47a1;
-    font-size: 18px;
-}
-
-.brand-sub {
-    color: #607d8b;
-    font-size: 12px;
-}
-
-/* NAVIGATION */
-
-.main-nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    gap: 8px;
-}
-
-.main-nav a {
-    color: #164f70;
-    padding: 8px 10px;
-    border-radius: 8px;
-    font-weight: 600;
-    transition:
-        background .2s ease,
-        color .2s ease;
-}
-
-.main-nav a:hover {
-    background: #eef7ff;
-    color: #0d47a1;
-}
-
-.main-nav .active {
-    background: #eaf4ff;
-    color: #0d47a1;
-}
-
-/* HERO */
-
-.articles-hero {
-    padding: 65px 0 55px;
-    background:
-        linear-gradient(
-            135deg,
-            #f0f9ff,
-            #ffffff
-        );
-    border-bottom: 1px solid #e6eef5;
-}
-
-.articles-hero-content {
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-}
-
-.articles-logo {
-    width: 95px;
-    height: 95px;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 20px;
-    background: #fff;
-    padding: 8px;
-    box-shadow: 0 8px 25px rgba(0,0,0,.10);
-}
-
-.articles-hero h1 {
-    margin: 0 0 15px;
-    color: #0d47a1;
-    font-size: clamp(30px, 5vw, 48px);
-    line-height: 1.3;
-}
-
-.articles-hero p {
-    margin: 0 auto;
-    max-width: 800px;
-    color: #526273;
-    font-size: 18px;
-    line-height: 1.9;
-}
-
-/* INTRO */
-
-.intro-section {
-    padding: 55px 0 25px;
-}
-
-.intro-box {
-    background: #fff;
-    border: 1px solid #e3edf4;
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 7px 25px rgba(0,0,0,.06);
-}
-
-.intro-box h2 {
-    margin: 0 0 12px;
-    color: #0d47a1;
-    font-size: 28px;
-}
-
-.intro-box p {
-    margin: 0;
-    color: #5f6f7f;
-    line-height: 1.9;
-}
-
-.info-box {
-    margin-top: 20px;
-    padding: 18px 20px;
-    background: #eef7ff;
-    border-left: 5px solid #1687c7;
-    border-radius: 10px;
-    color: #526273;
-}
-
-.info-box strong {
-    color: #0d47a1;
-}
-
-/* CATEGORY */
-
-.category {
-    padding: 45px 0 20px;
-}
-
-.category-header {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 22px;
-}
-
-.category-icon {
-    width: 54px;
-    height: 54px;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 15px;
-    background:
-        linear-gradient(
-            135deg,
-            #0d47a1,
-            #1687c7
-        );
-    color: #fff;
-    font-size: 26px;
-    box-shadow: 0 7px 18px rgba(13,71,161,.18);
-}
-
-.category-title h2 {
-    margin: 0;
-    color: #17324d;
-    font-size: 27px;
-    line-height: 1.4;
-}
-
-.category-title p {
-    margin: 2px 0 0;
-    color: #718096;
-    font-size: 14px;
-}
-
-/* ARTICLE GRID */
-
-.article-grid {
-    display: grid;
-    grid-template-columns:
-        repeat(3, minmax(0, 1fr));
-    gap: 22px;
-}
-
-/* ARTICLE CARD */
-
-.article-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: 290px;
-    padding: 24px;
-    background: #fff;
-    border: 1px solid #e3edf4;
-    border-radius: 18px;
-    box-shadow: 0 7px 25px rgba(0,0,0,.055);
-    overflow: hidden;
-    transition:
-        transform .2s ease,
-        box-shadow .2s ease,
-        border-color .2s ease;
-}
-
-.article-card::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 4px;
-    background:
-        linear-gradient(
-            90deg,
-            #0d47a1,
-            #1687c7
-        );
-}
-
-.article-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 14px 35px rgba(0,0,0,.10);
-    border-color: #cfe3f0;
-}
-
-.article-number {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #eaf4ff;
-    color: #0d47a1;
-    font-weight: 800;
-    font-size: 16px;
-    margin-bottom: 16px;
-}
-
-.article-card h3 {
-    margin: 0 0 10px;
-    color: #17324d;
-    font-size: 20px;
-    line-height: 1.5;
-}
-
-.article-card p {
-    margin: 0 0 20px;
-    color: #687789;
-    font-size: 15px;
-    line-height: 1.8;
-    flex-grow: 1;
-}
-
-.read-more {
-    display: inline-flex;
-    align-items: center;
-    color: #0d47a1;
-    font-weight: 800;
-    transition:
-        color .2s ease,
-        transform .2s ease;
-}
-
-.read-more:hover {
-    color: #1687c7;
-    transform: translateX(3px);
-}
-
-.category:nth-of-type(even) {
-    background: #f7fbff;
-}
-
-/* CTA */
-
-.articles-cta {
-    padding: 60px 0;
-}
-
-.cta-box {
-    text-align: center;
-    background:
-        linear-gradient(
-            135deg,
-            #0d47a1,
-            #1687c7
-        );
-    color: #fff;
-    border-radius: 22px;
-    padding: 40px 25px;
-    box-shadow: 0 12px 35px rgba(13,71,161,.18);
-}
-
-.cta-box h2 {
-    margin: 0 0 12px;
-    font-size: 30px;
-}
-
-.cta-box p {
-    margin: 0 auto 25px;
-    max-width: 700px;
-    line-height: 1.8;
-}
-
-.cta-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-}
-
-.cta-button {
-    display: inline-block;
-    padding: 12px 22px;
-    border-radius: 10px;
-    font-weight: 800;
-    background: #fff;
-    color: #0d47a1;
-}
-
-.cta-button.line {
-    background: #06c755;
-    color: #fff;
-}
-
-/* FLOATING BUTTONS */
-
-.floating-buttons {
-    position: fixed;
-    right: 18px;
-    bottom: 18px;
-    z-index: 2000;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.floating-buttons a {
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 22px;
-    box-shadow: 0 6px 20px rgba(0,0,0,.20);
-}
-
-.float-phone {
-    background: #0d47a1;
-}
-
-.float-line {
-    background: #06c755;
-}
-
-/* FOOTER */
-
-footer {
-    background: #17324d;
-    color: #fff;
-    text-align: center;
-    padding: 38px 20px;
-    margin-top: 20px;
-}
-
-footer p {
-    margin: 6px 0;
-}
-
-footer a {
-    color: #fff;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* TABLET */
-
-@media (max-width: 900px) {
-
-    .header-container {
-        flex-direction: column;
-        padding: 12px 0;
+    * {
+        box-sizing: border-box;
     }
 
-    .main-nav {
-        justify-content: center;
+    html {
+        scroll-behavior: smooth;
     }
 
-    .article-grid {
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr));
-    }
-}
-
-/* MOBILE */
-
-@media (max-width: 600px) {
-
-    .container {
-        width:
-            min(100% - 24px, 1150px);
+    body {
+        margin: 0;
+        font-family: Arial, "Noto Sans Thai", sans-serif;
+        background: #f5f7fb;
+        color: #1f2937;
+        line-height: 1.75;
     }
 
-    .header-container {
-        gap: 10px;
+    a {
+        color: inherit;
+    }
+
+    .articles-page {
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .article-header {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 18px 22px;
+        margin-bottom: 24px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.06);
     }
 
     .brand {
-        width: 100%;
-        justify-content: center;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        text-decoration: none;
+        margin-bottom: 16px;
     }
 
-    .brand-logo {
-        width: 52px;
-        height: 52px;
+    .brand img {
+        width: 72px;
+        height: 72px;
+        object-fit: contain;
+        border-radius: 12px;
     }
 
-    .brand-name {
-        font-size: 16px;
+    .brand-text {
+        font-size: 24px;
+        font-weight: 800;
+        color: #111827;
+    }
+
+    .brand-subtitle {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #64748b;
+        margin-top: 2px;
     }
 
     .main-nav {
-        width: 100%;
-        gap: 3px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
     }
 
     .main-nav a {
-        font-size: 13px;
-        padding: 6px 7px;
+        display: inline-block;
+        padding: 9px 14px;
+        border-radius: 10px;
+        text-decoration: none;
+        color: #334155;
+        background: #f1f5f9;
+        font-size: 15px;
+        font-weight: 600;
     }
 
-    .articles-hero {
-        padding: 45px 0 40px;
+    .main-nav a:hover {
+        background: #e2e8f0;
     }
 
-    .articles-logo {
-        width: 82px;
-        height: 82px;
+    .hero {
+        background: linear-gradient(135deg, #0f766e, #0369a1);
+        color: #ffffff;
+        border-radius: 22px;
+        padding: 42px 28px;
+        margin-bottom: 28px;
+        text-align: center;
     }
 
-    .articles-hero h1 {
-        font-size: 30px;
+    .hero h1 {
+        margin: 0 0 12px;
+        font-size: 36px;
+        line-height: 1.35;
     }
 
-    .articles-hero p {
-        font-size: 16px;
+    .hero p {
+        max-width: 800px;
+        margin: 0 auto;
+        font-size: 17px;
+        opacity: 0.96;
     }
 
-    .intro-box {
-        padding: 22px;
+    .intro {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 24px;
+        margin-bottom: 28px;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.05);
     }
 
-    .intro-box h2 {
-        font-size: 24px;
-    }
-
-    .category {
-        padding: 35px 0 15px;
-    }
-
-    .category-header {
-        align-items: flex-start;
-    }
-
-    .category-icon {
-        width: 48px;
-        height: 48px;
-        font-size: 23px;
-    }
-
-    .category-title h2 {
-        font-size: 22px;
-    }
-
-    .article-grid {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .article-card {
-        min-height: auto;
-        padding: 22px;
-    }
-
-    .cta-box {
-        padding: 32px 20px;
-    }
-
-    .cta-box h2 {
+    .intro h2 {
+        margin-top: 0;
         font-size: 25px;
     }
 
-    .floating-buttons {
-        right: 12px;
-        bottom: 12px;
+    .category {
+        margin-bottom: 34px;
     }
-}
+
+    .category-header {
+        background: #ffffff;
+        border-radius: 16px 16px 0 0;
+        padding: 20px 22px;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .category-header h2 {
+        margin: 0;
+        font-size: 25px;
+        color: #111827;
+    }
+
+    .category-header p {
+        margin: 6px 0 0;
+        color: #64748b;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        background: #ffffff;
+        padding: 18px;
+        border-radius: 0 0 16px 16px;
+    }
+
+    .article-card {
+        background: #f8fafc;
+        border: 1px solid #e5e7eb;
+        border-radius: 15px;
+        padding: 20px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .article-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .article-number {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #0f766e;
+        color: #ffffff;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .article-card h3 {
+        margin: 0 0 8px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: #111827;
+    }
+
+    .article-card p {
+        margin: 0 0 14px;
+        color: #64748b;
+        font-size: 14px;
+    }
+
+    .read-more {
+        display: inline-block;
+        text-decoration: none;
+        color: #0369a1;
+        font-weight: 800;
+        font-size: 15px;
+    }
+
+    .read-more:hover {
+        text-decoration: underline;
+    }
+
+    .contact-box {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 30px 24px;
+        margin: 34px 0;
+        text-align: center;
+        box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+    }
+
+    .contact-box h2 {
+        margin-top: 0;
+        font-size: 26px;
+    }
+
+    .contact-buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    .contact-button {
+        display: inline-block;
+        padding: 12px 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 800;
+    }
+
+    .phone-button {
+        background: #0f766e;
+        color: #ffffff;
+    }
+
+    .line-button {
+        background: #16a34a;
+        color: #ffffff;
+    }
+
+    .footer {
+        background: #111827;
+        color: #cbd5e1;
+        border-radius: 18px;
+        padding: 28px 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .footer strong {
+        display: block;
+        color: #ffffff;
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+
+    .footer-links {
+        margin-top: 14px;
+    }
+
+    .footer-links a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 8px;
+    }
+
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+
+        .article-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .hero h1 {
+            font-size: 30px;
+        }
+
+    }
+
+    @media (max-width: 600px) {
+
+        .articles-page {
+            padding: 12px;
+        }
+
+        .article-header {
+            padding: 15px;
+        }
+
+        .brand img {
+            width: 58px;
+            height: 58px;
+        }
+
+        .brand-text {
+            font-size: 19px;
+        }
+
+        .main-nav {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .main-nav a {
+            text-align: center;
+            font-size: 14px;
+            padding: 8px 5px;
+        }
+
+        .hero {
+            padding: 32px 18px;
+            border-radius: 18px;
+        }
+
+        .hero h1 {
+            font-size: 27px;
+        }
+
+        .hero p {
+            font-size: 15px;
+        }
+
+        .article-grid {
+            grid-template-columns: 1fr;
+            padding: 12px;
+        }
+
+        .category-header {
+            padding: 18px 16px;
+        }
+
+        .category-header h2 {
+            font-size: 22px;
+        }
+
+    }
 
 </style>
+```
 
 </head>
 
 <body>
 
-<header class="site-header">
-
-<div class="container header-container">
+<div class="articles-page">
 
 ```
-<a href="./index.html"
-   class="brand"
-   aria-label="ช่างบอยซ่อมแอร์เคลื่อนที่">
+<header class="article-header">
 
-    <img src="./logo.png"
-         alt="โลโก้ช่างบอยซ่อมแอร์เคลื่อนที่"
-         class="brand-logo"
-         width="58"
-         height="58">
+    <a class="brand" href="./index.html">
 
-    <span class="brand-text">
+        <img src="./logo.png"
+             alt="โลโก้ ช่างบอย ซ่อมแอร์เคลื่อนที่">
 
-        <span class="brand-name">
-            ช่างบอย ซ่อมแอร์เคลื่อนที่
-        </span>
+        <div>
+            <div class="brand-text">
+                ช่างบอย ซ่อมแอร์เคลื่อนที่
+            </div>
 
-        <span class="brand-sub">
-            ปทุมธานี
-        </span>
+            <span class="brand-subtitle">
+                ปทุมธานี
+            </span>
+        </div>
 
-    </span>
-
-</a>
-
-<nav class="main-nav"
-     aria-label="เมนูหลัก">
-
-    <a href="./index.html">
-        หน้าแรก
     </a>
 
-    <a href="./index.html#services">
-        บริการ
-    </a>
+    <nav class="main-nav" aria-label="เมนูหลัก">
 
-    <a href="./articles.html"
-       class="active">
-        บทความ
-    </a>
+        <a href="./index.html">หน้าแรก</a>
 
-    <a href="./index.html#faq">
-        FAQ
-    </a>
+        <a href="./index.html#services">บริการ</a>
 
-    <a href="./index.html#location">
-        แผนที่
-    </a>
+        <a href="./index.html#why-us">ทำไมต้องเลือกเรา</a>
 
-    <a href="./index.html#contact">
-        ติดต่อ
-    </a>
+        <a href="./symptoms.html">อาการเสีย</a>
 
-</nav>
-```
+        <a href="./articles.html">บทความ</a>
 
-</div>
+        <a href="./index.html#faq">FAQ</a>
+
+        <a href="./index.html#contact">ติดต่อ</a>
+
+    </nav>
 
 </header>
 
-<section class="articles-hero">
-
-<div class="container">
-
-```
-<div class="articles-hero-content">
-
-    <img src="./logo.png"
-         alt="ช่างบอยซ่อมแอร์เคลื่อนที่"
-         class="articles-logo"
-         width="95"
-         height="95">
-
-    <h1>
-        บทความความรู้แอร์เคลื่อนที่
-    </h1>
-
-    <p>
-        รวมความรู้เกี่ยวกับแอร์เคลื่อนที่
-        ทั้งการใช้งาน การดูแลรักษา
-        ระบบคอมเพรสเซอร์ พัดลม
-        อุปกรณ์ไฟฟ้า เซนเซอร์ ระบบน้ำ
-        และการตรวจสอบอาการเสีย
-    </p>
-
-</div>
-```
-
-</div>
-
-</section>
-
-<section class="intro-section">
-
-<div class="container">
-
-```
-<div class="intro-box">
-
-    <h2>
-        📚 ศูนย์รวมบทความ 32 เรื่อง
-    </h2>
-
-    <p>
-        ช่างบอยรวบรวมบทความความรู้เกี่ยวกับ
-        แอร์เคลื่อนที่เป็นหมวดหมู่
-        เพื่อให้ค้นหาข้อมูลได้ง่าย
-        ไม่ว่าจะเป็นเรื่องการใช้งาน
-        การประหยัดไฟ ระบบทำความเย็น
-        คอมเพรสเซอร์ พัดลม อุปกรณ์ไฟฟ้า
-        ระบบน้ำ และอาการผิดปกติของเครื่อง
-    </p>
-
-    <div class="info-box">
-
-        <strong>
-            💡 วิธีใช้งาน:
-        </strong>
-
-        เลือกหมวดที่ต้องการ
-        จากนั้นกด
-        <strong>
-            “อ่านบทความ →”
-        </strong>
-        เพื่อเข้าสู่หน้าเนื้อหาโดยตรง
-
-    </div>
-
-</div>
-```
-
-</div>
-
-</section>
 
 <main>
 
-<section class="category">
+    <section class="hero">
 
-<div class="container">
-
-```
-<div class="category-header">
-
-    <div class="category-icon">
-        📖
-    </div>
-
-    <div class="category-title">
-
-        <h2>
-            ความรู้และการใช้งานทั่วไป
-        </h2>
+        <h1>📚 บทความความรู้แอร์เคลื่อนที่</h1>
 
         <p>
-            พื้นฐานการใช้งาน การเลือกเครื่อง
-            การจัดวาง และการดูแลแอร์เคลื่อนที่
+            รวมความรู้เกี่ยวกับแอร์เคลื่อนที่
+            การใช้งาน การดูแลรักษา ระบบทำความเย็น
+            อุปกรณ์ไฟฟ้า และการตรวจสอบอาการเสีย
         </p>
 
-    </div>
+    </section>
 
-</div>
 
-<div class="article-grid">
+    <section class="intro">
 
-    <article class="article-card">
-        <div class="article-number">1</div>
-        <h3>ตั้งแอร์เคลื่อนที่ 25°C หรือ 26°C ดี?</h3>
-        <p>ทำความเข้าใจเรื่องอุณหภูมิ และแนวทางตั้งค่าแอร์เคลื่อนที่ให้เหมาะสมกับการใช้งาน</p>
-        <a href="./portable-air-conditioner-25-26-degree.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">2</div>
-        <h3>วิธีเลือก BTU แอร์เคลื่อนที่ให้เหมาะกับห้อง</h3>
-        <p>ทำความเข้าใจ BTU และปัจจัยที่ควรพิจารณาก่อนเลือกแอร์เคลื่อนที่</p>
-        <a href="./portable-air-conditioner-btu-guide.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">3</div>
-        <h3>แอร์เคลื่อนที่กินไฟมากไหม?</h3>
-        <p>ทำความเข้าใจการใช้ไฟของแอร์เคลื่อนที่และปัจจัยที่ทำให้ค่าไฟแตกต่างกัน</p>
-        <a href="./portable-air-conditioner-electricity-use.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">4</div>
-        <h3>วิธีใช้แอร์เคลื่อนที่ให้ประหยัดไฟ</h3>
-        <p>เทคนิคการใช้งานและดูแลเครื่องเพื่อลดภาระการทำงานและช่วยประหยัดไฟ</p>
-        <a href="./portable-air-conditioner-save-electricity.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">5</div>
-        <h3>วางแอร์เคลื่อนที่ตรงไหนดีที่สุด?</h3>
-        <p>แนวทางเลือกตำแหน่งวางเครื่องเพื่อช่วยให้อากาศไหลเวียนและระบายความร้อนได้เหมาะสม</p>
-        <a href="./portable-air-conditioner-placement.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">6</div>
-        <h3>วิธีทำความสะอาดแอร์เคลื่อนที่</h3>
-        <p>แนวทางดูแลความสะอาดของเครื่องและลดการสะสมของฝุ่น</p>
-        <a href="./portable-air-conditioner-filter-cleaning.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">7</div>
-        <h3>วิธีดูแลฟิลเตอร์แอร์เคลื่อนที่</h3>
-        <p>ทำความเข้าใจการดูแลฟิลเตอร์และความสำคัญของการรักษาความสะอาด</p>
-        <a href="./portable-air-conditioner-filter-care.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">8</div>
-        <h3>ท่อลมร้อนแอร์เคลื่อนที่สำคัญอย่างไร?</h3>
-        <p>ทำความเข้าใจหน้าที่ของท่อลมร้อนและเหตุผลที่ต้องระบายความร้อนออกจากห้อง</p>
-        <a href="./portable-air-conditioner-exhaust-hose.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">9</div>
-        <h3>ท่อน้ำทิ้งแอร์เคลื่อนที่ทำหน้าที่อะไร?</h3>
-        <p>ทำความเข้าใจระบบระบายน้ำและหน้าที่ของท่อน้ำทิ้ง</p>
-        <a href="./portable-air-conditioner-drain-hose.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-</div>
-```
-
-</div>
-
-</section>
-
-<section class="category">
-
-<div class="container">
-
-```
-<div class="category-header">
-
-    <div class="category-icon">
-        ⚙️
-    </div>
-
-    <div class="category-title">
-
-        <h2>
-            ระบบคอมเพรสเซอร์
-        </h2>
+        <h2>📖 ศูนย์รวมบทความ 32 เรื่อง</h2>
 
         <p>
-            ความรู้เกี่ยวกับคอมเพรสเซอร์
-            และระบบทำความเย็น
+            ช่างบอยรวบรวมบทความความรู้เกี่ยวกับแอร์เคลื่อนที่
+            แบ่งเป็นหมวดหมู่เพื่อให้ค้นหาข้อมูลได้ง่าย
+            ทั้งเรื่องการใช้งาน การประหยัดไฟ
+            ระบบทำความเย็น คอมเพรสเซอร์ พัดลม
+            อุปกรณ์ไฟฟ้า ระบบน้ำ และอาการผิดปกติของเครื่อง
         </p>
-
-    </div>
-
-</div>
-
-<div class="article-grid">
-
-    <article class="article-card">
-        <div class="article-number">10</div>
-        <h3>คอมเพรสเซอร์แอร์เคลื่อนที่ทำหน้าที่อะไร?</h3>
-        <p>ทำความรู้จักคอมเพรสเซอร์และบทบาทสำคัญในระบบทำความเย็น</p>
-        <a href="./portable-air-conditioner-compressor-function.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">11</div>
-        <h3>คอมเพรสเซอร์ไม่ทำงาน เกิดจากอะไร?</h3>
-        <p>แนวทางทำความเข้าใจสาเหตุเมื่อคอมเพรสเซอร์ไม่เริ่มทำงาน</p>
-        <a href="./compressor-not-start.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">12</div>
-        <h3>คอมเพรสเซอร์ทำงานแต่ไม่เย็น</h3>
-        <p>ปัจจัยที่เกี่ยวข้องกับระบบทำความเย็นเมื่อคอมเพรสเซอร์ทำงานแต่ความเย็นไม่เพียงพอ</p>
-        <a href="./compressor-runs-but-not-cold.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">13</div>
-        <h3>คอมเพรสเซอร์แอร์เคลื่อนที่ร้อนจัด</h3>
-        <p>ทำความเข้าใจสาเหตุที่ทำให้คอมเพรสเซอร์มีอุณหภูมิสูงผิดปกติ</p>
-        <a href="./portable-air-conditioner-compressor-overheat.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-</div>
-```
-
-</div>
-
-</section>
-
-<section class="category">
-
-<div class="container">
-
-```
-<div class="category-header">
-
-    <div class="category-icon">
-        🌀
-    </div>
-
-    <div class="category-title">
-
-        <h2>
-            ระบบพัดลมและการไหลเวียนอากาศ
-        </h2>
 
         <p>
-            ความรู้เกี่ยวกับพัดลม แรงลม
-            และการไหลเวียนของอากาศภายในเครื่อง
+            💡 เลือกหัวข้อที่สนใจ แล้วกด
+            <strong>“อ่านบทความ →”</strong>
+            เพื่อเข้าสู่หน้าเนื้อหาโดยตรง
         </p>
 
-    </div>
+    </section>
 
-</div>
 
-<div class="article-grid">
+    <!-- =========================
+         หมวด 1
+    ========================== -->
 
-    <article class="article-card">
-        <div class="article-number">14</div>
-        <h3>พัดลมแอร์เคลื่อนที่ทำหน้าที่อะไร?</h3>
-        <p>ทำความรู้จักหน้าที่ของพัดลมและความสำคัญต่อการไหลเวียนอากาศ</p>
-        <a href="./portable-air-conditioner-fan-function.html" class="read-more">อ่านบทความ →</a>
-    </article>
+    <section class="category">
 
-    <article class="article-card">
-        <div class="article-number">15</div>
-        <h3>พัดลมแอร์เคลื่อนที่หมุนช้า</h3>
-        <p>สาเหตุที่อาจทำให้พัดลมหมุนช้าและสิ่งที่ควรตรวจสอบเบื้องต้น</p>
-        <a href="./portable-air-conditioner-fan-slow.html" class="read-more">อ่านบทความ →</a>
-    </article>
+        <div class="category-header">
 
-    <article class="article-card">
-        <div class="article-number">16</div>
-        <h3>แรงลมแอร์เคลื่อนที่เบา</h3>
-        <p>แนวทางตรวจสอบเมื่อแรงลมออกจากเครื่องเบากว่าปกติ</p>
-        <a href="./portable-air-conditioner-airflow-weak.html" class="read-more">อ่านบทความ →</a>
-    </article>
+            <h2>📖 ความรู้และการใช้งานทั่วไป</h2>
 
-    <article class="article-card">
-        <div class="article-number">17</div>
-        <h3>พัดลมแอร์เคลื่อนที่ไม่ทำงาน</h3>
-        <p>สาเหตุเบื้องต้นที่อาจทำให้พัดลมไม่หมุนหรือหยุดทำงาน</p>
-        <a href="./fan-not-work.html" class="read-more">อ่านบทความ →</a>
-    </article>
+            <p>
+                พื้นฐานการใช้งาน การเลือกเครื่อง
+                การจัดวาง และการดูแลแอร์เคลื่อนที่
+            </p>
 
-    <article class="article-card">
-        <div class="article-number">18</div>
-        <h3>เสียงดังผิดปกติจากแอร์เคลื่อนที่</h3>
-        <p>แนวทางสังเกตเสียงผิดปกติและจุดต่าง ๆ ที่ควรตรวจสอบ</p>
-        <a href="./loud-noise.html" class="read-more">อ่านบทความ →</a>
-    </article>
+        </div>
 
-</div>
-```
+        <div class="article-grid">
 
-</div>
 
-</section>
+            <article class="article-card">
 
-<section class="category">
+                <span class="article-number">1</span>
 
-<div class="container">
+                <h3>
+                    ตั้งแอร์เคลื่อนที่ 25°C หรือ 26°C ดี?
+                </h3>
 
-```
-<div class="category-header">
+                <p>
+                    ทำความเข้าใจเรื่องอุณหภูมิ
+                    และแนวทางตั้งค่าแอร์เคลื่อนที่
+                    ให้เหมาะสมกับการใช้งาน
+                </p>
 
-    <div class="category-icon">
-        🔌
-    </div>
+                <a class="read-more"
+                   href="./portable-air-conditioner-25-26-degree.html">
+                    อ่านบทความ →
+                </a>
 
-    <div class="category-title">
+            </article>
 
-        <h2>
-            อุปกรณ์ไฟฟ้าและระบบควบคุม
-        </h2>
+
+            <article class="article-card">
+
+                <span class="article-number">2</span>
+
+                <h3>
+                    วิธีเลือก BTU แอร์เคลื่อนที่ให้เหมาะกับห้อง
+                </h3>
+
+                <p>
+                    ทำความเข้าใจ BTU
+                    และปัจจัยที่ควรพิจารณาก่อนเลือกเครื่อง
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-btu-guide.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">3</span>
+
+                <h3>
+                    แอร์เคลื่อนที่กินไฟมากไหม?
+                </h3>
+
+                <p>
+                    ทำความเข้าใจการใช้ไฟ
+                    และปัจจัยที่ทำให้ค่าไฟแตกต่างกัน
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-electricity-use.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">4</span>
+
+                <h3>
+                    วิธีใช้แอร์เคลื่อนที่ให้ประหยัดไฟ
+                </h3>
+
+                <p>
+                    เทคนิคการใช้งานและดูแลเครื่อง
+                    เพื่อลดภาระการทำงาน
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-save-electricity.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">5</span>
+
+                <h3>
+                    วางแอร์เคลื่อนที่ตรงไหนดีที่สุด?
+                </h3>
+
+                <p>
+                    แนวทางเลือกตำแหน่งวางเครื่อง
+                    เพื่อช่วยให้อากาศไหลเวียนและระบายความร้อนได้ดี
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-placement.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">6</span>
+
+                <h3>
+                    วิธีทำความสะอาดแอร์เคลื่อนที่
+                </h3>
+
+                <p>
+                    แนวทางดูแลความสะอาดของเครื่อง
+                    และลดการสะสมของฝุ่น
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-filter-cleaning.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">7</span>
+
+                <h3>
+                    วิธีดูแลฟิลเตอร์แอร์เคลื่อนที่
+                </h3>
+
+                <p>
+                    ทำความเข้าใจการดูแลฟิลเตอร์
+                    และความสำคัญของการรักษาความสะอาด
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-filter-care.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">8</span>
+
+                <h3>
+                    ท่อลมร้อนแอร์เคลื่อนที่สำคัญอย่างไร?
+                </h3>
+
+                <p>
+                    ทำความเข้าใจหน้าที่ของท่อลมร้อน
+                    และการระบายความร้อนออกจากห้อง
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-exhaust-hose.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">9</span>
+
+                <h3>
+                    ท่อน้ำทิ้งแอร์เคลื่อนที่ทำหน้าที่อะไร?
+                </h3>
+
+                <p>
+                    ทำความเข้าใจระบบระบายน้ำ
+                    และหน้าที่ของท่อน้ำทิ้ง
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-drain-hose.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         หมวด 2
+    ========================== -->
+
+    <section class="category">
+
+        <div class="category-header">
+
+            <h2>⚙️ ระบบคอมเพรสเซอร์</h2>
+
+            <p>
+                ความรู้เกี่ยวกับคอมเพรสเซอร์
+                และระบบทำความเย็น
+            </p>
+
+        </div>
+
+        <div class="article-grid">
+
+
+            <article class="article-card">
+
+                <span class="article-number">10</span>
+
+                <h3>
+                    คอมเพรสเซอร์แอร์เคลื่อนที่ทำหน้าที่อะไร?
+                </h3>
+
+                <p>
+                    ทำความรู้จักคอมเพรสเซอร์
+                    และบทบาทสำคัญในระบบทำความเย็น
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-compressor-function.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">11</span>
+
+                <h3>
+                    คอมเพรสเซอร์ไม่ทำงาน เกิดจากอะไร?
+                </h3>
+
+                <p>
+                    แนวทางทำความเข้าใจสาเหตุ
+                    เมื่อคอมเพรสเซอร์ไม่เริ่มทำงาน
+                </p>
+
+                <a class="read-more"
+                   href="./compressor-not-start.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">12</span>
+
+                <h3>
+                    คอมเพรสเซอร์ทำงานแต่ไม่เย็น
+                </h3>
+
+                <p>
+                    ปัจจัยที่เกี่ยวข้องกับระบบทำความเย็น
+                    เมื่อคอมเพรสเซอร์ทำงานแต่ไม่เย็น
+                </p>
+
+                <a class="read-more"
+                   href="./compressor-runs-but-not-cold.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">13</span>
+
+                <h3>
+                    คอมเพรสเซอร์แอร์เคลื่อนที่ร้อนจัด
+                </h3>
+
+                <p>
+                    ทำความเข้าใจสาเหตุที่ทำให้
+                    คอมเพรสเซอร์มีอุณหภูมิสูงผิดปกติ
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-compressor-overheat.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         หมวด 3
+    ========================== -->
+
+    <section class="category">
+
+        <div class="category-header">
+
+            <h2>🌀 ระบบพัดลมและการไหลเวียนอากาศ</h2>
+
+            <p>
+                ความรู้เกี่ยวกับพัดลม แรงลม
+                และการไหลเวียนของอากาศภายในเครื่อง
+            </p>
+
+        </div>
+
+        <div class="article-grid">
+
+
+            <article class="article-card">
+
+                <span class="article-number">14</span>
+
+                <h3>
+                    พัดลมแอร์เคลื่อนที่ทำหน้าที่อะไร?
+                </h3>
+
+                <p>
+                    ทำความรู้จักหน้าที่ของพัดลม
+                    และความสำคัญต่อการไหลเวียนอากาศ
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-fan-function.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">15</span>
+
+                <h3>
+                    พัดลมแอร์เคลื่อนที่หมุนช้า
+                </h3>
+
+                <p>
+                    สาเหตุที่อาจทำให้พัดลมหมุนช้า
+                    และสิ่งที่ควรตรวจสอบเบื้องต้น
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-fan-slow.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">16</span>
+
+                <h3>
+                    แรงลมแอร์เคลื่อนที่เบา
+                </h3>
+
+                <p>
+                    แนวทางตรวจสอบเมื่อแรงลม
+                    ออกจากเครื่องเบากว่าปกติ
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-airflow-weak.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">17</span>
+
+                <h3>
+                    พัดลมแอร์เคลื่อนที่ไม่ทำงาน
+                </h3>
+
+                <p>
+                    สาเหตุเบื้องต้นที่อาจทำให้พัดลม
+                    ไม่หมุนหรือหยุดทำงาน
+                </p>
+
+                <a class="read-more"
+                   href="./fan-not-work.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">18</span>
+
+                <h3>
+                    เสียงดังผิดปกติจากแอร์เคลื่อนที่
+                </h3>
+
+                <p>
+                    แนวทางสังเกตเสียงผิดปกติ
+                    และจุดต่าง ๆ ที่ควรตรวจสอบ
+                </p>
+
+                <a class="read-more"
+                   href="./loud-noise.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         หมวด 4
+    ========================== -->
+
+    <section class="category">
+
+        <div class="category-header">
+
+            <h2>🔌 อุปกรณ์ไฟฟ้าและระบบควบคุม</h2>
+
+            <p>
+                ความรู้เกี่ยวกับอุปกรณ์ไฟฟ้า
+                แผงวงจร รีเลย์ และเซนเซอร์
+            </p>
+
+        </div>
+
+        <div class="article-grid">
+
+
+            <article class="article-card">
+
+                <span class="article-number">19</span>
+
+                <h3>
+                    คาปาซิเตอร์แอร์เคลื่อนที่คืออะไร?
+                </h3>
+
+                <p>
+                    ทำความรู้จักคาปาซิเตอร์
+                    และบทบาทต่อการทำงานของมอเตอร์
+                </p>
+
+                <a class="read-more"
+                   href="./capacitor.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">20</span>
+
+                <h3>
+                    PCB แอร์เคลื่อนที่คืออะไร?
+                </h3>
+
+                <p>
+                    ทำความรู้จักแผงวงจรควบคุม
+                    และหน้าที่ของ PCB ภายในเครื่อง
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-pcb.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">21</span>
+
+                <h3>
+                    รีเลย์แอร์เคลื่อนที่ทำหน้าที่อะไร?
+                </h3>
+
+                <p>
+                    ทำความเข้าใจรีเลย์
+                    และการควบคุมอุปกรณ์ไฟฟ้าภายในเครื่อง
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-relay.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">22</span>
+
+                <h3>
+                    เซนเซอร์อุณหภูมิแอร์เคลื่อนที่ทำงานอย่างไร?
+                </h3>
+
+                <p>
+                    ทำความเข้าใจเซนเซอร์อุณหภูมิ
+                    และการตรวจจับอุณหภูมิภายในระบบ
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-temperature-sensor.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">23</span>
+
+                <h3>
+                    Thermistor คืออะไร?
+                </h3>
+
+                <p>
+                    ทำความรู้จัก Thermistor
+                    และความเกี่ยวข้องกับการตรวจจับอุณหภูมิ
+                </p>
+
+                <a class="read-more"
+                   href="./thermistor.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         หมวด 5
+    ========================== -->
+
+    <section class="category">
+
+        <div class="category-header">
+
+            <h2>💧 ระบบน้ำและการระบายความร้อน</h2>
+
+            <p>
+                ความรู้เกี่ยวกับน้ำ ท่อน้ำทิ้ง
+                น้ำรั่ว และระบบระบายความร้อน
+            </p>
+
+        </div>
+
+        <div class="article-grid">
+
+
+            <article class="article-card">
+
+                <span class="article-number">24</span>
+
+                <h3>
+                    ท่อน้ำทิ้งแอร์เคลื่อนที่สำคัญอย่างไร?
+                </h3>
+
+                <p>
+                    หน้าที่ของท่อน้ำทิ้ง
+                    และสิ่งที่ควรตรวจสอบเมื่อระบายน้ำผิดปกติ
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-drain-hose.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">25</span>
+
+                <h3>
+                    ท่อลมร้อนแอร์เคลื่อนที่สำคัญอย่างไร?
+                </h3>
+
+                <p>
+                    ทำความเข้าใจการระบายความร้อน
+                    และการติดตั้งท่อลมร้อน
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-exhaust-hose.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">26</span>
+
+                <h3>
+                    แอร์เคลื่อนที่น้ำรั่วหรือน้ำหยด
+                </h3>
+
+                <p>
+                    สาเหตุที่พบได้เมื่อมีน้ำรั่ว
+                    หรือน้ำหยดออกจากตัวเครื่อง
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-water-leak.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">27</span>
+
+                <h3>
+                    น้ำหยดจากแอร์เคลื่อนที่ เกิดจากอะไร?
+                </h3>
+
+                <p>
+                    แนวทางตรวจสอบปัญหาน้ำหยด
+                    และจุดที่อาจเกี่ยวข้องกับระบบน้ำ
+                </p>
+
+                <a class="read-more"
+                   href="./water-leak.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         หมวด 6
+    ========================== -->
+
+    <section class="category">
+
+        <div class="category-header">
+
+            <h2>❄️ อาการเสียและการตรวจสอบ</h2>
+
+            <p>
+                รวมบทความสำหรับผู้ที่กำลังพบปัญหา
+                จากการใช้งานแอร์เคลื่อนที่
+            </p>
+
+        </div>
+
+        <div class="article-grid">
+
+
+            <article class="article-card">
+
+                <span class="article-number">28</span>
+
+                <h3>
+                    แอร์เคลื่อนที่ไม่เย็น เกิดจากอะไร?
+                </h3>
+
+                <p>
+                    รวมสาเหตุเบื้องต้นที่ทำให้
+                    แอร์เคลื่อนที่เย็นไม่เต็มที่
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-not-cold.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">29</span>
+
+                <h3>
+                    แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?
+                </h3>
+
+                <p>
+                    แนวทางสังเกตอาการ
+                    เมื่อกดเปิดเครื่องแล้วไม่มีการทำงาน
+                </p>
+
+                <a class="read-more"
+                   href="./portable-air-conditioner-not-start.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">30</span>
+
+                <h3>
+                    แอร์เคลื่อนที่กินไฟสูงผิดปกติ
+                </h3>
+
+                <p>
+                    ปัจจัยที่อาจทำให้เครื่องใช้ไฟมากขึ้น
+                    และสิ่งที่ควรตรวจสอบ
+                </p>
+
+                <a class="read-more"
+                   href="./high-electricity.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">31</span>
+
+                <h3>
+                    น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่
+                </h3>
+
+                <p>
+                    ทำความเข้าใจสาเหตุที่ทำให้คอยล์เย็น
+                    มีน้ำแข็งเกาะ
+                </p>
+
+                <a class="read-more"
+                   href="./ice-on-coil.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+
+            <article class="article-card">
+
+                <span class="article-number">32</span>
+
+                <h3>
+                    แอร์ไม่เย็น ควรตรวจสอบอะไรบ้าง?
+                </h3>
+
+                <p>
+                    แนวทางตรวจสอบเบื้องต้น
+                    เมื่อเครื่องทำงานแต่ความเย็นไม่เพียงพอ
+                </p>
+
+                <a class="read-more"
+                   href="./air-not-cold.html">
+                    อ่านบทความ →
+                </a>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         ติดต่อ
+    ========================== -->
+
+    <section class="contact-box">
+
+        <h2>🔧 ต้องการสอบถามเรื่องแอร์เคลื่อนที่?</h2>
 
         <p>
-            ความรู้เกี่ยวกับอุปกรณ์ไฟฟ้า
-            แผงวงจร รีเลย์ และเซนเซอร์
+            หากกำลังพบปัญหาเกี่ยวกับแอร์เคลื่อนที่
+            สามารถสอบถามอาการหรือข้อมูลเบื้องต้นกับช่างบอยได้
         </p>
 
-    </div>
+        <div class="contact-buttons">
 
-</div>
+            <a class="contact-button phone-button"
+               href="tel:0805178615">
+                📞 โทร 080-517-8615
+            </a>
 
-<div class="article-grid">
+            <a class="contact-button line-button"
+               href="https://line.me/R/ti/p/@365jdxhc"
+               target="_blank"
+               rel="noopener">
+                💬 LINE @365jdxhc
+            </a>
 
-    <article class="article-card">
-        <div class="article-number">19</div>
-        <h3>คาปาซิเตอร์แอร์เคลื่อนที่คืออะไร?</h3>
-        <p>ทำความรู้จักคาปาซิเตอร์และบทบาทต่อการทำงานของมอเตอร์</p>
-        <a href="./capacitor.html" class="read-more">อ่านบทความ →</a>
-    </article>
+        </div>
 
-    <article class="article-card">
-        <div class="article-number">20</div>
-        <h3>PCB แอร์เคลื่อนที่คืออะไร?</h3>
-        <p>ทำความรู้จักแผงวงจรควบคุมและหน้าที่ของ PCB ภายในเครื่อง</p>
-        <a href="./portable-air-conditioner-pcb.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">21</div>
-        <h3>รีเลย์แอร์เคลื่อนที่ทำหน้าที่อะไร?</h3>
-        <p>ทำความเข้าใจรีเลย์และการควบคุมอุปกรณ์ไฟฟ้าภายในเครื่อง</p>
-        <a href="./portable-air-conditioner-relay.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">22</div>
-        <h3>เซนเซอร์อุณหภูมิแอร์เคลื่อนที่ทำงานอย่างไร?</h3>
-        <p>ทำความเข้าใจเซนเซอร์อุณหภูมิและการตรวจจับอุณหภูมิภายในระบบ</p>
-        <a href="./portable-air-conditioner-temperature-sensor.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">23</div>
-        <h3>Thermistor คืออะไร?</h3>
-        <p>ทำความรู้จัก Thermistor และความเกี่ยวข้องกับการตรวจจับอุณหภูมิ</p>
-        <a href="./thermistor.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-</div>
-```
-
-</div>
-
-</section>
-
-<section class="category">
-
-<div class="container">
-
-```
-<div class="category-header">
-
-    <div class="category-icon">
-        💧
-    </div>
-
-    <div class="category-title">
-
-        <h2>
-            ระบบน้ำและการระบายความร้อน
-        </h2>
-
-        <p>
-            ความรู้เกี่ยวกับน้ำ ท่อน้ำทิ้ง
-            น้ำรั่ว และระบบระบายความร้อน
-        </p>
-
-    </div>
-
-</div>
-
-<div class="article-grid">
-
-    <article class="article-card">
-        <div class="article-number">24</div>
-        <h3>ท่อน้ำทิ้งแอร์เคลื่อนที่สำคัญอย่างไร?</h3>
-        <p>หน้าที่ของท่อน้ำทิ้งและสิ่งที่ควรตรวจสอบเมื่อระบายน้ำผิดปกติ</p>
-        <a href="./portable-air-conditioner-drain-hose.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">25</div>
-        <h3>ท่อลมร้อนแอร์เคลื่อนที่สำคัญอย่างไร?</h3>
-        <p>ทำความเข้าใจการระบายความร้อนและการติดตั้งท่อลมร้อนให้เหมาะสม</p>
-        <a href="./portable-air-conditioner-exhaust-hose.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">26</div>
-        <h3>แอร์เคลื่อนที่น้ำรั่วหรือน้ำหยด</h3>
-        <p>สาเหตุที่พบได้เมื่อมีน้ำรั่วหรือน้ำหยดออกจากตัวเครื่อง</p>
-        <a href="./portable-air-conditioner-water-leak.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">27</div>
-        <h3>น้ำหยดจากแอร์เคลื่อนที่ เกิดจากอะไร?</h3>
-        <p>แนวทางตรวจสอบปัญหาน้ำหยดและจุดที่อาจเกี่ยวข้องกับระบบน้ำ</p>
-        <a href="./water-leak.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-</div>
-```
-
-</div>
-
-</section>
-
-<section class="category">
-
-<div class="container">
-
-```
-<div class="category-header">
-
-    <div class="category-icon">
-        ❄️
-    </div>
-
-    <div class="category-title">
-
-        <h2>
-            อาการเสียและการตรวจสอบ
-        </h2>
-
-        <p>
-            รวมบทความสำหรับผู้ที่กำลังพบปัญหา
-            จากการใช้งานแอร์เคลื่อนที่
-        </p>
-
-    </div>
-
-</div>
-
-<div class="article-grid">
-
-    <article class="article-card">
-        <div class="article-number">28</div>
-        <h3>แอร์เคลื่อนที่ไม่เย็น เกิดจากอะไร?</h3>
-        <p>รวมสาเหตุเบื้องต้นที่ทำให้แอร์เคลื่อนที่เย็นไม่เต็มที่</p>
-        <a href="./portable-air-conditioner-not-cold.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">29</div>
-        <h3>แอร์เคลื่อนที่เปิดไม่ติด เกิดจากอะไร?</h3>
-        <p>แนวทางสังเกตอาการเมื่อกดเปิดเครื่องแล้วไม่มีการทำงาน</p>
-        <a href="./portable-air-conditioner-not-start.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">30</div>
-        <h3>แอร์เคลื่อนที่กินไฟสูงผิดปกติ</h3>
-        <p>ปัจจัยที่อาจทำให้เครื่องใช้ไฟมากขึ้นและสิ่งที่ควรตรวจสอบ</p>
-        <a href="./high-electricity.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">31</div>
-        <h3>น้ำแข็งเกาะคอยล์แอร์เคลื่อนที่</h3>
-        <p>ทำความเข้าใจสาเหตุที่ทำให้คอยล์เย็นมีน้ำแข็งเกาะและสิ่งที่ควรตรวจสอบ</p>
-        <a href="./ice-on-coil.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-    <article class="article-card">
-        <div class="article-number">32</div>
-        <h3>แอร์ไม่เย็น ควรตรวจสอบอะไรบ้าง?</h3>
-        <p>แนวทางตรวจสอบเบื้องต้นเมื่อเครื่องทำงานแต่ความเย็นไม่เพียงพอ</p>
-        <a href="./air-not-cold.html" class="read-more">อ่านบทความ →</a>
-    </article>
-
-</div>
-```
-
-</div>
-
-</section>
-
-<section class="articles-cta">
-
-<div class="container">
-
-```
-<div class="cta-box">
-
-    <h2>
-        🔧 ต้องการสอบถามเรื่องแอร์เคลื่อนที่?
-    </h2>
-
-    <p>
-        หากกำลังพบปัญหาเกี่ยวกับแอร์เคลื่อนที่
-        สามารถสอบถามอาการหรือข้อมูลเบื้องต้น
-        กับช่างบอยได้
-    </p>
-
-    <div class="cta-buttons">
-
-        <a href="tel:0805178615"
-           class="cta-button">
-            📞 โทร 080-517-8615
-        </a>
-
-        <a href="https://line.me/R/ti/p/@365jdxhc"
-           class="cta-button line"
-           target="_blank"
-           rel="noopener noreferrer">
-            💬 LINE @365jdxhc
-        </a>
-
-    </div>
-
-</div>
-```
-
-</div>
-
-</section>
+    </section>
 
 </main>
 
-<div class="floating-buttons">
 
-<a href="tel:0805178615"
-class="float-phone"
-aria-label="โทรหาช่างบอย">
-📞 </a>
+<footer class="footer">
 
-<a href="https://line.me/R/ti/p/@365jdxhc"
-class="float-line"
-target="_blank"
-rel="noopener noreferrer"
-aria-label="ติดต่อ LINE ช่างบอย">
-💬 </a>
-
-</div>
-
-<footer>
-
-<p>
     <strong>
         ช่างบอย ซ่อมแอร์เคลื่อนที่
     </strong>
-</p>
 
-<p>
-    รวมความรู้เกี่ยวกับแอร์เคลื่อนที่
-    การใช้งาน การดูแลรักษา
-    และการตรวจสอบอาการเสีย
-</p>
+    <div>
+        รวมความรู้เกี่ยวกับแอร์เคลื่อนที่
+        การใช้งาน การดูแลรักษา
+        และการตรวจสอบอาการเสีย
+    </div>
 
-<p>
+    <div class="footer-links">
 
-```
-<a href="./index.html">
-    หน้าแรก
-</a>
+        <a href="./index.html">
+            หน้าแรก
+        </a>
 
-&nbsp; | &nbsp;
+        <a href="./symptoms.html">
+            อาการเสีย
+        </a>
 
-<a href="./articles.html">
-    บทความทั้งหมด
-</a>
+        <a href="./articles.html">
+            บทความทั้งหมด
+        </a>
 
-&nbsp; | &nbsp;
+        <a href="./index.html#contact">
+            ติดต่อ
+        </a>
 
-<a href="./index.html#contact">
-    ติดต่อ
-</a>
-```
+    </div>
 
-</p>
-
-<p>
-    © 2026 ช่างบอย ซ่อมแอร์เคลื่อนที่
-</p>
+    <div style="margin-top:14px;">
+        © 2026 ช่างบอย ซ่อมแอร์เคลื่อนที่
+    </div>
 
 </footer>
+```
+
+</div>
+
+<script src="./script.js"></script>
 
 </body>
-
 </html>
