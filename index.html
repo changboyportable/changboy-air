@@ -8,7 +8,9 @@
 <title>ช่างบอย ซ่อมแอร์เคลื่อนที่ | รับซ่อม ล้าง ตรวจเช็ก ทุกยี่ห้อ ทั่วประเทศ</title>
 
 <meta name="description" content="ช่างบอย ซ่อมแอร์เคลื่อนที่ รับซ่อม ล้าง ตรวจเช็ก และเปลี่ยนอะไหล่แอร์เคลื่อนที่ ทุกรุ่นทุกยี่ห้อ วิเคราะห์อาการเสียตามจริง พร้อมให้คำแนะนำก่อนซ่อม กรุงเทพฯ ปริมณฑล ปทุมธานี และพื้นที่ใกล้เคียง">
+
 <meta name="keywords" content="ซ่อมแอร์เคลื่อนที่, ช่างซ่อมแอร์เคลื่อนที่, ล้างแอร์เคลื่อนที่, แอร์เคลื่อนที่ไม่เย็น, ซ่อมบอร์ดแอร์เคลื่อนที่, ซ่อมแอร์เคลื่อนที่กรุงเทพ, ซ่อมแอร์เคลื่อนที่ปทุมธานี, คลองหลวง">
+
 <meta name="author" content="ช่างบอย ซ่อมแอร์เคลื่อนที่">
 <meta name="robots" content="index, follow">
 <meta name="googlebot" content="index, follow">
@@ -88,7 +90,7 @@ header {
     align-items: center;
     gap: 12px;
     min-width: 0;
-    transition: transform .2s ease;
+    transition: transform .25s ease;
 }
 
 .brand:hover {
@@ -110,6 +112,11 @@ header {
     font-size: 1.05rem;
     font-weight: 800;
     color: #075985;
+    transition: color .2s ease;
+}
+
+.brand:hover .brand-name {
+    color: #0b74de;
 }
 
 .brand-sub {
@@ -133,13 +140,18 @@ nav a {
     font-weight: 700;
     font-size: .92rem;
     color: #334155;
-    transition: all .2s ease;
+    transition:
+        background .2s ease,
+        color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
 }
 
 nav a:hover {
     background: #eaf4ff;
     color: #075985;
     transform: translateY(-2px);
+    box-shadow: 0 5px 14px rgba(11,116,222,.10);
 }
 
 /* HERO */
@@ -151,22 +163,13 @@ nav a:hover {
         linear-gradient(135deg, #eff8ff 0%, #ffffff 55%, #eaf6ff 100%);
 }
 
-/*
-   HERO DESKTOP
-   ซ้าย = ข้อความ
-   ขวา = รูป
-*/
-
 .hero-grid {
     width: min(1180px, 92%);
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-
     align-items: center;
-
-    gap: 60px;
+    column-gap: 60px;
 }
 
 .hero-content {
@@ -175,16 +178,49 @@ nav a:hover {
 }
 
 .hero h1 {
-    margin: 0 0 18px;
+    margin: 0 0 16px;
     font-size: clamp(2rem, 4vw, 3.3rem);
     line-height: 1.2;
     color: #075985;
-    transition: color .2s ease, transform .2s ease;
+    transition:
+        color .25s ease,
+        transform .25s ease,
+        text-shadow .25s ease;
 }
 
 .hero h1:hover {
     color: #0b74de;
     transform: translateY(-2px);
+    text-shadow: 0 7px 20px rgba(11,116,222,.15);
+}
+
+.hero-main {
+    margin: 0;
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+    font-weight: 800;
+    color: #0b74de;
+    line-height: 1.35;
+}
+
+.hero-sub {
+    margin: 3px 0 18px;
+    font-size: clamp(1.2rem, 2.2vw, 1.55rem);
+    font-weight: 800;
+    color: #075985;
+    line-height: 1.35;
+}
+
+.hero-main,
+.hero-sub {
+    transition:
+        color .2s ease,
+        transform .2s ease;
+}
+
+.hero-main:hover,
+.hero-sub:hover {
+    color: #0284c7;
+    transform: translateX(4px);
 }
 
 .hero p {
@@ -202,6 +238,18 @@ nav a:hover {
     box-shadow: 0 5px 20px rgba(15,23,42,.06);
     font-weight: 700;
     color: #075985;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        border-color .25s ease,
+        background .25s ease;
+}
+
+.hero-highlight:hover {
+    transform: translateX(5px);
+    border-color: #0b74de;
+    background: #f8fcff;
+    box-shadow: 0 10px 25px rgba(11,116,222,.12);
 }
 
 .hero-buttons {
@@ -221,12 +269,17 @@ nav a:hover {
     border-radius: 10px;
     font-weight: 800;
     border: 1px solid transparent;
-    transition: all .2s ease;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease,
+        background .25s ease,
+        border-color .25s ease,
+        color .25s ease;
 }
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 9px 20px rgba(15,23,42,.12);
+    box-shadow: 0 10px 22px rgba(15,23,42,.15);
 }
 
 .btn-primary {
@@ -256,23 +309,15 @@ nav a:hover {
 .btn-light:hover {
     background: #eaf4ff;
     border-color: #0b74de;
+    color: #075985;
 }
-
-/*
-   HERO IMAGE
-   ไม่ใช้ aspect-ratio
-   ไม่ใช้ object-fit: cover
-   เพื่อไม่บังคับรูปให้เป็นสี่เหลี่ยม
-*/
 
 .hero-image {
     width: 100%;
     min-width: 0;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     background: transparent;
     border-radius: 0;
     overflow: visible;
@@ -281,16 +326,11 @@ nav a:hover {
 
 .hero-image img {
     display: block;
-
     width: 100%;
     max-width: 560px;
-
     height: auto;
-
     object-fit: contain;
-
     margin: 0 auto;
-
     transition:
         transform .3s ease,
         filter .3s ease;
@@ -312,6 +352,14 @@ section {
     margin: 0 0 10px;
     color: #075985;
     font-size: clamp(1.7rem, 3vw, 2.35rem);
+    transition:
+        color .2s ease,
+        transform .2s ease;
+}
+
+.section-title:hover {
+    color: #0b74de;
+    transform: translateY(-2px);
 }
 
 .section-lead {
@@ -335,24 +383,39 @@ section {
     border-radius: 16px;
     padding: 24px;
     box-shadow: 0 7px 24px rgba(15,23,42,.05);
-    transition: all .25s ease;
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    border-color: #93c5fd;
-    box-shadow: 0 14px 30px rgba(15,23,42,.10);
+    transform: translateY(-6px);
+    border-color: #60a5fa;
+    background: #fbfdff;
+    box-shadow: 0 16px 34px rgba(15,23,42,.11);
 }
 
 .card-icon {
     font-size: 2rem;
     margin-bottom: 8px;
+    transition: transform .25s ease;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.08);
 }
 
 .card h3 {
     margin: 0 0 9px;
     color: #075985;
     font-size: 1.15rem;
+    transition: color .2s ease;
+}
+
+.card:hover h3 {
+    color: #0b74de;
 }
 
 .card p {
@@ -372,7 +435,9 @@ section {
     padding: 30px;
     text-align: center;
     box-shadow: 0 8px 30px rgba(15,23,42,.06);
-    transition: all .25s ease;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
 
 .coverage-box:hover {
@@ -395,7 +460,12 @@ section {
     border-radius: 999px;
     color: #075985;
     font-weight: 700;
-    transition: all .2s ease;
+    transition:
+        background .2s ease,
+        border-color .2s ease,
+        color .2s ease,
+        transform .2s ease,
+        box-shadow .2s ease;
 }
 
 .coverage-item:hover {
@@ -403,6 +473,7 @@ section {
     border-color: #0b74de;
     color: #fff;
     transform: translateY(-2px);
+    box-shadow: 0 7px 15px rgba(11,116,222,.18);
 }
 
 /* WORKS */
@@ -435,18 +506,28 @@ section {
     border-radius: 16px;
     padding: 24px;
     box-shadow: 0 7px 24px rgba(15,23,42,.05);
-    transition: all .25s ease;
+    transition:
+        transform .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease,
+        background .25s ease;
 }
 
 .article-card:hover {
-    transform: translateY(-5px);
-    border-color: #93c5fd;
-    box-shadow: 0 14px 30px rgba(15,23,42,.10);
+    transform: translateY(-6px);
+    border-color: #60a5fa;
+    background: #fbfdff;
+    box-shadow: 0 16px 34px rgba(15,23,42,.11);
 }
 
 .article-card h3 {
     margin-top: 0;
     color: #075985;
+    transition: color .2s ease;
+}
+
+.article-card:hover h3 {
+    color: #0b74de;
 }
 
 .article-card p {
@@ -458,10 +539,15 @@ section {
     margin-top: 16px;
     color: #0b74de;
     font-weight: 800;
+    transition:
+        color .2s ease,
+        transform .2s ease;
 }
 
 .article-card .read-more:hover {
     text-decoration: underline;
+    color: #075985;
+    transform: translateX(4px);
 }
 
 .more-box {
@@ -490,12 +576,16 @@ details {
     border-radius: 12px;
     margin-bottom: 12px;
     overflow: hidden;
-    transition: all .2s ease;
+    transition:
+        border-color .2s ease,
+        box-shadow .2s ease,
+        transform .2s ease;
 }
 
 details:hover {
-    border-color: #93c5fd;
-    box-shadow: 0 8px 22px rgba(15,23,42,.06);
+    border-color: #60a5fa;
+    box-shadow: 0 8px 22px rgba(15,23,42,.08);
+    transform: translateY(-2px);
 }
 
 summary {
@@ -503,6 +593,7 @@ summary {
     padding: 17px 20px;
     font-weight: 800;
     color: #075985;
+    transition: color .2s ease;
 }
 
 summary:hover {
@@ -522,7 +613,9 @@ details p {
     border-radius: 18px;
     box-shadow: 0 8px 30px rgba(15,23,42,.08);
     background: #fff;
-    transition: all .25s ease;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
 
 .map-box:hover {
@@ -565,11 +658,14 @@ details p {
 
 .contact-info a {
     font-weight: 700;
-    transition: all .2s ease;
+    transition:
+        color .2s ease,
+        transform .2s ease;
 }
 
 .contact-info a:hover {
     color: #dbeafe;
+    transform: translateY(-2px);
 }
 
 .contact-buttons {
@@ -613,11 +709,14 @@ footer {
 }
 
 .footer-links a {
-    transition: color .2s ease;
+    transition:
+        color .2s ease,
+        transform .2s ease;
 }
 
 .footer-links a:hover {
     color: #fff;
+    transform: translateY(-1px);
 }
 
 .copyright {
@@ -650,11 +749,14 @@ footer {
     color: #fff;
     font-size: 1.35rem;
     box-shadow: 0 7px 20px rgba(0,0,0,.2);
-    transition: all .2s ease;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
 }
 
 .float-btn:hover {
-    transform: translateY(-4px) scale(1.04);
+    transform: translateY(-5px) scale(1.06);
+    box-shadow: 0 12px 25px rgba(0,0,0,.28);
 }
 
 .float-phone {
@@ -678,15 +780,9 @@ footer {
         justify-content: center;
     }
 
-    /*
-       หน้าจอเล็ก:
-       เปลี่ยน Hero เป็นบน-ล่าง
-    */
-
     .hero-grid {
         grid-template-columns: 1fr;
         gap: 35px;
-        text-align: center;
     }
 
     .hero-content {
@@ -748,6 +844,14 @@ footer {
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    .hero-main {
+        font-size: 1.35rem;
+    }
+
+    .hero-sub {
+        font-size: 1.2rem;
     }
 
     .hero p {
@@ -953,10 +1057,13 @@ footer {
 
         <h1>ช่างบอย ซ่อมแอร์เคลื่อนที่</h1>
 
-        <p>
-            รับซ่อม ล้าง ตรวจเช็ก และวิเคราะห์อาการเสีย
+        <div class="hero-main">
+            รับซ่อม ล้าง ตรวจเช็ก
+        </div>
+
+        <div class="hero-sub">
             แอร์เคลื่อนที่ทุกยี่ห้อ
-        </p>
+        </div>
 
         <div class="hero-highlight">
             ดูแลระบบแอร์เคลื่อนที่อย่างละเอียด พร้อมให้คำแนะนำ
@@ -968,7 +1075,10 @@ footer {
                 📞 โทร 080-517-8615
             </a>
 
-            <a class="btn btn-line" href="https://line.me/ti/p/@365jdxhc" target="_blank" rel="noopener">
+            <a class="btn btn-line"
+               href="https://line.me/ti/p/@365jdxhc"
+               target="_blank"
+               rel="noopener">
                 💬 LINE @365jdxhc
             </a>
 
@@ -995,9 +1105,10 @@ footer {
 </section>
 
 <section id="services">
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         บริการของ ช่างบอย ซ่อมแอร์เคลื่อนที่
     </h2>
@@ -1064,15 +1175,17 @@ footer {
         </div>
 
     </div>
+
 </div>
 ```
 
 </section>
 
 <section class="coverage">
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         พื้นที่ให้บริการและดูแลลูกค้า
     </h2>
@@ -1084,11 +1197,13 @@ footer {
     <div class="coverage-box">
 
         <div class="coverage-list">
+
             <span class="coverage-item">ปทุมธานี</span>
             <span class="coverage-item">กรุงเทพมหานคร</span>
             <span class="coverage-item">นนทบุรี</span>
             <span class="coverage-item">สมุทรปราการ</span>
             <span class="coverage-item">พื้นที่ใกล้เคียง</span>
+
         </div>
 
     </div>
@@ -1099,9 +1214,10 @@ footer {
 </section>
 
 <section>
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         ทำไมลูกค้าจึงเลือก ช่างบอย
     </h2>
@@ -1147,9 +1263,10 @@ footer {
 </section>
 
 <section id="reviews">
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         รีวิวและผลงาน
     </h2>
@@ -1161,48 +1278,69 @@ footer {
     <div class="cards">
 
         <div class="card works-card">
+
             <div>
                 <div class="card-icon">★★★★★</div>
+
                 <h3>รีวิวจากลูกค้า</h3>
+
                 <p>
                     รีวิวจากลูกค้าจะนำมาแสดงในส่วนนี้
                     เพื่อให้ผู้เข้าชมเว็บไซต์สามารถดูประสบการณ์จากลูกค้าได้ง่ายขึ้น
                 </p>
             </div>
 
-            <a class="btn btn-light" href="https://www.google.com/search?q=ช่างบอย+ซ่อมแอร์เคลื่อนที่" target="_blank" rel="noopener">
+            <a class="btn btn-light"
+               href="https://www.google.com/search?q=ช่างบอย+ซ่อมแอร์เคลื่อนที่"
+               target="_blank"
+               rel="noopener">
                 ⭐ ดูรีวิวเพิ่มเติม
             </a>
+
         </div>
 
         <div class="card works-card">
+
             <div>
                 <div class="card-icon">▶️</div>
+
                 <h3>ผลงานและความรู้</h3>
+
                 <p>
                     สามารถติดตามผลงานและคลิปเกี่ยวกับ
                     การซ่อมแอร์เคลื่อนที่ได้จากช่องทางออนไลน์
                 </p>
             </div>
 
-            <a class="btn btn-light" href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่" target="_blank" rel="noopener">
+            <a class="btn btn-light"
+               href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่"
+               target="_blank"
+               rel="noopener">
                 ดู YouTube
             </a>
+
         </div>
 
         <div class="card works-card">
+
             <div>
                 <div class="card-icon">🎵</div>
+
                 <h3>ติดตามผลงาน</h3>
+
                 <p>
                     ชมคลิปและข้อมูลเกี่ยวกับแอร์เคลื่อนที่
                     ผ่านช่องทาง TikTok
                 </p>
             </div>
 
-            <a class="btn btn-light" href="https://www.tiktok.com/@changboyair" target="_blank" rel="noopener">
+            <a class="btn btn-light"
+               href="https://www.tiktok.com/@changboyair"
+               target="_blank"
+               rel="noopener">
                 ดู TikTok
             </a>
+
         </div>
 
     </div>
@@ -1213,9 +1351,10 @@ footer {
 </section>
 
 <section id="articles">
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         บทความความรู้แอร์เคลื่อนที่
     </h2>
@@ -1313,9 +1452,10 @@ footer {
 </section>
 
 <section id="faq" class="faq">
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         คำถามที่พบบ่อย
     </h2>
@@ -1401,9 +1541,10 @@ footer {
 </section>
 
 <section id="location">
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         ติดต่อ ช่างบอย ซ่อมแอร์เคลื่อนที่
     </h2>
@@ -1429,9 +1570,10 @@ footer {
 </section>
 
 <section class="contact">
-    <div class="container">
 
 ```
+<div class="container">
+
     <h2 class="section-title">
         ติดต่อ ช่างบอย ซ่อมแอร์เคลื่อนที่
     </h2>
@@ -1448,19 +1590,27 @@ footer {
                 📞 080-517-8615
             </a>
 
-            <a href="https://line.me/ti/p/@365jdxhc" target="_blank" rel="noopener">
+            <a href="https://line.me/ti/p/@365jdxhc"
+               target="_blank"
+               rel="noopener">
                 💬 LINE @365jdxhc
             </a>
 
-            <a href="https://www.facebook.com/videoair1" target="_blank" rel="noopener">
+            <a href="https://www.facebook.com/videoair1"
+               target="_blank"
+               rel="noopener">
                 📘 Facebook
             </a>
 
-            <a href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่" target="_blank" rel="noopener">
+            <a href="https://www.youtube.com/@ช่างบอยซ่อมแอร์เคลื่อนที่"
+               target="_blank"
+               rel="noopener">
                 ▶️ YouTube
             </a>
 
-            <a href="https://www.tiktok.com/@changboyair" target="_blank" rel="noopener">
+            <a href="https://www.tiktok.com/@changboyair"
+               target="_blank"
+               rel="noopener">
                 🎵 TikTok
             </a>
 
@@ -1476,12 +1626,14 @@ footer {
 </main>
 
 <footer>
-    <div class="container">
 
 ```
+<div class="container">
+
     <div class="footer-grid">
 
         <div>
+
             <div class="footer-brand">
                 ช่างบอย ซ่อมแอร์เคลื่อนที่
             </div>
@@ -1489,6 +1641,7 @@ footer {
             <div>
                 ความรู้และบริการเกี่ยวกับแอร์เคลื่อนที่
             </div>
+
         </div>
 
         <div class="footer-links">
