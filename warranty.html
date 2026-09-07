@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>เงื่อนไขการรับประกันงานซ่อมแอร์เคลื่อนที่ | ช่างบอย ซ่อมแอร์เคลื่อนที่</title>
+
+<meta name="description"
+      content="เงื่อนไขการรับประกันงานซ่อมแอร์เคลื่อนที่ ช่างบอย ซ่อมแอร์เคลื่อนที่ รับประกันตามงานที่ซ่อม อะไหล่ และจุดที่ดำเนินการแก้ไข">
+
+<meta name="keywords"
+      content="เงื่อนไขรับประกันแอร์เคลื่อนที่, รับประกันงานซ่อมแอร์เคลื่อนที่, ช่างบอยซ่อมแอร์เคลื่อนที่">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+      href="https://changboyportable.github.io/changboy-air/warranty.html">
+
+<link rel="icon" type="image/png" href="./logo.png">
+
+<style>
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family:
+            "Noto Sans Thai",
+            "Tahoma",
+            Arial,
+            sans-serif;
+        background: #f5f7fa;
+        color: #222;
+        line-height: 1.75;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+        background: #ffffff;
+        border-bottom: 1px solid #e5e7eb;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .header-inner {
+        width: min(1180px, 92%);
+        margin: auto;
+        min-height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 800;
+        color: #111827;
+    }
+
+    .brand img {
+        width: 54px;
+        height: 54px;
+        object-fit: contain;
+        transition: 0.3s ease;
+    }
+
+    .brand:hover img {
+        transform: scale(1.06);
+    }
+
+    .brand-text {
+        font-size: 1.05rem;
+        line-height: 1.3;
+    }
+
+    .brand-text span {
+        display: block;
+        color: #2563eb;
+        font-size: 0.82rem;
+        font-weight: 600;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav a {
+        padding: 9px 12px;
+        border-radius: 9px;
+        font-size: 0.92rem;
+        font-weight: 600;
+        color: #374151;
+        transition: 0.25s ease;
+    }
+
+    nav a:hover {
+        background: #2563eb;
+        color: #ffffff;
+        transform: translateY(-2px);
+    }
+
+    nav a.active {
+        background: #2563eb;
+        color: #ffffff;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .page-hero {
+        background:
+            linear-gradient(
+                135deg,
+                #eff6ff 0%,
+                #ffffff 55%,
+                #f8fafc 100%
+            );
+        padding: 70px 20px 55px;
+        text-align: center;
+        border-bottom: 1px solid #e5e7eb;
+    }
+
+    .page-hero h1 {
+        font-size: clamp(1.8rem, 4vw, 2.7rem);
+        line-height: 1.35;
+        color: #111827;
+        margin-bottom: 14px;
+    }
+
+    .page-hero p {
+        max-width: 760px;
+        margin: auto;
+        color: #4b5563;
+        font-size: 1rem;
+    }
+
+    /* =========================
+       CONTENT
+    ========================== */
+
+    .container {
+        width: min(1000px, 92%);
+        margin: 45px auto 70px;
+    }
+
+    .intro-box {
+        background: #ffffff;
+        border-left: 5px solid #2563eb;
+        border-radius: 12px;
+        padding: 22px 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 6px 22px rgba(0,0,0,0.06);
+    }
+
+    .intro-box strong {
+        color: #1d4ed8;
+    }
+
+    .warranty-card {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 25px 28px;
+        margin-bottom: 20px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.055);
+        border: 1px solid #e5e7eb;
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease,
+            border-color 0.25s ease;
+    }
+
+    .warranty-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(37,99,235,0.12);
+        border-color: #bfdbfe;
+    }
+
+    .warranty-card h2 {
+        color: #1d4ed8;
+        font-size: 1.2rem;
+        margin-bottom: 13px;
+        line-height: 1.5;
+    }
+
+    .warranty-card h2 span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        margin-right: 8px;
+        border-radius: 50%;
+        background: #2563eb;
+        color: #ffffff;
+        font-size: 0.95rem;
+    }
+
+    .warranty-card ul {
+        padding-left: 22px;
+    }
+
+    .warranty-card li {
+        margin-bottom: 7px;
+    }
+
+    .warranty-card li:last-child {
+        margin-bottom: 0;
+    }
+
+    .example-box {
+        background: #f8fafc;
+        border-left: 4px solid #94a3b8;
+        border-radius: 8px;
+        padding: 15px 18px;
+        margin-top: 15px;
+        color: #374151;
+    }
+
+    .important-box {
+        background: #eff6ff;
+        border: 1px solid #bfdbfe;
+        border-radius: 15px;
+        padding: 28px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .important-box h2 {
+        color: #1d4ed8;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+    }
+
+    .important-quote {
+        font-size: clamp(1.2rem, 3vw, 1.7rem);
+        font-weight: 800;
+        color: #111827;
+        line-height: 1.5;
+    }
+
+    .closing-box {
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 25px 28px;
+        margin-top: 20px;
+        border: 1px solid #e5e7eb;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    }
+
+    .closing-box strong {
+        color: #1d4ed8;
+    }
+
+    /* =========================
+       BUTTON
+    ========================== */
+
+    .back-home {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .back-home a {
+        display: inline-block;
+        background: #2563eb;
+        color: #ffffff;
+        padding: 12px 25px;
+        border-radius: 10px;
+        font-weight: 700;
+        transition: 0.25s ease;
+        box-shadow: 0 5px 15px rgba(37,99,235,0.2);
+    }
+
+    .back-home a:hover {
+        background: #1d4ed8;
+        transform: translateY(-3px);
+        box-shadow: 0 9px 22px rgba(37,99,235,0.28);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+        background: #111827;
+        color: #d1d5db;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    footer strong {
+        display: block;
+        color: #ffffff;
+        font-size: 1.05rem;
+        margin-bottom: 7px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        color: #9ca3af;
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 850px) {
+
+        .header-inner {
+            flex-direction: column;
+            padding: 14px 0;
+        }
+
+        nav {
+            justify-content: center;
+        }
+
+        .page-hero {
+            padding: 55px 18px 45px;
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+    }
+
+    @media (max-width: 600px) {
+
+        .brand {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .brand img {
+            width: 48px;
+            height: 48px;
+        }
+
+        nav {
+            width: 100%;
+            gap: 5px;
+        }
+
+        nav a {
+            font-size: 0.84rem;
+            padding: 8px 9px;
+        }
+
+        .page-hero h1 {
+            font-size: 1.75rem;
+        }
+
+        .page-hero p {
+            font-size: 0.92rem;
+        }
+
+        .warranty-card {
+            padding: 20px 18px;
+        }
+
+        .warranty-card h2 {
+            font-size: 1.08rem;
+        }
+
+        .warranty-card ul {
+            padding-left: 19px;
+        }
+
+        .important-box,
+        .closing-box {
+            padding: 21px 18px;
+        }
+
+        .important-quote {
+            font-size: 1.2rem;
+        }
+    }
+
+</style>
+```
+
+</head>
+
+<body>
+
+<header>
+
+```
+<div class="header-inner">
+
+    <a href="./index.html" class="brand">
+
+        <img
+            src="./logo.png"
+            alt="โลโก้ ช่างบอย ซ่อมแอร์เคลื่อนที่">
+
+        <div class="brand-text">
+            ช่างบอย ซ่อมแอร์เคลื่อนที่
+            <span>รับซ่อม ล้าง ตรวจเช็ก แอร์เคลื่อนที่</span>
+        </div>
+
+    </a>
+
+    <nav>
+
+        <a href="./index.html">
+            หน้าแรก
+        </a>
+
+        <a href="./index.html#services">
+            บริการ
+        </a>
+
+        <a href="./articles.html">
+            บทความ
+        </a>
+
+        <a href="./index.html#reviews">
+            รีวิว
+        </a>
+
+        <a href="./index.html#faq">
+            คำถามที่พบบ่อย
+        </a>
+
+        <a href="./index.html#contact">
+            ติดต่อ
+        </a>
+
+        <a href="./warranty.html" class="active">
+            เงื่อนไขรับประกัน
+        </a>
+
+    </nav>
+
+</div>
+```
+
+</header>
+
+<section class="page-hero">
+
+```
+<h1>
+    เงื่อนไขการรับประกันงานซ่อมแอร์เคลื่อนที่
+</h1>
+
+<p>
+    ช่างบอย ซ่อมแอร์เคลื่อนที่
+    <br>
+    เพื่อให้ลูกค้าและทางร้านเข้าใจตรงกัน
+    ทางร้านกำหนดเงื่อนไขการรับประกันงานซ่อมดังต่อไปนี้
+</p>
+```
+
+</section>
+
+<main class="container">
+
+```
+<div class="intro-box">
+
+    <strong>
+        ขอบเขตสำคัญของการรับประกัน
+    </strong>
+
+    <br>
+
+    การรับประกันเป็นการรับประกันตามงานที่ร้านดำเนินการซ่อม
+    อะไหล่ที่เปลี่ยน และจุดที่ร้านแก้ไข
+    ไม่ใช่การรับประกันอุปกรณ์ทุกชิ้นส่วนของเครื่องทั้งหมด
+
+</div>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>1</span>
+        ขอบเขตการรับประกัน
+    </h2>
+
+    <ul>
+
+        <li>
+            รับประกันเฉพาะงานซ่อม อะไหล่ และจุดที่ร้านดำเนินการแก้ไขหรือเปลี่ยนใหม่
+            ตามใบรับซ่อม / ใบส่งมอบเครื่อง / ใบเสร็จ
+        </li>
+
+        <li>
+            ไม่ถือเป็นการรับประกันอุปกรณ์ทุกชิ้นส่วนทั้งเครื่อง
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>2</span>
+        ระยะเวลารับประกัน
+    </h2>
+
+    <ul>
+
+        <li>
+            ระยะเวลารับประกันเป็นไปตามที่ระบุในใบรับซ่อม
+            / ใบส่งมอบ / ใบเสร็จ
+        </li>
+
+        <li>
+            เริ่มนับจากวันที่ลูกค้ารับเครื่องกลับจากร้าน
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>3</span>
+        กรณีที่อยู่ในเงื่อนไขรับประกัน
+    </h2>
+
+    <ul>
+
+        <li>
+            งานซ่อมเดิมมีปัญหา
+        </li>
+
+        <li>
+            อะไหล่ที่เปลี่ยนผิดปกติ
+        </li>
+
+        <li>
+            จุดที่ซ่อมกลับมาเกิดอาการเดิม
+        </li>
+
+        <li>
+            ความผิดปกติที่ตรวจสอบแล้วเกี่ยวข้องโดยตรงกับงานซ่อมเดิม
+        </li>
+
+        <li>
+            ร้านตรวจสอบและพิจารณาแก้ไข
+            โดยไม่คิดค่าแรงในส่วนที่อยู่ในความรับผิดชอบของงานซ่อมเดิม
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>4</span>
+        อาการเสียใหม่ที่ไม่เกี่ยวข้อง
+    </h2>
+
+    <ul>
+
+        <li>
+            ถ้าเป็นคนละระบบ / ชิ้นส่วน / สาเหตุที่ไม่เกี่ยวข้อง
+            ไม่ถือเป็นงานซ่อมเดิมโดยอัตโนมัติ
+        </li>
+
+        <li>
+            ร้านตรวจสอบก่อนทุกครั้ง และแจ้งลูกค้าก่อนซ่อมเพิ่มเติม
+        </li>
+
+    </ul>
+
+    <div class="example-box">
+
+        <strong>ตัวอย่าง:</strong>
+
+        ซ่อมหน้าจอไม่ทำงาน แล้ว 1 สัปดาห์ต่อมาคอมเพรสเซอร์ไม่ทำงาน
+        ต้องตรวจสอบความเกี่ยวข้องก่อน
+        หากเป็นระบบหรืออะไหล่อื่น อาจไม่อยู่ในประกันงานเดิม
+
+    </div>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>5</span>
+        กรณีที่ไม่อยู่ในเงื่อนไขรับประกัน
+    </h2>
+
+    <ul>
+
+        <li>
+            อาการเสียหรืออะไหล่คนละส่วน
+        </li>
+
+        <li>
+            ใช้งานผิดวิธี
+        </li>
+
+        <li>
+            ไฟฟ้าผิดปกติ ไฟตก ไฟเกิน หรือไฟกระชาก
+        </li>
+
+        <li>
+            น้ำหรือความชื้นเข้าระบบไฟหรือ PCB
+        </li>
+
+        <li>
+            เครื่องถูกกระแทก ตก หรือได้รับความเสียหายจากภายนอก
+        </li>
+
+        <li>
+            ลูกค้าหรือบุคคลอื่นแกะ ซ่อม ดัดแปลง หรือต่อวงจรหลังรับเครื่อง
+        </li>
+
+        <li>
+            สัตว์ แมลง หรือสิ่งแปลกปลอมเข้าไปทำให้เกิดความเสียหาย
+        </li>
+
+        <li>
+            อะไหล่เสื่อมตามอายุที่ไม่ได้อยู่ในรายการรับประกัน
+        </li>
+
+        <li>
+            เหตุสุดวิสัยหรือปัจจัยภายนอก
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>6</span>
+        เมื่อนำเครื่องกลับมาตรวจ
+    </h2>
+
+    <ul>
+
+        <li>
+            ควรนำเครื่องกลับมาให้ร้านตรวจสอบก่อนซ่อมกับบุคคลอื่น
+        </li>
+
+        <li>
+            ร้านสงวนสิทธิ์พิจารณาหลังตรวจสอบสาเหตุและสภาพเครื่อง
+        </li>
+
+        <li>
+            การมีอาการเสียภายในระยะประกัน
+            ไม่ได้หมายความว่าอยู่ในประกันทุกกรณี
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>7</span>
+        การซ่อมเพิ่มเติม
+    </h2>
+
+    <ul>
+
+        <li>
+            หากเป็นอาการใหม่หรืออยู่นอกเงื่อนไขรับประกัน
+            ร้านจะแจ้งรายละเอียดและค่าใช้จ่ายก่อนซ่อม
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>8</span>
+        หลักการของร้าน
+    </h2>
+
+    <div class="important-box">
+
+        <h2>
+            หลักสำคัญในการรับประกัน
+        </h2>
+
+        <div class="important-quote">
+            “รับประกันตามงานที่ซ่อม ไม่ใช่รับประกันทั้งเครื่อง”
+        </div>
+
+        <p style="margin-top:15px;">
+            ร้านตรวจสอบตรงไปตรงมา
+            โดยพิจารณาสาเหตุและความเกี่ยวข้องกับงานเดิมเป็นหลัก
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="warranty-card">
+
+    <h2>
+        <span>9</span>
+        ความเสื่อมสภาพของเครื่องและชิ้นส่วนเดิม
+    </h2>
+
+    <ul>
+
+        <li>
+            เครื่องเก่าอาจมีพลาสติกกรอบหรือเปราะ
+            ยางเสื่อม จุดยึดหรือน็อตเป็นสนิม
+            รวมถึงชิ้นส่วนที่ผุ แตก หรือเสื่อมจากความร้อนและระยะเวลาการใช้งาน
+        </li>
+
+        <li>
+            หากถอดเครื่องและชิ้นส่วนเดิมที่เสื่อมอยู่แล้ว
+            เกิดการแตก หัก หรือชำรุดระหว่างการถอดหรือการตรวจสอบ
+            ไม่ถือว่าเกิดจากงานซ่อมโดยอัตโนมัติ
+            และไม่อยู่ในประกันเดิม
+        </li>
+
+        <li>
+            ร้านจะแจ้งสภาพและแนวทางก่อนซ่อมเพิ่มเติม
+            หากตรวจพบหรือสามารถประเมินสภาพได้
+        </li>
+
+        <li>
+            หากตรวจสอบแล้วพบว่าความเสียหายเกิดจากการปฏิบัติงานไม่เหมาะสม
+            หรือความประมาทของร้าน
+            ร้านจะพิจารณารับผิดชอบตามความเหมาะสม
+        </li>
+
+    </ul>
+
+    <div class="example-box">
+
+        <strong>หมายเหตุ:</strong>
+
+        เครื่องที่มีอายุการใช้งานมาก
+        ชิ้นส่วนเดิมอาจมีสภาพเปราะหรือเสื่อม
+        ทำให้เกิดความเสียหายขณะถอดประกอบได้
+        แม้ช่างจะดำเนินการด้วยความระมัดระวัง
+
+    </div>
+
+</section>
+
+
+<div class="closing-box">
+
+    <strong>
+        ช่างบอย ซ่อมแอร์เคลื่อนที่
+    </strong>
+
+    <br>
+
+    ตรวจเช็กตามอาการ • ซ่อมตามสาเหตุ • แจ้งรายละเอียดก่อนดำเนินการ
+
+</div>
+
+
+<div class="back-home">
+
+    <a href="./index.html">
+        ← กลับหน้าแรก
+    </a>
+
+</div>
+```
+
+</main>
+
+<footer>
+
+```
+<strong>
+    ช่างบอย ซ่อมแอร์เคลื่อนที่
+</strong>
+
+<p>
+    ตรวจเช็กตามอาการ • ซ่อมตามสาเหตุ • แจ้งรายละเอียดก่อนดำเนินการ
+</p>
+```
+
+</footer>
+
+</body>
+</html>
